@@ -1,0 +1,10 @@
+<div>
+    <h1>Hi dude</h1>
+    <input type="text" ng-model="lat">
+    <input type="text" ng-model="long">
+    <button ng-model="update">refresh</button>
+</div>
+
+<ui-gmap-google-map center='map.center' zoom='map.zoom' options='map.options'></ui-gmap-google-map>
+
+{{ map.center.latitude }} {{ map.center.longitude }}

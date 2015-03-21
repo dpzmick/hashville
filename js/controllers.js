@@ -7,7 +7,7 @@ angular.module('hashControllers', ['uiGmapgoogle-maps'])
         $scope.when = "How long will you be in Nashville?";
 }])
 
-.controller('IteneraryCtrl', ['$scope', 'uiGmapGoogleMapApi',
+.controller('ItineraryCtrl', ['$scope', 'uiGmapGoogleMapApi',
     function($scope, uiGmapGoogleMapApi) {
         $scope.lat = 36.17;
         $scope.long = -86.78;

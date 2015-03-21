@@ -22,7 +22,7 @@ angular.module('hash', [
         
         .when('/plan', {
             templateUrl: '/templates/plan.html',
-            controller: 'IteneraryCtrl'
+            controller: 'ItineraryCtrl'
         })
         
         .otherwise({ 
