@@ -1,32 +1,31 @@
-/* line 1, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.keys {
-  color: blue; }
+/* line 23, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
 
-/* line 6, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-#rental label:first-child {
-  width: 120px;
-  text-align: right;
-  display: inline-block; }
-/* line 12, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-#rental button {
-  margin-left: 124px; }
-/* line 16, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-#rental .error {
-  color: red; }
-
-/* line 21, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.log {
+/* line 27, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.wrapper {
   width: 100%;
-  margin-top: 20px; }
-  /* line 25, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-  .log th {
-    text-align: left; }
-  /* line 29, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-  .log tr {
-    margin-bottom: 6px; }
+  height: 100vh;
+  background: url(../img/nashville-603784_1920.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 /* line 34, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.angular-google-map-container {
-  height: 400px; }
+.input {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 38, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+#map {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 33%; }
 
 /*# sourceMappingURL=main.css.map */

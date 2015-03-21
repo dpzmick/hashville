@@ -1,5 +1,7 @@
-<div>
-    <h1>Hi dude</h1>
+<div class="wrapper">
+    <div class="input">
+        <input name="where" ng-model="where" required placeholder="Where will you be staying?"><br>
+        <input name="when" ng-model="when" required placeholder="How long will you be here?">
+        <button ng-click="submit()">Plan Trip</button>
+    </div>
 </div>
-
-<ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
