@@ -20,4 +20,8 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+/* line 38, /Users/lawrencehumphrey/Dev/hashville/css/main.scss */
+.angular-google-map-container {
+  height: 400px; }
+
 /*# sourceMappingURL=main.css.map */

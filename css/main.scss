@@ -34,3 +34,7 @@ body {
 .input {
     @include center-this(45%);
 }
+
+.angular-google-map-container { 
+    height: 400px; 
+}

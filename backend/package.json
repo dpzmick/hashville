@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "lodash": "^3.5.0",
+    "mongo": "^0.1.0",
   },
   "devDependencies": {
     "flow": "^0.2.3",

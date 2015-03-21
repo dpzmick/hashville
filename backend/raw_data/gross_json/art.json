@@ -1,0 +1,1005 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "dqkw-tj5j",
+      "name" : "Art in Public Places",
+      "attribution" : "Metro Nashville Arts Commission",
+      "attributionLink" : "http://arts.nashville.gov",
+      "averageRating" : 0,
+      "category" : "Culture",
+      "createdAt" : 1397598303,
+      "description" : "This dataset contains all Art displayed in public locations.",
+      "displayType" : "table",
+      "downloadCount" : 46,
+      "indexUpdatedAt" : 1414707682,
+      "licenseId" : "PUBLIC_DOMAIN",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 7925298,
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1399313928,
+      "publicationGroup" : 1547633,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1399313915,
+      "rowsUpdatedBy" : "vezj-bc7i",
+      "tableId" : 1570389,
+      "totalTimesRated" : 0,
+      "viewCount" : 395,
+      "viewLastModified" : 1425324829,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : 146841922,
+        "name" : "Title",
+        "dataTypeName" : "text",
+        "fieldName" : "title",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19209405,
+        "width" : 160,
+        "cachedContents" : {
+          "non_null" : 118,
+          "smallest" : "[Cross Country Runners]",
+          "null" : 0,
+          "largest" : "Wooden Benches",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Totem"
+          }, {
+            "count" : 19,
+            "item" : "S. M. Patton, Architect"
+          }, {
+            "count" : 18,
+            "item" : "Mare and Foal"
+          }, {
+            "count" : 17,
+            "item" : "Fourth and Commerce Sculpture"
+          }, {
+            "count" : 16,
+            "item" : "Lightning Wire Fountain"
+          }, {
+            "count" : 15,
+            "item" : "St. Vincent de Paul"
+          }, {
+            "count" : 14,
+            "item" : "Ariel"
+          }, {
+            "count" : 13,
+            "item" : "Timeless"
+          }, {
+            "count" : 12,
+            "item" : "Farm Family"
+          }, {
+            "count" : 11,
+            "item" : "Industry (The TVA Group)"
+          }, {
+            "count" : 10,
+            "item" : "Pioneer Family (The Mountain Group)"
+          }, {
+            "count" : 9,
+            "item" : "The Jubilee Singers"
+          }, {
+            "count" : 8,
+            "item" : "Statue of Dr. W. E. B. Dubois"
+          }, {
+            "count" : 7,
+            "item" : "Underwater Scene"
+          }, {
+            "count" : 6,
+            "item" : "Desert Scene"
+          }, {
+            "count" : 5,
+            "item" : "Various"
+          }, {
+            "count" : 4,
+            "item" : "A Splash of Color"
+          }, {
+            "count" : 3,
+            "item" : "Abstract White Sculpture"
+          }, {
+            "count" : 2,
+            "item" : "Wall mural of teachers, students and families"
+          }, {
+            "count" : 1,
+            "item" : "Succah"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 146842036,
+        "name" : "Last Name",
+        "dataTypeName" : "text",
+        "fieldName" : "last_name",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19564675,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 118,
+          "smallest" : "Baker",
+          "null" : 0,
+          "largest" : "Zolnay",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Faxon"
+          }, {
+            "count" : 19,
+            "item" : "LeQuire"
+          }, {
+            "count" : 18,
+            "item" : "Zolnay"
+          }, {
+            "count" : 17,
+            "item" : "Kinney and Scholz"
+          }, {
+            "count" : 16,
+            "item" : "Mims"
+          }, {
+            "count" : 15,
+            "item" : "Unknown"
+          }, {
+            "count" : 14,
+            "item" : "Walker"
+          }, {
+            "count" : 13,
+            "item" : "Neighborhood children supervised by artists"
+          }, {
+            "count" : 12,
+            "item" : "Halahmy"
+          }, {
+            "count" : 11,
+            "item" : "Limor"
+          }, {
+            "count" : 10,
+            "item" : "Bennyworth"
+          }, {
+            "count" : 9,
+            "item" : "Noland"
+          }, {
+            "count" : 8,
+            "item" : "Shields"
+          }, {
+            "count" : 7,
+            "item" : "Williams"
+          }, {
+            "count" : 6,
+            "item" : "Calk"
+          }, {
+            "count" : 5,
+            "item" : "Borem"
+          }, {
+            "count" : 4,
+            "item" : "McGraw"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 146842097,
+        "name" : "First Name",
+        "dataTypeName" : "text",
+        "fieldName" : "first_name",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19564676,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 114,
+          "smallest" : "Adam and David",
+          "null" : 4,
+          "largest" : "William",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Russell"
+          }, {
+            "count" : 19,
+            "item" : "Alan"
+          }, {
+            "count" : 18,
+            "item" : "George Julian"
+          }, {
+            "count" : 17,
+            "item" : "Belle and Leopold"
+          }, {
+            "count" : 16,
+            "item" : "Puryear"
+          }, {
+            "count" : 15,
+            "item" : "Joe"
+          }, {
+            "count" : 14,
+            "item" : "Unknown"
+          }, {
+            "count" : 13,
+            "item" : "Lin"
+          }, {
+            "count" : 12,
+            "item" : "James"
+          }, {
+            "count" : 11,
+            "item" : "Livin"
+          }, {
+            "count" : 10,
+            "item" : "Steve"
+          }, {
+            "count" : 9,
+            "item" : "Terry"
+          }, {
+            "count" : 8,
+            "item" : "Olin"
+          }, {
+            "count" : 7,
+            "item" : "Jonah"
+          }, {
+            "count" : 6,
+            "item" : "Deloss"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 146841924,
+        "name" : "Location",
+        "dataTypeName" : "text",
+        "fieldName" : "location",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19209407,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 117,
+          "smallest" : "12th Avenue South",
+          "null" : 1,
+          "largest" : "Watkins Park Community Center",
+          "top" : [ {
+            "count" : 20,
+            "item" : "12th Avenue South"
+          }, {
+            "count" : 19,
+            "item" : "Belle Meade Boulevard"
+          }, {
+            "count" : 18,
+            "item" : "Centennial Park"
+          }, {
+            "count" : 17,
+            "item" : "Montgomery Bell Academy"
+          }, {
+            "count" : 16,
+            "item" : "Nashville International Airport"
+          }, {
+            "count" : 15,
+            "item" : "Nashville National Cemetery"
+          }, {
+            "count" : 14,
+            "item" : "Nashville Public Library"
+          }, {
+            "count" : 13,
+            "item" : "Riverfront Park"
+          }, {
+            "count" : 12,
+            "item" : "Saint George's Episcopal Church"
+          }, {
+            "count" : 11,
+            "item" : "Schermerhorn Symphony Center"
+          }, {
+            "count" : 10,
+            "item" : "Tennessee Legislative Plaza"
+          }, {
+            "count" : 9,
+            "item" : "Tennessee State Capitol"
+          }, {
+            "count" : 8,
+            "item" : "Warner Park Nature Center"
+          }, {
+            "count" : 7,
+            "item" : "Tennessee State Museum"
+          }, {
+            "count" : 6,
+            "item" : "AT&T Building Plaza"
+          }, {
+            "count" : 5,
+            "item" : "Nashville Ladies of Charity"
+          }, {
+            "count" : 4,
+            "item" : "Commerce Center Building"
+          }, {
+            "count" : 3,
+            "item" : "Cordell Hull State Office Building"
+          }, {
+            "count" : 2,
+            "item" : "Fisk University"
+          }, {
+            "count" : 1,
+            "item" : " McFerrin Community Center"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 146841925,
+        "name" : "Medium",
+        "dataTypeName" : "text",
+        "fieldName" : "medium",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19209408,
+        "width" : 255,
+        "cachedContents" : {
+          "non_null" : 110,
+          "smallest" : "83 Stained glass medallions",
+          "null" : 8,
+          "largest" : "Wrought iron/cast iron, painted, on a concrete patio",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Bronze"
+          }, {
+            "count" : 19,
+            "item" : "Limestone"
+          }, {
+            "count" : 18,
+            "item" : "Hollow bronze on a marble base"
+          }, {
+            "count" : 17,
+            "item" : "Alabama Marble"
+          }, {
+            "count" : 16,
+            "item" : "Italian marble sculpture on a concrete slab"
+          }, {
+            "count" : 15,
+            "item" : "Bronze on a stone base"
+          }, {
+            "count" : 14,
+            "item" : "Cast Nickel Bronze"
+          }, {
+            "count" : 13,
+            "item" : "Unknown metal"
+          }, {
+            "count" : 12,
+            "item" : "Cortin Steel"
+          }, {
+            "count" : 11,
+            "item" : "Bronze sculpture with brick base"
+          }, {
+            "count" : 10,
+            "item" : "Burnished steel"
+          }, {
+            "count" : 9,
+            "item" : "Rubber, foam rubber, vinyl, electronic parts, auto parts, kitchen utensils, trash, beer cans, cloth"
+          }, {
+            "count" : 8,
+            "item" : "Graffiti "
+          }, {
+            "count" : 7,
+            "item" : "Mixed Media - wood and paint"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 146841926,
+        "name" : "Type",
+        "dataTypeName" : "text",
+        "fieldName" : "type",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19209409,
+        "width" : 72,
+        "cachedContents" : {
+          "non_null" : 102,
+          "smallest" : "Arch",
+          "null" : 16,
+          "largest" : "Weathervane",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Sculpture"
+          }, {
+            "count" : 19,
+            "item" : "Topiary"
+          }, {
+            "count" : 18,
+            "item" : "Monument"
+          }, {
+            "count" : 17,
+            "item" : "Mural"
+          }, {
+            "count" : 16,
+            "item" : "Relief"
+          }, {
+            "count" : 15,
+            "item" : "Fountain"
+          }, {
+            "count" : 14,
+            "item" : "Mosaic"
+          }, {
+            "count" : 13,
+            "item" : "Bronzes"
+          }, {
+            "count" : 12,
+            "item" : "Frieze"
+          }, {
+            "count" : 11,
+            "item" : "Mobil"
+          }, {
+            "count" : 10,
+            "item" : "Multipart"
+          }, {
+            "count" : 9,
+            "item" : "Mobile"
+          }, {
+            "count" : 8,
+            "item" : "Furniture"
+          }, {
+            "count" : 7,
+            "item" : "Weathervane"
+          }, {
+            "count" : 6,
+            "item" : "Totem Pole"
+          }, {
+            "count" : 5,
+            "item" : "Painting"
+          }, {
+            "count" : 4,
+            "item" : "Arch"
+          }, {
+            "count" : 3,
+            "item" : "Graffiti"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 146841927,
+        "name" : "Description",
+        "dataTypeName" : "text",
+        "fieldName" : "description",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19209410,
+        "width" : 469,
+        "cachedContents" : {
+          "non_null" : 85,
+          "smallest" : "16 tiles demonstrating the phases of the sun, 8 tiles demonstrating the phases of the moon, and four tiles depicting the seasons on earth",
+          "null" : 33,
+          "largest" : "Two polarbears who appear to be in a snowball fight.",
+          "top" : [ {
+            "count" : 20,
+            "item" : "A confident man walking forward with an outstretched hand gesturing support and encouragement to his audience. He has a heart inscribed on one arm and an owl sitting on his shoulder."
+          }, {
+            "count" : 19,
+            "item" : "Six brightly colored standing figures constructed of bits of trash. The figures are dressed as cowboys and wear hats, vests, boots, and jeans. Some figures carry guns, one has a banjo and another has a guitar. The figures are resting on the ground and there are grAvenuel walkways around them."
+          }, {
+            "count" : 18,
+            "item" : "chairs depicting the four seasons"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 146841928,
+        "name" : "Latitude",
+        "dataTypeName" : "number",
+        "fieldName" : "latitude",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 19209411,
+        "width" : 69,
+        "cachedContents" : {
+          "non_null" : 118,
+          "smallest" : "36.060890999999998",
+          "sum" : "4264.897103999999987",
+          "null" : 0,
+          "average" : "36.14319579661017",
+          "largest" : "36.241261999999999",
+          "top" : [ {
+            "count" : 20,
+            "item" : "36.12856"
+          }, {
+            "count" : 19,
+            "item" : "36.241261999999999"
+          }, {
+            "count" : 18,
+            "item" : "36.162145000000002"
+          }, {
+            "count" : 17,
+            "item" : "36.119751000000001"
+          }, {
+            "count" : 16,
+            "item" : "36.165267"
+          }, {
+            "count" : 15,
+            "item" : "36.060890999999998"
+          }, {
+            "count" : 14,
+            "item" : "36.16489"
+          }, {
+            "count" : 13,
+            "item" : "36.167085999999998"
+          }, {
+            "count" : 12,
+            "item" : "36.107914999999998"
+          }, {
+            "count" : 11,
+            "item" : "36.132641"
+          }, {
+            "count" : 10,
+            "item" : "36.134045"
+          }, {
+            "count" : 9,
+            "item" : "36.161560999999999"
+          }, {
+            "count" : 8,
+            "item" : "36.16151"
+          }, {
+            "count" : 7,
+            "item" : "36.128836999999997"
+          }, {
+            "count" : 6,
+            "item" : "36.150638999999998"
+          }, {
+            "count" : 5,
+            "item" : "36.150789000000003"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 146841929,
+        "name" : "Longitude",
+        "dataTypeName" : "number",
+        "fieldName" : "longitude",
+        "position" : 10,
+        "renderTypeName" : "number",
+        "tableColumnId" : 19209412,
+        "width" : 68,
+        "cachedContents" : {
+          "non_null" : 118,
+          "smallest" : "-86.914563999999999",
+          "sum" : "-10242.546558000000005",
+          "null" : 0,
+          "average" : "-86.80124201694915",
+          "largest" : "-86.615644000000003",
+          "top" : [ {
+            "count" : 20,
+            "item" : "-86.836603999999994"
+          }, {
+            "count" : 19,
+            "item" : "-86.725593000000003"
+          }, {
+            "count" : 18,
+            "item" : "-86.782049999999998"
+          }, {
+            "count" : 17,
+            "item" : "-86.853425999999999"
+          }, {
+            "count" : 16,
+            "item" : "-86.783816999999999"
+          }, {
+            "count" : 15,
+            "item" : "-86.914563999999999"
+          }, {
+            "count" : 14,
+            "item" : "-86.781837999999993"
+          }, {
+            "count" : 13,
+            "item" : "-86.804760999999999"
+          }, {
+            "count" : 12,
+            "item" : "-86.864517000000006"
+          }, {
+            "count" : 11,
+            "item" : "-86.794734000000005"
+          }, {
+            "count" : 10,
+            "item" : "-86.794945999999996"
+          }, {
+            "count" : 9,
+            "item" : "-86.777889000000002"
+          }, {
+            "count" : 8,
+            "item" : "-86.778159000000002"
+          }, {
+            "count" : 7,
+            "item" : "-86.844016999999994"
+          }, {
+            "count" : 6,
+            "item" : "-86.776859999999999"
+          }, {
+            "count" : 5,
+            "item" : "-86.775762999999998"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 146841930,
+        "name" : "Mapped Location",
+        "dataTypeName" : "location",
+        "fieldName" : "mapped_location",
+        "position" : 11,
+        "renderTypeName" : "location",
+        "tableColumnId" : 19209413,
+        "width" : 148,
+        "cachedContents" : {
+          "non_null" : 118,
+          "smallest" : {
+            "longitude" : "-86.79027",
+            "latitude" : "36.121614"
+          },
+          "null" : 0,
+          "largest" : {
+            "longitude" : "-86.78205",
+            "latitude" : "36.162145"
+          },
+          "top" : [ {
+            "count" : 20,
+            "item" : {
+              "longitude" : "-86.781838",
+              "latitude" : "36.16489"
+            }
+          }, {
+            "count" : 19,
+            "item" : {
+              "longitude" : "-86.86524",
+              "latitude" : "36.176007"
+            }
+          }, {
+            "count" : 18,
+            "item" : {
+              "longitude" : "-86.854896",
+              "latitude" : "36.119289"
+            }
+          }, {
+            "count" : 17,
+            "item" : {
+              "longitude" : "-86.777739",
+              "latitude" : "36.162338"
+            }
+          }, {
+            "count" : 16,
+            "item" : {
+              "longitude" : "-86.777098",
+              "latitude" : "36.162335"
+            }
+          }, {
+            "count" : 15,
+            "item" : {
+              "longitude" : "-86.806028",
+              "latitude" : "36.152335"
+            }
+          }, {
+            "count" : 14,
+            "item" : {
+              "longitude" : "-86.813114",
+              "latitude" : "36.147641"
+            }
+          }, {
+            "count" : 13,
+            "item" : {
+              "longitude" : "-86.776307",
+              "latitude" : "36.16227"
+            }
+          }, {
+            "count" : 12,
+            "item" : {
+              "longitude" : "-86.783316",
+              "latitude" : "36.167565"
+            }
+          }, {
+            "count" : 11,
+            "item" : {
+              "longitude" : "-86.783431",
+              "latitude" : "36.167017"
+            }
+          }, {
+            "count" : 10,
+            "item" : {
+              "longitude" : "-86.783216",
+              "latitude" : "36.166688"
+            }
+          }, {
+            "count" : 9,
+            "item" : {
+              "longitude" : "-86.804761",
+              "latitude" : "36.167086"
+            }
+          }, {
+            "count" : 8,
+            "item" : {
+              "longitude" : "-86.804761",
+              "latitude" : "36.167086"
+            }
+          }, {
+            "count" : 7,
+            "item" : {
+              "longitude" : "-86.767386",
+              "latitude" : "36.182275"
+            }
+          }, {
+            "count" : 6,
+            "item" : {
+              "longitude" : "-86.756719",
+              "latitude" : "36.150707"
+            }
+          }, {
+            "count" : 5,
+            "item" : {
+              "longitude" : "-86.783679",
+              "latitude" : "36.143047"
+            }
+          }, {
+            "count" : 4,
+            "item" : {
+              "longitude" : "-86.799745",
+              "latitude" : "36.162019"
+            }
+          }, {
+            "count" : 3,
+            "item" : {
+              "longitude" : "-86.766898",
+              "latitude" : "36.120938"
+            }
+          }, {
+            "count" : 2,
+            "item" : {
+              "longitude" : "-86.768931",
+              "latitude" : "36.178352"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : "-86.864517",
+              "latitude" : "36.107915"
+            }
+          } ]
+        },
+        "format" : {
+          "view" : "address_coords",
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain"
+      },
+      "metadata" : {
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rdfSubject" : "0",
+        "attachments" : [ {
+          "assetId" : "BR2kXtcuMs6ZwzgcZqqgV3j8OEbie0B3xte2KSZ8XWQ",
+          "blobId" : "",
+          "name" : "Art-in-Public-Places-Metadata.docx",
+          "filename" : "Art-in-Public-Places-Metadata.docx"
+        } ],
+        "rowIdentifier" : "0",
+        "rdfClass" : ""
+      },
+      "owner" : {
+        "id" : "vezj-bc7i",
+        "displayName" : "Houston",
+        "profileImageUrlLarge" : "/images/profile/8202/8592/houston_large.jpg",
+        "profileImageUrlMedium" : "/images/profile/8202/8592/houston_thumb.jpg",
+        "profileImageUrlSmall" : "/images/profile/8202/8592/houston_tiny.jpg",
+        "roleName" : "administrator",
+        "screenName" : "Houston",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "query" : {
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "vezj-bc7i",
+        "displayName" : "Houston",
+        "profileImageUrlLarge" : "/images/profile/8202/8592/houston_large.jpg",
+        "profileImageUrlMedium" : "/images/profile/8202/8592/houston_thumb.jpg",
+        "profileImageUrlSmall" : "/images/profile/8202/8592/houston_tiny.jpg",
+        "roleName" : "administrator",
+        "screenName" : "Houston",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "tags" : [ "metro", "public", "art" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 1, "D2664746-A78F-4331-9BDB-F2B2E35E8321", 1, 1399313899, "878289", 1399313899, "878289", "{\n}", "Can-Do", "Lucking-Reilley", "Mary", "12th Avenue South", "Painted metal", "Sculpture", "Trash can created by artist and children", "36.121614000000001", "-86.790270000000007", [ null, "36.121614000000001", "-86.790270000000007", null, false ] ]
+, [ 2, "F115E370-ECE7-460F-B221-7F85CE0D8A61", 2, 1399313899, "878289", 1399313899, "878289", "{\n}", "Polarbears with Snowballs", "Unknown", "Unknown", "12th Avenue South", "Plaster", "Sculpture", "Two polarbears who appear to be in a snowball fight.", "36.142609999999998", "-86.786797000000007", [ null, "36.142609999999998", "-86.786797000000007", null, false ] ]
+, [ 3, "B9DAD137-26FF-4F88-BC18-DE692C373D0C", 3, 1399313899, "878289", 1399313899, "878289", "{\n}", "Chet Atkins", "Faxon", "Russell", "Bank of America ", "Bronze stool and guitar on a granite plynth", "Sculpture", "A sculpture of a young Chet Atkins seated on a stool and playing the guitar.", "36.164658000000003", "-86.781019000000001", [ null, "36.164658000000003", "-86.781019000000001", null, false ] ]
+, [ 4, "B2D96FC7-9A89-4D9B-BE5B-5BC84814BDA0", 4, 1399313899, "878289", 1399313899, "878289", "{\n}", "Raccoons and the Magic Horseshoes", "Schon", "Nancy", "Belle Meade Boulevard", "Bronze mounted on grass", "Sculpture", "A family of racoons wandering through the median between two horseshoes created out of stones.", "36.148755000000001", "-86.813421000000005", [ null, "36.148755000000001", "-86.813421000000005", null, false ] ]
+, [ 5, "34F10B96-0AFC-44B1-A970-A3CC90C99F59", 5, 1399313899, "878289", 1399313899, "878289", "{\n}", "Bison", "LeQuire", "Alan", "Buffalo Park, Nashville, TN 37207", "9 Stainless steel sculptures", "Topiary", null, "36.078902999999997", "-86.837089000000006", [ null, "36.078902999999997", "-86.837089000000006", null, false ] ]
+, [ 6, "3D738493-4EE1-46D3-BA22-7F5C42D3DC57", 6, 1399313899, "878289", 1399313899, "878289", "{\n}", "Confederate Private Monument", "Zolnay", "George Julian", "Centennial Park", "Bronze on a limestone and granite base", "Monument", "A seated portrait of Sam Davis, a boy hero of the Confederate Army. Davis wears a military uniform and holds the barrel of a rifle in his proper right hand. The butt of the rifle rests on the rocky stone ledge on which Davis is seated. He faces forward wi", "36.147880000000001", "-86.812607999999997", [ null, "36.147880000000001", "-86.812607999999997", null, false ] ]
+, [ 7, "1A9EDECF-A9EA-438D-B40C-320CCAEC4F55", 7, 1399313899, "878289", 1399313899, "878289", "{\n}", "Parthenon East Pediment", "Kinney and Scholz", "Belle and Leopold", "Centennial Park", "Concrete over a steel armature", "Sculpture", "Pedimental sculpture which depicts the birth of Athena.  The Olympian gods depicted include Helios, Dionysus, Persephone, Demeter, Poseidon, Hephaestus, Zeus, Nike, Athena, Hera, Ares, Hermes, Apollo, Ganymede, Hestia, Aphrodite, and Selene.  Mythology -- Classical -- Athena, Helios, Dionysus, Perephone, Demeter, Poseidon, Hephaestus, Zeus, Nike, Hera, Ares, Hermes, Apollo, Ganymede, Hestia, Aphrodite, and Selene.", "36.150066000000002", "-86.813077000000007", [ null, "36.150066000000002", "-86.813077000000007", null, false ] ]
+, [ 8, "B68139D7-FCEB-474A-8479-5AB13B2D53C0", 8, 1399313899, "878289", 1399313899, "878289", "{\n}", "John W. Thomas", "Yandell", "Enid", "Centennial Park", "Sculpture: bronze;  \nBase: stone on a concrete platform", "Monument", "A bronze full length portrait of John W Thomas, the President of the 1897 Centennial Exposition of TN.  Thomas stands with his left foot forward and his right hand outstretched. He holds a cape in his left hand and wears a suit with knee-length jacket. Th", "36.148876999999999", "-86.813567000000006", [ null, "36.148876999999999", "-86.813567000000006", null, false ] ]
+, [ 9, "3D885709-AE7C-4918-94AD-B375277FF9C1", 9, 1399313899, "878289", 1399313899, "878289", "{\n}", "Gold Star Monument to World War I Veterans", "Zolnay", "George Julian", "Centennial Park", "Bronze on a granite base", "Monument", "A sculpture of two large bronze figures. A female figure wears a cape and kneels over a dead soldier, partially supporting him. The cape is very large and forms a shelter around both figures.  Her proper right hand is under the soldier's proper right shou", "36.148876999999999", "-86.813567000000006", [ null, "36.148876999999999", "-86.813567000000006", null, false ] ]
+, [ 10, "0F6F1413-A09F-4A62-87A4-580ADF4A806F", 10, 1399313899, "878289", 1399313899, "878289", "{\n}", "Parthenon West Pediment", "Kinney and Scholz", "Belle and Leopold", "Centennial Park", "Concrete over a steel armature", "Sculpture", "Pedimental sculpture which depicts the contest between Athena and Poseidon for the honor of being the patron god for the city of Athens.  Athena and Poseidon are portrayed along with other gods and goddesses and horse drawn chariots.  Mythology -- Classical  -- Athena, Mythology -- Classical -- Poseidon, Architecture -- Vehicle -- Carriage", "36.149681000000001", "-86.813759000000005", [ null, "36.149681000000001", "-86.813759000000005", null, false ] ]
+, [ 11, "138BF9A4-AE17-4BF9-86E7-6C1B07BCB0A9", 11, 1399313899, "878289", 1399313899, "878289", "{\n}", "Piecing It All Together", "Cooper", "Michael", "Church Street Park", "Painting on Stone ", "Mural", "Three workmen--the artist and the building's two owners--are shown putting the building facade together like a jigsaw puzzle.", "36.162807999999998", "-86.781862000000004", [ null, "36.162807999999998", "-86.781862000000004", null, false ] ]
+, [ 12, "D88059C3-CD10-4C6A-ABDF-2C3BF786F78B", 12, 1399313899, "878289", 1399313899, "878289", "{\n}", "Soldier and Farmer (The Equestrian Group)", "Mims", "Puryear", "Cordell Hull State Office Building", "Bronze on a stone base", "Sculpture", "A soldier in a uniform on a horse looking down at a farmer standing to his proper right. The farmer wears overalls, a shirt with a collar and rolled up sleeves, and knee-high boots. The soldier wears a double-breasted jacket with a belt, gloves and a beard and moustache. He is turned to the proper left and looks down at the farmer. His proper right hand is on the back of the horse and his proper left hand holds the horse's reins. The  horse looks straight ahead. The figure group stands on flat plinth on a stone base attached to the building.\nOccupation -- Military -- Soldier; Occupation -- Farm; Figure group -- Male\nEquestrian; Animal -- Horse; Dress -- Uniform -- Military Uniform", "36.167319999999997", "-86.783645000000007", [ null, "36.167319999999997", "-86.783645000000007", null, false ] ]
+, [ 13, "BA393583-6E4D-42D4-AEF2-8A80393D8BE4", 13, 1399313899, "878289", 1399313899, "878289", "{\n}", "Founding Fathers Cenotaph", "Mims", "Puryear", "Disciples of Christ Historical Society courtyard", "Bas-relief on granite", "Relief", "A four-sided, cenotaph with a relief portrait bust on each side. The busts are of Alexander Campbell, Barton Warren Stone, Walter Scott, and Thomas Campbell. In each portrait the sitter looks straight ahead and wears a jacket, high-neck shirt, and ascot o", "36.145642000000002", "-86.797651999999999", [ null, "36.145642000000002", "-86.797651999999999", null, false ] ]
+, [ 14, "16027D0A-A4EB-4849-9768-A44BEFCF0F7C", 14, 1399313899, "878289", 1399313899, "878289", "{\n}", "History in Stained Glass", "Baker", "Gus", "Disciples of Christ Historical Society interior", "83 Stained glass medallions", null, null, "36.145642000000002", "-86.797651999999999", [ null, "36.145642000000002", "-86.797651999999999", null, false ] ]
+, [ 15, "15641C06-E4E3-4BBB-88AA-1BF087C546A8", 15, 1399313899, "878289", 1399313899, "878289", "{\n}", "Threshold", "Sorci", "Joe", "East Bank Greenway", "Found metal objects", "Sculpture", "installation of found industrial metal", "36.165379999999999", "-86.773641999999995", [ null, "36.165379999999999", "-86.773641999999995", null, false ] ]
+, [ 16, "EF3A8361-4C3E-461A-8B54-81D2B098B3E7", 16, 1399313899, "878289", 1399313899, "878289", "{\n}", "Sea Serpent", "Silva", "Pedro", "Fannie Mae Dees Park", "Ceramic tile set in concrete reinforced with steel rods and wire mesh", "Fountain", "A huge sea serpent which appears to be partially submerged beneath the surface of the ground. The serpent's body takes the form of large arches and is used as playground equipment. The surface of the sculpture is covered with cermaic tiles in bright turquoise and primary colors. The tiles form mosaic pictures of various cartoon characters, clowns, animals, etc.\nFantasy -- Monster\nCartoon", "36.136887000000002", "-86.806213", [ null, "36.136887000000002", "-86.806213", null, false ] ]
+, [ 17, "7EE4BA4A-6D53-462C-90F8-3027AD27EECC", 17, 1399313899, "878289", 1399313899, "878289", "{\n}", "The Peace Monument", "Moretti", "Giuseppe", "Granny White Pike and Battlefield Dr. Nashville, TN 37204", "Bronze on Carrera marble base", "Monument", "A standing youth holds back two rearing horses, one on either side of him. The nude youth gazes to the proper left side and out into the distance. The youth and the rearing horses face forward. A cloth or drape arches above the youth and the horses, and a cloth is draped about the youth's feet. The youth wears a drape and a belt about his waist. Behind the bronze grouping was a marble shaft surmounted by an angel of peace. The bronze grouping and shaft rest on a marble base with a stepped bottom.\nHistory--United States--Civil War\nFigure male--Full length\nAnimal--Horse\nAllegory--Civic--Peace", "36.114648000000003", "-86.792327999999998", [ null, "36.114648000000003", "-86.792327999999998", null, false ] ]
+, [ 18, "744A2DB0-5660-47EC-B6F2-189BDEDAAA09", 18, 1399313899, "878289", 1399313899, "878289", "{\n}", "Les Paul Guitar Mural", "Hughes", "Milree", "Hard Rock Café", "Painting", "Mural", null, "36.162399999999998", "-86.774906999999999", [ null, "36.162399999999998", "-86.774906999999999", null, false ] ]
+, [ 19, "B38DFD83-F15F-436D-85CF-505E8FD68EED", 19, 1399313899, "878289", 1399313899, "878289", "{\n}", "Rolling Hills", "Ulibarri", "Jerry", "Hermitage Branch Public Library", "Acrylic on canvas", "Mural", "Landscapes typical to the Nashville area Wbe Site Address:", "36.177038000000003", "-86.615644000000003", [ null, "36.177038000000003", "-86.615644000000003", null, false ] ]
+, [ 20, "532F9BDF-73E9-4051-A612-C71749A9C5F5", 20, 1399313899, "878289", 1399313899, "878289", "{\n}", "Dragon Wall Mural", "Randolf and Glick", "Adam and David", "Hillsboro Village", "Painting", "Mural", null, "36.136507999999999", "-86.801270000000002", [ null, "36.136507999999999", "-86.801270000000002", null, false ] ]
+, [ 21, "5681AA81-AFDC-4084-B4E5-9F8FF331A7FA", 21, 1399313899, "878289", 1399313899, "878289", "{\n}", "Jere Baxter", "Kinney", "Belle", "Jere Baxter Middle School", "Bronze on granite base", "Monument", "Standing male figure in formal Dress, with long buttoned coat.  The figure's proper right hand is slightly outstretched as in a welcoming gesture; his proper left leg is slightly forward and his gaze is straight ahead.  The figure stands on a rectangular ", "36.219047000000003", "-86.751574000000005", [ null, "36.219047000000003", "-86.751574000000005", null, false ] ]
+, [ 22, "2291E757-7975-4AB6-9B3C-8AA51DA5FA4C", 22, 1399313899, "878289", 1399313899, "878289", "{\n}", "Industry, Agriculture, Commerce, Statesmanship", "Cornwell", "Dean", "Metro Courthouse", "Painting/mural", "Mural", "The murals in the main lobby of the Davidson County Courthouse feature heroic figures representing Industry, Agriculture, Commerce, and Statesmanship superimposed over maps of Nashville and Davidson County.", "36.167560000000002", "-86.778598000000002", [ null, "36.167560000000002", "-86.778598000000002", null, false ] ]
+, [ 23, "F9AEFDAA-2ACE-45C2-87F3-747EED677D87", 23, 1399313899, "878289", 1399313899, "878289", "{\n}", "Teacher and Student", "LeQuire", "Alan", "Montgomery Bell Academy", "Bronze", null, null, "36.12856", "-86.836603999999994", [ null, "36.12856", "-86.836603999999994", null, false ] ]
+, [ 24, "5CA8B4E9-CB6D-4C90-B7C5-AD5DE61A3BBF", 24, 1399313899, "878289", 1399313899, "878289", "{\n}", "Sam Davis  ", "LeQuire", "Alan", "Montgomery Bell Academy", "Bronze", null, null, "36.12856", "-86.836603999999994", [ null, "36.12856", "-86.836603999999994", null, false ] ]
+, [ 25, "A94DA94E-0F4E-4BBD-81B6-B94ED42106BF", 25, 1399313899, "878289", 1399313899, "878289", "{\n}", "Tommy Owen", "LeQuire", "Alan", "Montgomery Bell Academy", "Bronze", null, null, "36.12856", "-86.836603999999994", [ null, "36.12856", "-86.836603999999994", null, false ] ]
+, [ 26, "E3320DF4-86E6-4FE5-827D-B14A8F9141E4", 26, 1399313899, "878289", 1399313899, "878289", "{\n}", "[Cross Country Runners]", "Frost", "Miley", "Montgomery Bell Academy", "Bronze", null, null, "36.12856", "-86.836603999999994", [ null, "36.12856", "-86.836603999999994", null, false ] ]
+, [ 27, "69F5FDF2-9323-41F2-9D18-65FC5EDEC803", 27, 1399313899, "878289", 1399313899, "878289", "{\n}", "Music City Center Collection", "Various", "Various", "Music City Center", "Various man-made and natural material", null, null, "36.156830999999997", "-86.778442999999996", [ null, "36.156830999999997", "-86.778442999999996", null, false ] ]
+, [ 28, "B53C010E-2A3E-4FE6-9FB5-169E8392E4A0", 28, 1399313899, "878289", 1399313899, "878289", "{\n}", "Musica", "LeQuire", "Alan", "Music Row Roundabout/Buddy Killen Circle", "Bronze", null, null, "36.152092000000003", "-86.791617000000002", [ null, "36.152092000000003", "-86.791617000000002", null, false ] ]
+, [ 29, "357075E1-E97E-4DE5-BB96-982EB1438C23", 29, 1399313899, "878289", 1399313899, "878289", "{\n}", "Flights of Fantasy", "Hunter", "Sherri Warner", "Nashville International Airport", "Concrete", "Mosaic", "An interactive play and rest area outside of the Ground Transportation area. Four mosaic sculptures and a mosaic bench portraying a smiling airplanes and a flying carpet. The bench depicts various flying creatures along a blue sky with clouds and the sun.", "36.131630000000001", "-86.668839000000006", [ null, "36.131630000000001", "-86.668839000000006", null, false ] ]
+, [ 30, "B40E1987-D1CA-4AAE-856D-A1BACD1889C3", 30, 1399313899, "878289", 1399313899, "878289", "{\n}", "Airport Sun Project", "Eldred", "Dale", "Nashville International Airport", "Light interference and transformation panels", "Sculpture", "Colorful panels along the truss system and ticketing lobby wall that change dependent upon sun and shadows.", "36.130808000000002", "-86.668974000000006", [ null, "36.130808000000002", "-86.668974000000006", null, false ] ]
+, [ 31, "8DCAE0C8-6F43-4147-9543-8EE0E4196C80", 31, 1399313899, "878289", 1399313899, "878289", "{\n}", "Dancing on Air", "Hastings", "Jack", "Nashville International Airport", "Airframe aluminum and metal foil", "Sculpture", "2 mobiles with colorful bent metal pieces", "36.131318", "-86.669286", [ null, "36.131318", "-86.669286", null, false ] ]
+, [ 32, "115C7CAF-30B6-40E1-B386-E4FC57EC485E", 32, 1399313899, "878289", 1399313899, "878289", "{\n}", "Waveform: Pan American Blues", "Sheng", "Shan Shan", "Nashville International Airport", "Cold cast processed glass", "Sculpture", "A series of 82 glass panels ranging in length from 7.5 feet to 14.5 feet. The panels are colored red, blue, and purple.", "36.131506999999999", "-86.669447000000005", [ null, "36.131506999999999", "-86.669447000000005", null, false ] ]
+, [ 33, "CBDAC2FE-4F7E-4229-8EA0-F7FFF0D2E50F", 33, 1399313899, "878289", 1399313899, "878289", "{\n}", "Wind Reeds", "Kahn", "Ned", "Nashville International Airport", "Aluminum panels", "Sculpture", "Hinged aluminum panels that cover a wall of the Consolidated Rental Car facility. The panels move according to the wind", "36.134689000000002", "-86.667766999999998", [ null, "36.134689000000002", "-86.667766999999998", null, false ] ]
+, [ 34, "720678B7-1E81-47D6-80F6-489696DEFBD1", 34, 1399313899, "878289", 1399313899, "878289", "{\n}", "Minnesota Monument", "Daniels", "John K.", "Nashville National Cemetery", "Metal on stone", "Monument", "A monument which consists of a robed woman atop a rectangular base.  The woman stands holding a wreath in both hands at about hip level. She looks straight ahead and wears her hair pulled back from her face. She has a cloak over her shoulder. Her proper l", "36.241261999999999", "-86.725593000000003", [ null, "36.241261999999999", "-86.725593000000003", null, false ] ]
+, [ 35, "DF138E26-689B-4CFE-9A58-914FADD4AFE6", 35, 1399313899, "878289", 1399313899, "878289", "{\n}", "[Statue of U.S. Colored Troops soldier]", "Butler", "Roy", "Nashville National Cemetery", "Bronze", null, null, "36.241261999999999", "-86.725593000000003", [ null, "36.241261999999999", "-86.725593000000003", null, false ] ]
+, [ 36, "7D1CCA1E-7FCE-4EC8-9619-F8709F829A0F", 36, 1399313899, "878289", 1399313899, "878289", "{\n}", "Library Doors", "LeQuire", "Alan", "Nashville Public Library", "Bronze", "Bronzes", "images of local people as well as Tennessee animals and plants are incorporated into the three pair of grand scale double doors.  The 8 panels in the Central Pair of Doors convey the importance of reading by depicting a  widely diverse group of adults and children enjoying books or using a computer.  The 16 panels on the East and West doors show the plants and animals.  The artist's intent was to humanize the library entry experience by creating a work that children and adults could touch and view at pedestrian scale.", "36.162145000000002", "-86.782049999999998", [ null, "36.162145000000002", "-86.782049999999998", null, false ] ]
+, [ 37, "10BE20A2-F3BE-40AD-849D-7E69F0AB5C77", 37, 1399313899, "878289", 1399313899, "878289", "{\n}", "Foliated Scroll", "Bloomer", "Kent", "Nashville Public Library", "Aluminum", "Frieze", "a contemporary adaptation of a classical foliated scroll motif.  Inspired by 19th century Beaux Arts students picturing ornament from the ancient temple of Jupiter.  It is composed of an undulating \"palmette\" and spiral repetition with leAvenues, flowers, and scrolls.  It is situated 40 feet off the ground below the windows on the library's North façade.", "36.162145000000002", "-86.782049999999998", [ null, "36.162145000000002", "-86.782049999999998", null, false ] ]
+, [ 38, "F6A0D031-283D-4FC4-B6CF-50DC05C13BDF", 38, 1399313899, "878289", 1399313899, "878289", "{\n}", "Nashville, A History through Maps and Aerial Views", "Haas", "Richard", "Nashville Public Library", "Oil on Canvas", "Mural", "Eight scenes showing the development of Nashville from 1800 to 2001.  Inspired by The Gallery of Maps in the Vatican commissioned in 1580 by Pope Gregory XIII.  The mural culminates in a half medallion above the entry doors.", "36.162145000000002", "-86.782049999999998", [ null, "36.162145000000002", "-86.782049999999998", null, false ] ]
+, [ 39, "1DE70549-FCC6-41D6-9E72-4715374A7529", 39, 1399313899, "878289", 1399313899, "878289", "{\n}", "A Story of Nashville", "Ridley", "Greg", "Nashville Public Library", "Hammered copper repousse", "Frieze", "Inside the Grand Reading Room, this is a series of 80 hammered copper panels within the top of the book stacks that tell a linear story of Nashville's history from its pre-settlement period to present day.", "36.162145000000002", "-86.782049999999998", [ null, "36.162145000000002", "-86.782049999999998", null, false ] ]
+, [ 40, "12686966-238B-4BE5-B1FD-51CF83AF32D5", 40, 1399313899, "878289", 1399313899, "878289", "{\n}", "The Prince", "Outlaw", "Adrienne", "Nashville Public Library", "Mixed Media Use of heavy guage aluminum wire and the two figures are dressed in hand-tailored clothes", "Mobil", "The Little Prince\nOutlaw hung a whimsical mobile under a painting of a spiral galaxy.  Two characters hang from either end: the Little Prince and the businessman.  At the Prince's end, colored glass stars twirl around a small, finely embroidered, white silk sculpture of a boy (the prince).  On the other end, a large, white man's suit sits at a table.  A st of star's twinkles behind his back.  The man would not recognize the little prince's drawing as a boa constrictor swallowing a snake but would only see a hat.  Outlaw Drew from Antoine de Saint-Exupery's \"The Little Prince\" to address her theme \"What is essential is invisible to the eye.\"", "36.162145000000002", "-86.782049999999998", [ null, "36.162145000000002", "-86.782049999999998", null, false ] ]
+, [ 41, "D804E067-DCA6-40F1-A424-6185AFE8071E", 41, 1399313899, "878289", 1399313899, "878289", "{\n}", "La Storia della Terra", "The Kubach - Wilmsen Team", "The Kubach - Wilmsen Team", "Nashville Public Library", "Stone", "Sculpture", "A 20 foot tower of stone books. There are 26 books, one for each letter of the alphabet. Stones are from five continents.", "36.162145000000002", "-86.782049999999998", [ null, "36.162145000000002", "-86.782049999999998", null, false ] ]
+, [ 42, "7F3BAF9F-0D46-4D38-AFA2-930901EBABF9", 42, 1399313899, "878289", 1399313899, "878289", "{\n}", "Untitled", "Parrish", "Frank", "Nashville State Community College", "Painted sheet metal; base - concrete, wooden railroad ties, and gravel", "Multipart", "Three repeating black curved metal shapes, possibly abstracted from the human form. The parts are set at varying heights, each supported on three poles or legs. When the sculpture is viewed from the east or west, the elements visually overlap, appearing as a single object. When viewed from the north or south, three distinct parts are visible.\nAbstract\nFigure", "36.134625", "-86.857290000000006", [ null, "36.134625", "-86.857290000000006", null, false ] ]
+, [ 43, "CB15FD78-FC99-443F-AB73-34BEC0D82C67", 43, 1399313899, "878289", 1399313899, "878289", "{\n}", "Owen Bradley", "Smith", "Gary Ernest", "Owen Bradley Park", "Bronze sculpture on a pedestal of concrete ", "Sculpture", null, "36.151825000000002", "-86.791816999999995", [ null, "36.151825000000002", "-86.791816999999995", null, false ] ]
+, [ 44, "A974FF11-FB0B-42D0-A6F8-80D95A55E5EF", 44, 1399313899, "878289", 1399313899, "878289", "{\n}", "Founding of Nashville", "Mims", "Puryear", "Riverfront Park", "Copper on marble slab base", "Sculpture", "A depiction of the founders of Nashville, James Robertson and John Donelson shaking hands. The figures are heroic in size and are dressed in buckskins. One of the figures has an ax over his proper left shoulder. The other figure holds a rifle in his proper left hand with the butt of the gun resting on the plinth at his feet. The copper sculpture rests on a copper plinth on a two-tiered base of marble slabs.\nHistory--United States--Westward Expansion\nHistory--United States--Tennessee\nPortrait male--Donelson, John--Full length\nPortrait male--Robertson, James--Full length\nObject--Tool--Ax\nObject--Weapon--Gun", "36.164800999999997", "-86.775779999999997", [ null, "36.164800999999997", "-86.775779999999997", null, false ] ]
+, [ 45, "1709421A-09C1-40B5-97C1-1C0DDBB5F73F", 45, 1399313899, "878289", 1399313899, "878289", "{\n}", "Timothy Demonbreun", "LeQuire", "Alan", "Riverfront Park", "Bronze sculpture ", "Sculpture", "Timothy Demonbreun kneeling on his left knee holding a gun.", "36.166569000000003", "-86.776473999999993", [ null, "36.166569000000003", "-86.776473999999993", null, false ] ]
+, [ 46, "279983F7-A1CC-4D9E-AB9C-BD7386A06C8F", 46, 1399313899, "878289", 1399313899, "878289", "{\n}", "Samaritan", "Wise", "Scott", "Saint George's Episcopal Church", "Indiana limestone", null, null, "36.119751000000001", "-86.853425999999999", [ null, "36.119751000000001", "-86.853425999999999", null, false ] ]
+, [ 47, "09CC0DDE-C495-4BFD-8156-7009F85E7BE2", 47, 1399313899, "878289", 1399313899, "878289", "{\n}", "Blowing Bubbles", "Faxon", "Russell", "Saint George's Episcopal Church", "Bronze", null, null, "36.119751000000001", "-86.853425999999999", [ null, "36.119751000000001", "-86.853425999999999", null, false ] ]
+, [ 48, "2FED5C29-3CF4-4203-9173-CA6FF2C133B5", 48, 1399313899, "878289", 1399313899, "878289", "{\n}", "Angel", "Ralston", "William", "Saint George's Episcopal Church Columbarium", "Stone on concrete and brick base", "Sculpture", "An elongated figure consisting of a stylized face atop a tall column. The figure has two arm or wing-like appendages. The proper left one reaches up to the face and the proper right one is down by its side. In front of the figure is a curved bench with a bird placed on one corner. Religion -- New Testament -- Angel\nAnimal -- Bird", "36.119751000000001", "-86.853425999999999", [ null, "36.119751000000001", "-86.853425999999999", null, false ] ]
+, [ 49, "4CBD666E-1771-4D57-93EA-C88B14E5ECA5", 49, 1399313899, "878289", 1399313899, "878289", "{\n}", "St. George and the Maiden", "Toomey", "Dana", "Saint George's Episcopal Church courtyard", "Cast bronze", "Fountain", "A two-piece monumental bronze sculpture installation. A figure of a maiden, wearing a flowing sleeveless dress, stands on a depiction of a stone which crushes a Dragon beneath it. The maiden has long hair and steps forward on her bent proper left leg. Her", "36.119751000000001", "-86.853425999999999", [ null, "36.119751000000001", "-86.853425999999999", null, false ] ]
+, [ 50, "9CFA2F67-C3E4-4BEA-9643-2F5EF6DB735C", 50, 1399313899, "878289", 1399313899, "878289", "{\n}", "The Birth of Apollo", "Eskridge", "Casey", "Schermerhorn Symphony Center", "Bronze sculpture as centerpiece of fountain", "Sculpture", "Two figures topping a fountain, one with a lyre and one with a horn.", "36.159931999999998", "-86.776114000000007", [ null, "36.159931999999998", "-86.776114000000007", null, false ] ]
+, [ 51, "AB6C5C27-5E8C-416E-BB9E-6D4733263E83", 51, 1399313899, "878289", 1399313899, "878289", "{\n}", "The Flutist", "Varo", "Marton", "Schermerhorn Symphony Center", "Marble", "Sculpture", "Statue commemorating Kenneth D Schermerhorn, Music Director and Conductor of the Nashville Symphony Orchestra from 1983-2005.", "36.159610999999998", "-86.775942000000001", [ null, "36.159610999999998", "-86.775942000000001", null, false ] ]
+, [ 52, "7F92DB1C-2E74-4439-9C83-58AAB325D21F", 52, 1399313899, "878289", 1399313899, "878289", "{\n}", "The Recording Angel", "Flack", "Audrey", "Schermerhorn Symphony Center", "Bronze", "Sculpture", "Bronze angel holding a fountain pen and tablet", "36.159204000000003", "-86.775706", [ null, "36.159204000000003", "-86.775706", null, false ] ]
+, [ 53, "9492AEFF-1C49-432D-8A11-1AA45D4CE80E", 53, 1399313899, "878289", 1399313899, "878289", "{\n}", "Orpheus and Eurydice", "Kaskey", "Ray", "Schermerhorn Symphony Center", "Limestone", "Relief", "Relief sculpture above main entrance of Schermerhorn Symphony Center", "36.160172000000003", "-86.775751999999997", [ null, "36.160172000000003", "-86.775751999999997", null, false ] ]
+, [ 54, "AEDDA400-CBAC-4F53-B2CE-78BCF24B80F9", 54, 1399313899, "878289", 1399313899, "878289", "{\n}", "Tennessee Vietnam Veteran's Memorial", "LeQuire", "Alan", "Tennessee Legislative Plaza", "Bronze with a green patina on a granite base", "Monument", "Three bronze soldiers dressed in different uniforms from the Vietnam War. The figures are arranged on a circular bronze plinth. A standing soldier in the back center of the plinth wears a helmet and holds a gun in both hands. He looks over his proper righ", "36.163882000000001", "-86.783333999999996", [ null, "36.163882000000001", "-86.783333999999996", null, false ] ]
+, [ 55, "8FE3DF76-C342-43BE-AA43-F22C61FF1962", 55, 1399313899, "878289", 1399313899, "878289", "{\n}", "Tennessee Confederate Women's Memorial", "Kinney", "Belle", "Tennessee Legislative Plaza", "Sculpture: bronze, painted copper over patina;  Base: granite", "Sculpture", "Three seated figures. At the proper left is a male figure lying back against a broken cannon as if dying. In the center is a female figure representing a Greek goddess and wearing classical drapery and a laurel wreath on her head. She holds a wreath over ", "36.163688999999998", "-86.783584000000005", [ null, "36.163688999999998", "-86.783584000000005", null, false ] ]
+, [ 56, "46E32762-4CAF-4B6D-ABD5-EFADE6DC0C43", 56, 1399313899, "878289", 1399313899, "878289", "{\n}", "Tennessee Korean War Memorial", "Faxon", "Russell", "Tennessee Legislative Plaza", "Bronze sculpture on bronze base with black granite wall in back The back wall has bronze relief", "Monument", "Two male figures dressed in combat fatigues and positioned in front of a wall with a map of Korea on it.  The proper left figure lunges forward on his proper right leg, wears a helmet, and carries a rifle out in front of his chest.  The proper right figur", "36.164141000000001", "-86.782893999999999", [ null, "36.164141000000001", "-86.782893999999999", null, false ] ]
+, [ 57, "55D2FD08-2743-4B37-9128-4F1B113E8CE7", 57, 1399313899, "878289", 1399313899, "878289", "{\n}", "Victory", "Kinney and Scholz", "Belle and Leopold", "Tennessee Legislative Plaza", "Bronze with brown patina on a granite base", "Sculpture", "A statue of a classical warrior, nude except for sandals, a helmet, and a cloth which drapes around his proper left hip and loins. He holds a sword and wreath in his proper right hand. His proper right arm is draped with cloth.  He holds a small female fi", "36.164358", "-86.783784999999995", [ null, "36.164358", "-86.783784999999995", null, false ] ]
+, [ 58, "8BC0BF26-9DA0-45AB-A876-021FFE1D8116", 58, 1399313899, "878289", 1399313899, "878289", "{\n}", "Andrew Jackson", "Mills", "Clark", "Tennessee State Capitol", "Bronze sculpture with patina on a Tennessee marble base", "Sculpture", "A portrait sculpture of Andrew Jackson on a rearing horse. Jackson and the horse face to the proper right. The horse appears excited as if in battle. The horse is balanced on his two hind legs. His mane and tail appear to be blowing in the wind. Jackson w", "36.166086", "-86.783660999999995", [ null, "36.166086", "-86.783660999999995", null, false ] ]
+, [ 59, "C29D0193-E152-4DA5-9FC7-7947A8B60AFB", 59, 1399313899, "878289", 1399313899, "878289", "{\n}", "Sergeant Alvin C. York", "de Weldon", "Felix", "Tennessee State Capitol", "Bronze with green patina on green Swedish granite", "Sculpture", "A full length portrait of Sergeant Alvin C. York, a WWI soldier. He stands with feet wide apart and has a rifle raised to his proper right shoulder as if he's about to shoot. He wears a combat uniform which includes a helmet, boots, wrapped leg coverings ", "36.165604999999999", "-86.782754999999995", [ null, "36.165604999999999", "-86.782754999999995", null, false ] ]
+, [ 60, "D948AA8B-D939-4890-8A9B-892A52D32202", 60, 1399313899, "878289", 1399313899, "878289", "{\n}", "Edward Ward Carmack", "Cox-McCormack", "Nancy", "Tennessee State Capitol", "Bronze with brown patina on granite base", "Sculpture", "A full length standing portrait of Edward Ward Carmack wearing  formal dress including a knee-length coat, vest, and tie.  His proper right foot is slightly forward.  He has a moustache and looks straight ahead.  He stands atop a granite base with a curve", "36.165267", "-86.783816999999999", [ null, "36.165267", "-86.783816999999999", null, false ] ]
+, [ 61, "C2429786-1342-4845-8A94-8073D22A504B", 61, 1399313899, "878289", 1399313899, "878289", "{\n}", "Women Suffrage Memorial", "LeQuire", "Alan", "Tennessee State Capitol", "Bronze sculpture", "Sculpture", null, "36.165267", "-86.783816999999999", [ null, "36.165267", "-86.783816999999999", null, false ] ]
+, [ 62, "DD92EBD4-BE92-405C-874F-327E37CB1982", 62, 1399313899, "878289", 1399313899, "878289", "{\n}", "Sam Davis of Tennessee", "Zolnay", "George Julian", "Tennessee State Capitol", "Bronze on a limestone base", "Monument", "A statue of Sam Davis, a boy hero of the Confederate Army. Davis stands with arms crossed. He wears a short jacket, belt with buckle marked with \"CSA\" and knee-length boots. His coat is draped behind him. His proper right leg is slightly bent and slightly", "36.165103000000002", "-86.784267", [ null, "36.165103000000002", "-86.784267", null, false ] ]
+, [ 63, "A0A248BD-13AE-45D0-A6C3-BB28D9B7B13E", 63, 1399313899, "878289", 1399313899, "878289", "{\n}", "Athena Parthenos", "LeQuire", "Alan", "The Parthenon, Centennial Park", "Gypsum cement reinforced with fiberglass over metal armature, marble base, gold leaf (23.75 karat), paint", "Sculpture", "Athena Parthenos with shield and spear, holding Nike in right hand. Includes snake representing the people of Athens, Pegasus and Sphinx (on helmut), Medusa (on breastplate), Battle of the Amazons (on shield), and Battle of the Lapiths and Centaurs (on sa", "36.149861999999999", "-86.813457999999997", [ null, "36.149861999999999", "-86.813457999999997", null, false ] ]
+, [ 64, "9DFDDDA9-FFE2-4252-B724-821369C197F3", 64, 1399313899, "878289", 1399313899, "878289", "{\n}", "The Three Graces", "Mims", "Thomas Puryear Mims", "Vanderbilt University", "Concrete or white marble on a concrete base", "Sculpture", "A depictionof three standing nude female figures. The figures are simplified and are all interconnected to form a solid columnar shape. The sculpture rests on a rectangular base.\nFigure group -- Female -- Nude\nMythology -- Classical -- Graces", "36.144373000000002", "-86.802871999999994", [ null, "36.144373000000002", "-86.802871999999994", null, false ] ]
+, [ 65, "CB403E24-7D17-4099-9E0C-5793B376BBF1", 65, 1399313899, "878289", 1399313899, "878289", "{\n}", "[Tile on Reception Desk, Restrooms, and Kitchen]", "Shimmin", "Mimi", "Warner Park Nature Center", "Tile and stone mosaic", "Mosaic", "Theme: multicolored leAvenues and animals.  Shimmin wanted visitors to feels as though once the door had opened, the wind and the leAvenues blew them in.", "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 66, "4E40B45E-71A2-427B-AC81-382A8FACB83F", 66, 1399313899, "878289", 1399313899, "878289", "{\n}", "Wetlands Murals in Restrooms", "Tupper", "Kathy", "Warner Park Nature Center", "Paint ", "Mural", "The women's restroom contains a mural depicting spring and summer, while the men's restroom depicts fall and winter.  The seasonal changes in the wetlands are shown.", "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 67, "4475AB49-B17C-4488-ABB9-3C0A043359DD", 67, 1399313899, "878289", 1399313899, "878289", "{\n}", "Spiderweb Mobile", "Outlaw", "Adrienne", "Warner Park Nature Center", "Metal, crystal, and silk", "Mobile", "there are two webs, one made by a funnel web spider and one made out of an orb weAvenuer spider.  The orb weAvenuer spider has crystal beads on it, resembling dew.  The egg case is made out of silk.", "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 68, "B07B8C7D-D9BD-46EB-B64A-87D6C578090E", 68, 1399313899, "878289", 1399313899, "878289", "{\n}", "[Tile Mosaic at Back Porch Amphitheater]", "Davidson", "Bernice", "Warner Park Nature Center", "Ceramic Tile ", "Mosaic", "16 tiles demonstrating the phases of the sun, 8 tiles demonstrating the phases of the moon, and four tiles depicting the seasons on earth", "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 69, "89358968-9E6F-40CA-8EC5-91E5F5B3511D", 69, 1399313899, "878289", 1399313899, "878289", "{\n}", "Wooden Benches", "Hood", "Vic", "Warner Park Nature Center", "native speices of wood", "Furniture", "benches", "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 70, "6AD0FE4C-015F-40E0-9F9C-E17F0C67888E", 70, 1399313899, "878289", 1399313899, "878289", "{\n}", "Walnut Table", "Lawson", "Harry", "Warner Park Nature Center", "Walnut", "Furniture", "a table.  The wood was donated by Ruth Warner", "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 71, "1F3E2B14-6508-4E5F-B3C5-97C35E2D3ADB", 71, 1399313899, "878289", 1399313899, "878289", "{\n}", "Hawk Weathervane", "McDonald", "Joe", "Warner Park Nature Center", "Bronze ", "Weathervane", "a weathervane depicting a red tailed hawk on top of the outside of the building.", "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 72, "174D14FE-DAEE-45C5-812C-4B70045F00A7", 72, 1399313899, "878289", 1399313899, "878289", "{\n}", "Fireplace Screen", "Merry ", "Keith", "Warner Park Nature Center", "Bronze", "Furniture", "the fireplace screen using the lattice from the 1920 Church Street Trolley Bridge", "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 73, "AEA560B9-1FA1-432A-A9F4-310F1FB34E26", 73, 1399313899, "878289", 1399313899, "878289", "{\n}", "Stonework on the Outdoor Signage", "Johnsen", "Patrick", "Warner Park Nature Center", "Native limestone", "Sculpture", "three stacks of limestone; one per building; with the building's name etched into it.", "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 74, "747928E1-AFFC-4E43-B57C-C60999ACB5D5", 74, 1399313899, "878289", 1399313899, "878289", "{\n}", "Critters", "Stevenson", "Stanley", "Warner Park Nature Center", "Metal", "Sculpture", null, "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 75, "DD68A1ED-22F4-4980-B6BD-EE0500450803", 75, 1399313899, "878289", 1399313899, "878289", "{\n}", "[Sculptures on Stone Markers]", "Billingsley", "Cindy", "Warner Park Nature Center", "Bronze", null, null, "36.060890999999998", "-86.914563999999999", [ null, "36.060890999999998", "-86.914563999999999", null, false ] ]
+, [ 76, "48295F08-A436-440D-A3C4-2F5FE2594A5F", 76, 1399313899, "878289", 1399313899, "878289", "{\n}", "Headstones", "Various", "Various", "Nashville City Cemetery", "Stone", "Monument", null, "36.147554999999997", "-86.769463000000002", [ null, "36.147554999999997", "-86.769463000000002", null, false ] ]
+, [ 77, "B9A8176E-A991-4D1B-B5B4-4F0CF8C16C3E", 77, 1399313899, "878289", 1399313899, "878289", "{\n}", "[Entry Archway]", "Unknown", "Unknown", "Nashville National Cemetery", "Limestone", null, null, "36.241261999999999", "-86.725593000000003", [ null, "36.241261999999999", "-86.725593000000003", null, false ] ]
+, [ 78, "FB634FB8-6C7C-4C36-A713-AA554DF63491", 78, 1399313899, "878289", 1399313899, "878289", "{\n}", "Tennessee WWII Memorial", "Tuck-Hinton", null, "Tennessee Bicentennial Mall", "Granite globe floating on 1/8 inch of water", "Monument", "Memorial commemorates Tennessee soldiers serving in WWII. The globe has countries as they were in 1945. Granite columns around the globe portray the historic events during WWII. A bench nearby lists the seven Congressional Medal of Honor recepients from T", "36.172015000000002", "-86.788635999999997", [ null, "36.172015000000002", "-86.788635999999997", null, false ] ]
+, [ 79, "BDA219C0-6E28-4348-9CB6-7D596D6C1478", 79, 1399313899, "878289", 1399313899, "878289", "{\n}", "Tennessee Falls", "Houge and Meek and Sweenson", "Jon and Tom and Lin", "Tennessee Performing Arts Center", "Stone ", "Fountain", "A stone wall built with three types of stone with water falling down the wall into a pool at the bottom.", "36.164791999999998", "-86.782387", [ null, "36.164791999999998", "-86.782387", null, false ] ]
+, [ 80, "31F218E5-17E5-4A47-A221-A0E9A25BBDD6", 80, 1399313899, "878289", 1399313899, "878289", "{\n}", "President Andrew Johnson", "Grey", "Jim", "Tennessee State Capitol", "Bronze sculpture ", "Sculpture", null, "36.165596999999998", "-86.783313000000007", [ null, "36.165596999999998", "-86.783313000000007", null, false ] ]
+, [ 81, "0C61FA14-43FA-494C-BE7D-B050B4D694C4", 81, 1399313899, "878289", 1399313899, "878289", "{\n}", "Anticipation (woman on bench)", "Faxon", "Russell", "Tennessee State Museum", "Cold cast bronze", "Sculpture", "A statue of a woman with legs crossed sitting on a bench and leaning forward.", "36.16489", "-86.781837999999993", [ null, "36.16489", "-86.781837999999993", null, false ] ]
+, [ 82, "87EBADED-CD83-4301-81E9-29E4F64E0132", 82, 1399313899, "878289", 1399313899, "878289", "{\n}", "The Actors", "Bryant", "Olen", "Tennessee State Museum", "Wood", "Sculpture", null, "36.16489", "-86.781837999999993", [ null, "36.16489", "-86.781837999999993", null, false ] ]
+, [ 83, "D1579E8D-282D-442F-9665-6C5CC1D26836", 83, 1399313899, "878289", 1399313899, "878289", "{\n}", "Totem", "Green", "Homer", "Tennessee State Museum", "Cedar and Housepaint", "Totem Pole", "A totem pole made up of ten owls standing one on top of another. The bottom owl rests on a square base. The owls all hAvenue their wings extended and are painted with yellow, red and black spots. The owls vary in base color and some hAvenue white spots. The owls hAvenue plastic eyes.\nAnimal -- Bird -- Owl", "36.16489", "-86.781837999999993", [ null, "36.16489", "-86.781837999999993", null, false ] ]
+, [ 84, "8F13DCE9-A09A-4A9F-B3B6-A03667EC3B70", 84, 1399313899, "878289", 1399313899, "878289", "{\n}", "S. M. Patton, Architect", "Unknown", "Unknown", "Tennessee State Prison", null, "Sculpture", "A portrait bust of Samuel McClung Patton, architect. Patton has a moustache and wears a coat and tie. The bust is brown in color and rests on a light colored pedestal.\nPortrait male -- Patton, Samuel McClung -- Bust\nOccupation -- Art -- Architect", "36.176006999999998", "-86.86524", [ null, "36.176006999999998", "-86.86524", null, false ] ]
+, [ 85, "303E5058-425E-45B9-BF63-3E0CF9395B6B", 85, 1399313899, "878289", 1399313899, "878289", "{\n}", "Mare and Foal", "Reardon", "Gwen", "Belle Meade Boulevard", "Bronze", "Sculpture", "Life-size bronze mare and foal", "36.119289000000002", "-86.854895999999997", [ null, "36.119289000000002", "-86.854895999999997", null, false ] ]
+, [ 86, "E56336A7-646D-41B4-8604-B3F3FC4BB125", 86, 1399313899, "878289", 1399313899, "878289", "{\n}", "Fourth and Commerce Sculpture", "Walker", "Lin", "AT&T Building Plaza", null, "Sculpture", null, "36.162337999999998", "-86.777738999999997", [ null, "36.162337999999998", "-86.777738999999997", null, false ] ]
+, [ 87, "0CF552B0-4C4C-426E-9AE0-66C61DEC6331", 87, 1399313899, "878289", 1399313899, "878289", "{\n}", "Lightning Wire Fountain", "Walker", "Lin", "AT&T Building Plaza", null, "Fountain", null, "36.162334999999999", "-86.777097999999995", [ null, "36.162334999999999", "-86.777097999999995", null, false ] ]
+, [ 88, "91566955-066C-4BAF-8352-EA5004179A9E", 88, 1399313899, "878289", 1399313899, "878289", "{\n}", "St. Vincent de Paul", "Faxon", "Russell", "Nashville Ladies of Charity", "Hollow metal", "Sculpture", "De Paul wears long robes and a skull cap.  He stands holding a baby to his chest in his proper left arm.  He extends his proper right hand out to the side, palm up.  A small child stands in front of St. Vincent and grasps his robes.  The child wears loose", "36.152335000000001", "-86.806027999999998", [ null, "36.152335000000001", "-86.806027999999998", null, false ] ]
+, [ 89, "015E0CE7-D443-4501-9D49-52729DB4400D", 89, 1399313899, "878289", 1399313899, "878289", "{\n}", "Ariel", "Emery", "Lin", "Centennial Park", "Sculpture: bronze with brown patina; \nBase: concrete covered with aggregate pebbles", "Mobile", "A five piece mobile of crescent-shaped forms. Each of the forms is approximately 2-3 feet long and is connected to and pivots around a central support form. The mobile rests on a bronze plinth, h. 2\", which is slightly smaller than the cement base beneath", "36.147641", "-86.813113999999999", [ null, "36.147641", "-86.813113999999999", null, false ] ]
+, [ 90, "319A4D03-4F6D-4389-89DB-EEC11C2B0D1A", 90, 1399313899, "878289", 1399313899, "878289", "{\n}", "Timeless", "Sorci", "Joe", "Commerce Center Building", "Steel and Civil War cannonballs", "Sculpture", "Two nearly interlinked hemicycles with cannonballs arranged within them.", "36.162269999999999", "-86.776307000000003", [ null, "36.162269999999999", "-86.776307000000003", null, false ] ]
+, [ 91, "09C16B87-E227-4913-8FE7-7F1DBAED7067", 91, 1399313899, "878289", 1399313899, "878289", "{\n}", "Farm Family", "Mims", "Puryear", "Cordell Hull State Office Building", "Hollow bronze on a marble and limestone base", "Sculpture", "A stylized depiction of a seated farm family. A man wearing trousers and no shirt or shoes holds a child in his lap. A dog sits on his proper right side and rests his head on the man's proper right thigh. To his proper left is a seated woman holding a baby in both arms. She wears a shin-length dress and no shoes. Her head is turned to the proper left side and she looks down at the baby. The sculpture rests on a smooth limestone base attached to a building.\nFigure group - Family; Occupation - Farm; Animal - Dog", "36.167565000000003", "-86.783315999999999", [ null, "36.167565000000003", "-86.783315999999999", null, false ] ]
+, [ 92, "CF1C7119-EC3A-4EE5-9236-7920B9FB2500", 92, 1399313899, "878289", 1399313899, "878289", "{\n}", "Industry (The TVA Group)", "Mims", "Puryear", "Cordell Hull State Office Building", "Hollow bronze on a marble base", "Sculpture", "Three heroic figures representing industry. The tallest figure is a female wearing a shore-sleeved dress and standing at the back of the group. To her proper left and in front of her is a standing young male figure wearing a short-sleeved shirt and trousers. Kneeling in front is a large male figure wearing a stylized helmet and armor. The sculpture is bolted to a stone base which is attached to the building. \nAllegory -- Arts & Sciences -- Industry\nFigure group", "36.167017000000001", "-86.783430999999993", [ null, "36.167017000000001", "-86.783430999999993", null, false ] ]
+, [ 93, "3B389A69-4987-4A92-8020-4697D919CDC0", 93, 1399313899, "878289", 1399313899, "878289", "{\n}", "Pioneer Family (The Mountain Group)", "Mims", "Puryear", "Cordell Hull State Office Building", "Hollow bronze on a marble base", "Sculpture", "A stylized depiction of three heroic pioneer figures wearing buckskin clothing. A youth stands in front wearing a cap, tunic, trousers, mocasins, and holding a hunting knife in his proper right hand. He looks to the proper right and steps forward onto his proper left leg. His proper left foot extends slightly beyond the edge of the plinth. Behind him stands an older and taller male figure, also wearing buckskin clothing. He steps forward on his proper right foot and wears a hunting knife in his belt. Behind him stands a woman wearing a knee length dress and stepping forward on her proper right foot. The figure group stands on rectangular plinth.\nFigure group -- Family\nHistory -- United States -- Westward Expansion\nOccupation -- Hunter\nDress -- Historic -- Pioneer Dress\nObject -- Weapon -- Knife", "36.166688000000001", "-86.783215999999996", [ null, "36.166688000000001", "-86.783215999999996", null, false ] ]
+, [ 94, "90E6FC1A-E432-493E-B32D-4953A308EB08", 94, 1399313899, "878289", 1399313899, "878289", "{\n}", "The Jubilee Singers", "Havel", "Edmund", "Fisk University", "Mural/Painting", "Painting", null, "36.167085999999998", "-86.804760999999999", [ null, "36.167085999999998", "-86.804760999999999", null, false ] ]
+, [ 95, "0F9B6898-7F1B-40A3-B8BB-425B027CF30B", 95, 1399313899, "878289", 1399313899, "878289", "{\n}", "Statue of Dr. W. E. B. Dubois", "Miles", "James", "Fisk University", "Bronze", "Sculpture", "A full length portrait of W. E. B. Dubois.  Dubois wears a suit with wide lapels and buttoned cuffs, a buttoned vest, shirt, and bow tie.  His shoes appear to be of worn leather with thin soles.  He holds two large books in both hands at waist level.  The books are depicted with curled old pages and bound in old leather.  The statue rests on a simple cube-shaped metal base.\nPortrait male -- Dubois, W.E.B. -- Full length\nEthnic -- Black\nOccupation -- Education -- Teacher\nOccupation -- Other -- Reformer\nOccupation -- Other -- Historian", "36.167085999999998", "-86.804760999999999", [ null, "36.167085999999998", "-86.804760999999999", null, false ] ]
+, [ 96, "6F01E955-13E1-4D69-A523-83E4D5D0553C", 96, 1399313899, "878289", 1399313899, "878289", "{\n}", "Underwater Scene", "Neighborhood children supervised by artists", null, " McFerrin Community Center", null, "Mural", null, "36.182274999999997", "-86.767386000000002", [ null, "36.182274999999997", "-86.767386000000002", null, false ] ]
+, [ 97, "0883EEEB-8800-412D-B5F0-8B9D382D7EA8", 97, 1399313899, "878289", 1399313899, "878289", "{\n}", "Desert Scene", "Neighborhood children supervised by artists", null, " J.C. Napier Community Center", null, "Mural", null, "36.150706999999997", "-86.756719000000004", [ null, "36.150706999999997", "-86.756719000000004", null, false ] ]
+, [ 98, "84545187-2F7C-4968-AB3B-0044FA21CE57", 98, 1399313899, "878289", 1399313899, "878289", "{\n}", "Various", "Neighborhood children supervised by artists", null, "E.S. Rose Community Center", null, "Mural", null, "36.143047000000003", "-86.783679000000006", [ null, "36.143047000000003", "-86.783679000000006", null, false ] ]
+, [ 99, "3B832DC5-F427-4DC4-9068-D77E979C0E52", 99, 1399313899, "878289", 1399313899, "878289", "{\n}", "A Splash of Color", "Stevenson and Stanley and ROFF (Harroff)", "Doug and Ronnica and Lynn", "Watkins Park Community Center", "Steel, brick, wood, and fabric; frostproof ceramic tile", "Multipart", "Painted wooden hoop dancer on a twenty foot pole, with nylon streamers on hoop, surrounded by a brick planter, located in front of building.\nWooden figures with streamers along south wall of building.\nMosaic tile front building entrance.", "36.162019000000001", "-86.799745000000001", [ null, "36.162019000000001", "-86.799745000000001", null, false ] ]
+, [ 100, "7EF6C7CB-DEAF-4C31-B59C-7A82F5D3A9A5", 100, 1399313899, "878289", 1399313899, "878289", "{\n}", "Abstract White Sculpture", "Unknown", "Unknown", "Metro Schools Administrative Building", null, "Sculpture", "Abstract sculpture", "36.120938000000002", "-86.766897999999998", [ null, "36.120938000000002", "-86.766897999999998", null, false ] ]
+, [ 101, "1DF0FB4C-068E-4618-90DF-D802AF354F1A", 101, 1399313899, "878289", 1399313899, "878289", "{\n}", "Wall mural of teachers, students and families", "Threalkill", "James", "Caldwell Elementary School", null, "Mural", null, "36.178351999999997", "-86.768930999999995", [ null, "36.178351999999997", "-86.768930999999995", null, false ] ]
+, [ 102, "3C4DCF6E-EBBF-41DE-B550-8460B582E362", 102, 1399313899, "878289", 1399313899, "878289", "{\n}", "Succah", "Limor", "Irwin", "Temple Ohabai Sholom", "Wrought iron/cast iron, painted, on a concrete patio", "Sculpture", "A sukkah consisting of two wrought iron trees holding eleven cross bars from which Stars of David (Mogen David) hang. Branches forming a canopy extend four feet beyond the tree trunks. One tree has a dove with an olive branch attached to an upper limb. Th", "36.107914999999998", "-86.864517000000006", [ null, "36.107914999999998", "-86.864517000000006", null, false ] ]
+, [ 103, "02EE8631-C59B-4C44-BC28-57E290A5788E", 103, 1399313899, "878289", 1399313899, "878289", "{\n}", "Untitled", "Silberman", "Helen E.", "Temple Ohabai Sholom", "Bronze on Indiana limestone", "Sculpture", "An abstract form balanced on one point. The surface of the piece is textured. The shapes suggest flight or motion.\nAbstract", "36.107914999999998", "-86.864517000000006", [ null, "36.107914999999998", "-86.864517000000006", null, false ] ]
+, [ 104, "B825E4EA-41F1-445A-901A-57A42F6A8161", 104, 1399313899, "878289", 1399313899, "878289", "{\n}", "Truth, Justice, Peace", "Kaz", "Nathaniel", "Temple Ohabai Sholom", "Alabama Marble", "Relief", "A relief attached to a curved exterior wall of a synagogue. The highly stylized relief depicts three bearded rabbis in a militant pose representing Truth, Justice and Peace. The figure on the right, representing Justice, holds balance scales as if they we", "36.107914999999998", "-86.864517000000006", [ null, "36.107914999999998", "-86.864517000000006", null, false ] ]
+, [ 105, "C498DEAF-6E8E-48EA-8E4C-16E8AAC3E7E7", 105, 1399313899, "878289", 1399313899, "878289", "{\n}", "Felix Ansel Salzkotter", "Unknown", "Unknown", "Temple Ohabai Sholom Cemetery", "Italian marble sculpture on a concrete slab", "Sculpture", "A young boy wearing calf-length pants, a jacket, and calf-length boots with scalloped edges. He rests his proper right elbow on a pedestal, and his proper right hand is raised to his ear. The boy's proper right leg is crossed over his proper left. His pro", "36.107914999999998", "-86.864517000000006", [ null, "36.107914999999998", "-86.864517000000006", null, false ] ]
+, [ 106, "ABF71B2F-854A-40CA-9A36-77237C0355EB", 106, 1399313899, "878289", 1399313899, "878289", "{\n}", "Papa and the Boys", "Davis", "Gary M.", "Temple Ohabai Sholom Sculpture Garden", "Bronze on a stone base", "Sculpture", "Old man and two boys in fond embrace. The man is in the center with a boy on each side. The man's figure is bust-length, the boy's figure on the man's proper right is bust-length, and the boy's figure on the man's proper left is thigh-length. None of the figures is wearing a shirt. The boy to the proper left wears shorts.\nFigure group -- Family -- Father & Child\nAllegory -- Life -- Manhood", "36.107914999999998", "-86.864517000000006", [ null, "36.107914999999998", "-86.864517000000006", null, false ] ]
+, [ 107, "7C0E21CE-D2DC-402B-A55A-8AE1B1752109", 107, 1399313899, "878289", 1399313899, "878289", "{\n}", "Pomegranate Gates", "Halahmy", "Oded", "Temple Ohabai Sholom Sculpture Garden", "Cast Nickel Bronze", "Arch", "An arch gate with nine pomegranates across the top of the arch. On each side at the top of the arch is a relief of a hand, symbolizing priestly blessing. The two side posts are rectangular and each is set on individual block-like footings.  At the top of the arch is a large pomegranate in the center with four smaller ones on either side. A molded lion of Judah is located on each side of the arch at the front.\nReligion -- Judaism\nObject -- Fruit -- Pomegranate\nFigure -- Fragment -- Hand\nAnimal -- Lion", "36.107914999999998", "-86.864517000000006", [ null, "36.107914999999998", "-86.864517000000006", null, false ] ]
+, [ 108, "5BE21712-A4A2-4DD0-AD27-A72CDD22897A", 108, 1399313899, "878289", 1399313899, "878289", "{\n}", "Phoenix", "Limor", "Livin", "Belmont University, next to the Gerhardt Student Center", "Unknown metal", "Sculpture", "A simplified depiction of a phoenix, with wings spread, atop a pyre.  The pyre consists of steel tubing and cut sheet metal flames rising from a flat plate of steel bolted in one place to the top of the brick pedestal.  The phoenix consists of welded sheets of metal.  The phoenix stands upright with wings spread equally.  Mythology -- Other -- Egyptian   Animal -- Bird", "36.132641", "-86.794734000000005", [ null, "36.132641", "-86.794734000000005", null, false ] ]
+, [ 109, "14D54BD2-3993-4454-9ED8-35FEBE78010A", 109, 1399313899, "878289", 1399313899, "878289", "{\n}", "Ed and Bernice Johnson and a Student", "Faxon", "Russell", "Belmont University, in front of the Curb Event Center", "Bronze", null, null, "36.132641", "-86.794734000000005", [ null, "36.132641", "-86.794734000000005", null, false ] ]
+, [ 110, "7475F986-BDE9-456B-897E-E6C78F07942C", 110, 1399313899, "878289", 1399313899, "878289", "{\n}", "Untitled   ", "Bennyworth", "Steve", "Belmont University, outside Leu Art Building", "Cortin Steel", null, null, "36.133789", "-86.796113000000005", [ null, "36.133789", "-86.796113000000005", null, false ] ]
+, [ 111, "EFAEF0F9-78DB-4508-B1E6-1D246C720E2A", 111, 1399313899, "878289", 1399313899, "878289", "{\n}", "Something in the Air", "Noland", "Bill", "Belmont University, Alumni House", "Bronze", null, null, "36.135643999999999", "-86.794556999999998", [ null, "36.135643999999999", "-86.794556999999998", null, false ] ]
+, [ 112, "09322E4D-D6CA-45B9-B6E7-939F5D721CA8", 112, 1399313899, "878289", 1399313899, "878289", "{\n}", "Servant or Master", "Limor", "Livin", "Belmont University, between Heron Hall and Pembroke Hall", "Unknown metal", null, null, "36.134045", "-86.794945999999996", [ null, "36.134045", "-86.794945999999996", null, false ] ]
+, [ 113, "DC9DF0B2-3EC4-4458-9F01-C118DF341858", 113, 1399313899, "878289", 1399313899, "878289", "{\n}", "Thomas Gleen Ryman", "Shields", "Steve", "Ryman Auditorium", "Bronze sculpture with brick base", "Sculpture", "Full-length standing figure of Ryman, holding a section of a riverboat steering spoke.\nFigure male -- Ryman, Thomas -- Full length\nArchitecture -- Boat -- Detail", "36.161560999999999", "-86.777889000000002", [ null, "36.161560999999999", "-86.777889000000002", null, false ] ]
+, [ 114, "A8E9D785-1A13-42CE-9912-A97AA08A9B51", 114, 1399313899, "878289", 1399313899, "878289", "{\n}", "Oh, Roy", "Faxon", "Russell", "Ryman Auditorium", "Bronze", "Sculpture", "Minnie Pearl and Roy Acuff seated on a bench inside Ryman Auditorium.", "36.16151", "-86.778159000000002", [ null, "36.16151", "-86.778159000000002", null, false ] ]
+, [ 115, "6C7D76E1-D538-4775-B88D-040C1954ACBF", 115, 1399313899, "878289", 1399313899, "878289", "{\n}", "The Man of Love and Wisdom", "Williams", "Terry", "St. Thomas Hospital Medical Plaza", "Burnished steel", "Sculpture", "A confident man walking forward with an outstretched hand gesturing support and encouragement to his audience. He has a heart inscribed on one arm and an owl sitting on his shoulder.", "36.128836999999997", "-86.844016999999994", [ null, "36.128836999999997", "-86.844016999999994", null, false ] ]
+, [ 116, "F88D650A-C2B8-4481-8EDD-0B606A861B8E", 116, 1399313899, "878289", 1399313899, "878289", "{\n}", "Broadway Cowboys", "Calk", "Olin", "TomKats Restaurant", "Rubber, foam rubber, vinyl, electronic parts, auto parts, kitchen utensils, trash, beer cans, cloth", "Sculpture", "Six brightly colored standing figures constructed of bits of trash. The figures are dressed as cowboys and wear hats, vests, boots, and jeans. Some figures carry guns, one has a banjo and another has a guitar. The figures are resting on the ground and there are grAvenuel walkways around them.", "36.150638999999998", "-86.776859999999999", [ null, "36.150638999999998", "-86.776859999999999", null, false ] ]
+, [ 117, "3608A2F6-59B2-4330-B2F9-7B2792499002", 117, 1399313899, "878289", 1399313899, "878289", "{\n}", "Encada", "Borem", "Jonah", null, "Graffiti ", "Graffiti", null, "36.150789000000003", "-86.775762999999998", [ null, "36.150789000000003", "-86.775762999999998", null, false ] ]
+, [ 118, "CBCFBC02-203E-40CB-8E61-A56E14E2CEBD", 118, 1399313899, "878289", 1399313899, "878289", "{\n}", "Children's Chairs For The Seasons", "McGraw", "Deloss", "Nashville Public Library", "Mixed Media - wood and paint", "Furniture", "chairs depicting the four seasons", "36.162145000000002", "-86.782049999999998", [ null, "36.162145000000002", "-86.782049999999998", null, false ] ]
+ ]
+}
