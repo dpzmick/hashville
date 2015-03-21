@@ -10,7 +10,6 @@ angular.module('hashControllers', [])
     $scope.submit = function() {
 //        Info.where = $scope.where;
         console.log(Info.where);
-//        $rootScope.date = $scope.when;
         $location.path('/plan');
     }
         
@@ -23,7 +22,7 @@ angular.module('hashControllers', [])
         
         var mapOptions = {
             zoom: 14,
-            center: new google.maps.LatLng(-33.897, 150.099),
+            center: new google.maps.LatLng(lat, long),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: false,
             draggable: false,
@@ -41,35 +40,55 @@ angular.module('hashControllers', [])
             });
         }
         
-        var rendererOptions = { map: $scope.map };
+        var rendererOptions = { 
+            map: $scope.map,
+//            suppressMarkers: true
+        };
         var directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
         
-        /*
-        var point1 = new google.maps.LatLng(-33.8975098545041,151.09962701797485);
-        var point2 = new google.maps.LatLng(-33.8584421519279,151.0693073272705);
-        var point3 = new google.maps.LatLng(-33.87312358690301,151.99952697753906);
-        var point4 = new google.maps.LatLng(-33.84525521656404,151.0421848297119);
-        */
-        
-        //var point1 = new google.maps.LatLng();
-        //var point2 = new google.maps.LatLng();
-        //var point3 = new google.maps.LatLng();
-        //var point4 = new google.maps.LatLng();
-        
-        console.log(angular.fromJson(data.json));
-        
-        var wps = [{ location: point1 }, { location: point2 }, {location: point4}];
+        $scope.data = {
+            itinerary: [
+                {
+                    name: "cafe-coco", lat: 36.151912, lon: -86.804893
+                },
+                {
+                    name: "frist", lat: 36.157501, lon: -86.783707
+                },
+                {
+                    name: "edleys", lat: 36.175921, lon: -86.756294
+                },
+                {
+                    name: "parthenon", lat: 36.149608, lon: -86.81262
+                }
+            ],
 
-        var org = new google.maps.LatLng ( -33.89192157947345,151.13604068756104);
-        var dest = new google.maps.LatLng ( -33.69727974097957,150.29047966003418);
+            suggestions: [
+                {
+                    name: "filling-station", lat: 36.122781, lon: -86.789652
+                },
+                {
+                    name: "climb-nashville", lat: 36.153031, lon: -86.828027
+                },
+                {
+                    name: "contra", lat: 36.110897, lon: -86.801207
+                },
+                {
+                    name: "ryman", lat: 36.161248, lon: -86.778471
+                }
+            ]
+        };
+        
+        var points = parseJSON($scope.data);
+
+        var org = new google.maps.LatLng(lat, long);
+        var dest = points.suggestions[0].location;
 
         var request = {
             origin: org,
             destination: dest,
-            waypoints: wps,
+            waypoints: points.itinerary,
             travelMode: google.maps.DirectionsTravelMode.WALKING
         };
-
 
         var directionsService = new google.maps.DirectionsService();
         directionsService.route(request, function(response, status) {

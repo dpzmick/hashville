@@ -1,8 +1,17 @@
 <div>
     <h1>Ca$hville</h1>
-    <input type="text" ng-model="lat">
-    <input type="text" ng-model="long">
-    <button ng-model="update">refresh</button>
+    <section class="itinerary">
+        <h2>Itinerary</h2>
+        <div ng-repeat="item in data.itinerary">
+            <h3>{{ item.name }}</h3>
+        </div>
+    </section>
+    <section class="suggestions">
+        <h2>Suggestions</h2>
+        <div ng-repeat="item in data.suggestions">
+            <h3>{{ item.name }}</h3>
+        </div>
+    </section>
 </div>
 
 <div id="map"></div>
