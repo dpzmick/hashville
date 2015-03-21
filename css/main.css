@@ -1,28 +1,21 @@
-/* line 1, /Users/lawrencehumphrey/Dev/neutral-cycle/css/main.scss */
-.keys {
-  color: blue; }
+/* line 23, /Users/lawrencehumphrey/Dev/hashville/css/main.scss */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; }
 
-/* line 6, /Users/lawrencehumphrey/Dev/neutral-cycle/css/main.scss */
-#rental label:first-child {
-  width: 120px;
-  text-align: right;
-  display: inline-block; }
-/* line 12, /Users/lawrencehumphrey/Dev/neutral-cycle/css/main.scss */
-#rental button {
-  margin-left: 124px; }
-/* line 16, /Users/lawrencehumphrey/Dev/neutral-cycle/css/main.scss */
-#rental .error {
-  color: red; }
+/* line 27, /Users/lawrencehumphrey/Dev/hashville/css/main.scss */
+html {
+  background: url(../img/nashville-603784_1920.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-/* line 21, /Users/lawrencehumphrey/Dev/neutral-cycle/css/main.scss */
-.log {
-  width: 100%;
-  margin-top: 20px; }
-  /* line 25, /Users/lawrencehumphrey/Dev/neutral-cycle/css/main.scss */
-  .log th {
-    text-align: left; }
-  /* line 29, /Users/lawrencehumphrey/Dev/neutral-cycle/css/main.scss */
-  .log tr {
-    margin-bottom: 6px; }
+/* line 32, /Users/lawrencehumphrey/Dev/hashville/css/main.scss */
+.input {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=main.css.map */

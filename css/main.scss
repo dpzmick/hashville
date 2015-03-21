@@ -1,32 +1,34 @@
-.keys {
-    color: blue;
+@mixin center-this($top) {
+    position: absolute;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin disable-horizontal-scrolling() {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@mixin background-size($param) {
+    -webkit-background-size: $param;
+    -moz-background-size: $param;
+    -o-background-size: $param;
+    background-size: $param;
+}
+@mixin filter($quant) {
+    filter: blur($quant);
+    -webkit-filter: blur($quant);
 }
 
-#rental {
-    label:first-child {
-        width: 120px;
-        text-align: right;
-        display: inline-block;
-    }
-    
-    button {
-        margin-left: 124px;
-    }
-    
-    .error {
-        color: red;   
-    }
+html,
+body {
+    @include disable-horizontal-scrolling();
 }
 
-.log { 
-    width: 100%;
-    margin-top: 20px;
-    
-    th {
-        text-align: left;
-    }
-    
-    tr {
-        margin-bottom: 6px;
-    }
+html { 
+    background: url(../img/nashville-603784_1920.jpg) no-repeat center center fixed; 
+    @include background-size(cover);
+}
+
+.input {
+    @include center-this(45%);
 }
