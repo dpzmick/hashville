@@ -20,6 +20,11 @@ angular.module('hash', [
             controller: 'LandingCtrl'
         })
         
+        .when('/plan', {
+            templateUrl: '/templates/plan.html',
+            controller: 'IteneraryCtrl'
+        })
+        
         .otherwise({ 
             templateUrl: '/templates/404.html' 
         });

@@ -1,6 +1,13 @@
 angular.module('hashControllers', ['uiGmapgoogle-maps'])
 
-.controller('LandingCtrl', ['$scope', 'uiGmapGoogleMapApi',
+
+.controller('LandingCtrl', ['$scope',
+    function($scope) {
+        $scope.where = "Where will you be staying?";
+        $scope.when = "How long will you be in Nashville?";
+}])
+
+.controller('IteneraryCtrl', ['$scope', 'uiGmapGoogleMapApi',
     function($scope, uiGmapGoogleMapApi) {
         $scope.lat = 36.17;
         $scope.long = -86.78;
