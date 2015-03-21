@@ -1,0 +1,12 @@
+{
+    "libs": [
+        "gulp"
+    ],
+    "plugins": {
+        "node": {},
+        "requirejs": {
+            "baseurl": "./",
+            "paths": {}
+        }
+    }
+}
