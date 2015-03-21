@@ -1,7 +1,9 @@
 [ignore]
+.*/build/.*
 
 [include]
 
 [libs]
+/Users/dz0004455/programming/hashville/backend/lib/*
 
 [options]
