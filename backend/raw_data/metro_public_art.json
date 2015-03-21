@@ -1,0 +1,1067 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "eviu-nxp6",
+      "name" : "Metro Public Art Collection",
+      "attribution" : "Metro Arts Commission",
+      "attributionLink" : "http://publicart.nashville.gov",
+      "averageRating" : 0,
+      "category" : "Culture",
+      "createdAt" : 1398314553,
+      "description" : "Metro Public Art Collection",
+      "displayType" : "table",
+      "downloadCount" : 35,
+      "indexUpdatedAt" : 1414723573,
+      "licenseId" : "PUBLIC_DOMAIN",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 8054563,
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1400819366,
+      "publicationGroup" : 1556069,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1400819246,
+      "rowsUpdatedBy" : "vezj-bc7i",
+      "tableId" : 1592065,
+      "totalTimesRated" : 0,
+      "viewCount" : 160,
+      "viewLastModified" : 1425324871,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : 149616383,
+        "name" : "Artwork",
+        "dataTypeName" : "text",
+        "fieldName" : "artwork",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19342806,
+        "width" : 291,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : "Aileron",
+          "null" : 0,
+          "largest" : "Watermark: Tool Fire",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Aileron"
+          }, {
+            "count" : 19,
+            "item" : "Air Wave"
+          }, {
+            "count" : 18,
+            "item" : "Banjo"
+          }, {
+            "count" : 17,
+            "item" : "Bicycle Copse"
+          }, {
+            "count" : 16,
+            "item" : "Capital"
+          }, {
+            "count" : 15,
+            "item" : "City Irises"
+          }, {
+            "count" : 14,
+            "item" : "Corn and Tomato"
+          }, {
+            "count" : 13,
+            "item" : "Emerge"
+          }, {
+            "count" : 12,
+            "item" : "Lotus"
+          }, {
+            "count" : 11,
+            "item" : "Lyrical Riders"
+          }, {
+            "count" : 10,
+            "item" : "Microphone"
+          }, {
+            "count" : 9,
+            "item" : "On Air"
+          }, {
+            "count" : 8,
+            "item" : "Pedal Petroleum"
+          }, {
+            "count" : 7,
+            "item" : "Soundboard Sliders"
+          }, {
+            "count" : 6,
+            "item" : "The Riders"
+          }, {
+            "count" : 5,
+            "item" : "Citizen"
+          }, {
+            "count" : 4,
+            "item" : "Continuum"
+          }, {
+            "count" : 3,
+            "item" : "Exploration and Discovery #1: The Spark of Discovery"
+          }, {
+            "count" : 2,
+            "item" : "Exploration and Discovery #2: The Scholar"
+          }, {
+            "count" : 1,
+            "item" : "Exploration and Discovery #3: To the Moon"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616384,
+        "name" : "Last Name",
+        "dataTypeName" : "text",
+        "fieldName" : "last_name",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19566358,
+        "width" : 140,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : "Allison",
+          "null" : 0,
+          "largest" : "Young",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Dillon"
+          }, {
+            "count" : 19,
+            "item" : "Hendrix"
+          }, {
+            "count" : 18,
+            "item" : "Howse"
+          }, {
+            "count" : 17,
+            "item" : "Doak"
+          }, {
+            "count" : 16,
+            "item" : "Tidwell"
+          }, {
+            "count" : 15,
+            "item" : "Eichman"
+          }, {
+            "count" : 14,
+            "item" : "Easter and Goostree"
+          }, {
+            "count" : 13,
+            "item" : "Young"
+          }, {
+            "count" : 12,
+            "item" : "Allison"
+          }, {
+            "count" : 11,
+            "item" : "Novak"
+          }, {
+            "count" : 10,
+            "item" : "Harmon and Hill and Lee"
+          }, {
+            "count" : 9,
+            "item" : "Griffith and Pellerin"
+          }, {
+            "count" : 8,
+            "item" : "Buffet"
+          }, {
+            "count" : 7,
+            "item" : "McDaniel"
+          }, {
+            "count" : 6,
+            "item" : "Conley"
+          }, {
+            "count" : 5,
+            "item" : "Sayre"
+          }, {
+            "count" : 4,
+            "item" : "McGee"
+          }, {
+            "count" : 3,
+            "item" : "Rowe"
+          }, {
+            "count" : 2,
+            "item" : "Aycock"
+          }, {
+            "count" : 1,
+            "item" : "Berry"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616385,
+        "name" : "First Name",
+        "dataTypeName" : "text",
+        "fieldName" : "first_name",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19566359,
+        "width" : 147,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : "Alan",
+          "null" : 0,
+          "largest" : "William",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Michael"
+          }, {
+            "count" : 19,
+            "item" : "Suzy"
+          }, {
+            "count" : 18,
+            "item" : "Ric"
+          }, {
+            "count" : 17,
+            "item" : "Alice"
+          }, {
+            "count" : 16,
+            "item" : "Luke"
+          }, {
+            "count" : 15,
+            "item" : "Jessica"
+          }, {
+            "count" : 14,
+            "item" : "Page and Dan"
+          }, {
+            "count" : 13,
+            "item" : "Matt"
+          }, {
+            "count" : 12,
+            "item" : "Anthony"
+          }, {
+            "count" : 11,
+            "item" : "Keith and Mac and Franne"
+          }, {
+            "count" : 10,
+            "item" : "Samantha and Jen"
+          }, {
+            "count" : 9,
+            "item" : "William"
+          }, {
+            "count" : 8,
+            "item" : "Duncan"
+          }, {
+            "count" : 7,
+            "item" : "Seth"
+          }, {
+            "count" : 6,
+            "item" : "Thomas"
+          }, {
+            "count" : 5,
+            "item" : "Carrie"
+          }, {
+            "count" : 4,
+            "item" : "Ken"
+          }, {
+            "count" : 3,
+            "item" : "Kevin"
+          }, {
+            "count" : 2,
+            "item" : "Lawrence"
+          }, {
+            "count" : 1,
+            "item" : "David"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616386,
+        "name" : "Location",
+        "dataTypeName" : "text",
+        "fieldName" : "location",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19342808,
+        "width" : 257,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : "12 South, 2318 12th Avenue South, 37204",
+          "null" : 0,
+          "largest" : "West Park Community Center",
+          "top" : [ {
+            "count" : 20,
+            "item" : "McCabe Park Community Center"
+          }, {
+            "count" : 19,
+            "item" : "Madison Police Precinct, 400 Myatt Dr., Madison, 37115"
+          }, {
+            "count" : 18,
+            "item" : "Fulton Complex"
+          }, {
+            "count" : 17,
+            "item" : "401 Commerce Street"
+          }, {
+            "count" : 16,
+            "item" : "Nashville Farmers' Market"
+          }, {
+            "count" : 15,
+            "item" : "Hermitage Park, 3720 James Kay Lane, Hermitage, 37076 "
+          }, {
+            "count" : 14,
+            "item" : "Church Street Park"
+          }, {
+            "count" : 13,
+            "item" : "Fannie Mae Dees Park, 2400 Blakemore Ave., 37212"
+          }, {
+            "count" : 12,
+            "item" : "Coleman Park Community Center, 384 Thompson Ln., 37211"
+          }, {
+            "count" : 11,
+            "item" : "Buddy Killen Circle (Demonbruen Roundabout)"
+          }, {
+            "count" : 10,
+            "item" : "Morgan Park, 411 Hume St., 37208"
+          }, {
+            "count" : 9,
+            "item" : "Donelson Train Station, 2705 Lebanon Pike, 37214"
+          }, {
+            "count" : 8,
+            "item" : "12 South, 2318 12th Avenue South, 37204"
+          }, {
+            "count" : 7,
+            "item" : "Shelby Street Pedestrian Bridge"
+          }, {
+            "count" : 6,
+            "item" : "Public Square Park"
+          }, {
+            "count" : 5,
+            "item" : "Goodlettsville Public Library"
+          }, {
+            "count" : 4,
+            "item" : "Main Library Courtyard, 615 Church St. "
+          }, {
+            "count" : 3,
+            "item" : "East Bank Greenway"
+          }, {
+            "count" : 2,
+            "item" : "28th/31st Avenue Connector"
+          }, {
+            "count" : 1,
+            "item" : "Shelby Park"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616387,
+        "name" : "Medium",
+        "dataTypeName" : "text",
+        "fieldName" : "medium",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19342809,
+        "width" : 172,
+        "cachedContents" : {
+          "non_null" : 23,
+          "smallest" : "Acrylic on transparent tiles; some photographs",
+          "null" : 17,
+          "largest" : "Yellow pine logs, limestone boulder, anchor chain",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Forged iron, bronze"
+          }, {
+            "count" : 19,
+            "item" : "Mild steel, powder coat"
+          }, {
+            "count" : 18,
+            "item" : "Stainless Steel"
+          }, {
+            "count" : 17,
+            "item" : "Mild steel and steel pope, acrylic steel curved bar"
+          }, {
+            "count" : 16,
+            "item" : "Polished concrete base with stainless steel curved bar"
+          }, {
+            "count" : 15,
+            "item" : "Steel and stainless steel, powder coat"
+          }, {
+            "count" : 14,
+            "item" : "Tube Steel"
+          }, {
+            "count" : 13,
+            "item" : "Glass torsos with woven stainless steel base"
+          }, {
+            "count" : 12,
+            "item" : "Acrylic on transparent tiles; some photographs"
+          }, {
+            "count" : 11,
+            "item" : "Bronze, fabricated steel base"
+          }, {
+            "count" : 10,
+            "item" : "Cast bronze, fabricated bronze, fabricated steel base"
+          }, {
+            "count" : 9,
+            "item" : "Bronze, cast glass with bronze rim, granite"
+          }, {
+            "count" : 8,
+            "item" : "Steel, neon, aluminum, industrial metals"
+          }, {
+            "count" : 7,
+            "item" : "Black granite and stainless steel"
+          }, {
+            "count" : 6,
+            "item" : "Tile and stone mosaic"
+          }, {
+            "count" : 5,
+            "item" : "Yellow pine logs, limestone boulder, anchor chain"
+          }, {
+            "count" : 4,
+            "item" : "Polychrome concrete"
+          }, {
+            "count" : 3,
+            "item" : "Cast water-impermeable concrete, powdered pigments"
+          }, {
+            "count" : 2,
+            "item" : "Blue glass, LED lighting, galvanized metal"
+          }, {
+            "count" : 1,
+            "item" : "Composite decking, aluminum, windsocks"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616389,
+        "name" : "Project Status",
+        "dataTypeName" : "text",
+        "fieldName" : "project_status",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19342812,
+        "width" : 85,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : "Complete",
+          "null" : 0,
+          "largest" : "In Progress",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Complete"
+          }, {
+            "count" : 19,
+            "item" : "In Progress"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616388,
+        "name" : "Description",
+        "dataTypeName" : "text",
+        "fieldName" : "description",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19342811,
+        "width" : 599,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : "A kinetic bronze sculpture sitting on three legs with two wings on top which spin 360 degrees with the wind. ",
+          "null" : 0,
+          "largest" : "This transit shelter compliments the theme of quilting and connectivity that runs through the connector bridge.",
+          "top" : [ {
+            "count" : 20,
+            "item" : "A kinetic bronze sculpture sitting on three legs with two wings on top which spin 360 degrees with the wind. "
+          }, {
+            "count" : 19,
+            "item" : "For this design, a pair of functional air pumps flank an oscillating air wave. Air Wave is as practical as it is conceptual. In homage to all the good musical vibrations created by Nashville, sounds waves flow out from the flanking air pumps."
+          }, {
+            "count" : 18,
+            "item" : "This rack reflects the rich musical history, tradition, and culture of the Nashville area."
+          }, {
+            "count" : 17,
+            "item" : "This rack represents a copse of trees found in nature, offering visual and spacial shelter in a bare sidewalk-scape."
+          }, {
+            "count" : 16,
+            "item" : "The three circumscribed circles with stars represent the state flag of Tennessee. This design for this rack was influenced by Nashville's growing civic identity as a town of health and environmentally conscious citizens, represented by the circles made of bike chains and the location beside the Farmers' Market."
+          }, {
+            "count" : 15,
+            "item" : "City Irises uses a playful and colorful design to showcase Tennessee’s state flower."
+          }, {
+            "count" : 14,
+            "item" : "Located by the Farmers' Market, this bike rack represents the fresh and local fruits and vegetables that can be found at the market. "
+          }, {
+            "count" : 13,
+            "item" : "Emerge is a bike rack of two padlocks coming up from the ground. They are placed across the street from the Nashville Public Library. Emergewas selected by Americans for the Arts 2011 Public Art Network Year in Review."
+          }, {
+            "count" : 12,
+            "item" : "This bike rack utilizes recycled bike frames to compose the colorful organic design. “My goal in designing this rack was to make a visually and artistically interesting piece of art, while also keeping the design practical and useful. I want the rack to clearly communicate it is available to the public for the purpose of locking bicycles. I also wanted to create something that reminds the public that biking is a great healthy, environmentally-friendly way to commute and explore our city. In addition, I like the idea that the materials for this rack are sourced locally. Tied into this idea of using local materials is the concept of sustainability, which is always an undercurrent in my work. I mainly work with recycled metal and glass.  Most of the art I create is functional and many of my large metal and glass pieces serve as light fixtures.” I am passionate about public art because they allow art to reach more people than just those who can afford to purchase professional art. Public art allows people to interact with art on a daily basis instead of just in museums."
+          }, {
+            "count" : 11,
+            "item" : "In this design, bicycle and rider are synthesized into one unified, lyrical design. “I love bike and I love Nashville – except for the traffic, which is why I want to do my part as a professional artist to encourage fellow cyclists to ride instead of drive.”"
+          }, {
+            "count" : 10,
+            "item" : "At the roundabout by Music Row, this rack highlights the musical tradition of Nashville.Microphone was selected by Americans for the Arts 2011 Public Art Network Year in Review."
+          }, {
+            "count" : 9,
+            "item" : "This rack is an abstracted radio tower inspired by the history of live radio shows and music in Nashville. This artwork stands approximately 12 feet high with its circles of radio waves and lightning bolts crowning the top of the tower."
+          }, {
+            "count" : 8,
+            "item" : "Pedal Petroleum is a play on pedal powered “free gas.” Using actual gas pumps and bright colors, this rack is a fun addition to commuters’ daily treks. “The design for my bicycle rack Pedal Petroleum aims at light-hearted humor, using bright happy colors.  The implied message, that riding a bicycle displaces a certain amount of costly and noxious gasoline, is meant to be immediately grasped.  There is also some irony in the fact that the defunct gas pump is now the means of securing and protecting its rival: free transportation.”"
+          }, {
+            "count" : 7,
+            "item" : "Soundboard Sliders represents Nashville’s unique identity as a music production hub. \"As an avid cycler and visual artist, naturally I was excited about this project from the beginning. Mixing sculpture with a functional object such as a bike rack is a great way to promote cycling and public art, both of which are good for our city. Although we have far to go, over the past six years I have witnessed this city expand its biking culture exponentially through bike lanes, greenways, bike sharing, and artistic bicycle racks. I am proud to be a part of this growing movement and hopefully these racks will encourage more cycling while at the same time bolster an appreciation for public art.\" Duncan McDaniel lives and works in Nashville. In addition to working as a professional visual artist, he works as an art handler for various institutions including the Frist Center for the Visual Arts, Cheekwood Museum of Art and the Tennessee State Museum."
+          }, {
+            "count" : 6,
+            "item" : "Made of painted tube steel, the Riders are created to look like they are riding a bicycle when it is placed parallel to the rack."
+          }, {
+            "count" : 5,
+            "item" : "The two figures represent the leaders of Nashville directing the development of the city, going back to founders James Robertson and John Donelson to Fisk and Tennessee A&I University students leading the Nashville Civil Rights reform to current leadership. The sculptures turn to represent every Nashvillian's participation in the city. At night, the sculptures are lit to serve as a beacon for a gathering place for all of Nashville."
+          }, {
+            "count" : 4,
+            "item" : "The piece is above the information desk at the library and illuminates the rich history of Goodlettsville. The tiles represent pages and the information and history that can be found within the library. The artist created a companion book to more fully explain the piece and the history behind each tile."
+          }, {
+            "count" : 3,
+            "item" : "This is the first piece of Exploration and Discovery highlighting the role Nashville has played in art, science, and culture innovations. Among other things, a saber tooth tiger skull is buried underneath the children as a reference to the skull found in the AmSouth building excavation and representing the things that came before us."
+          }, {
+            "count" : 2,
+            "item" : "The second piece of \"Exploration and Discovery\" represents the active pursuit of knowledge. The rug beneath the scholar is worn from looking into the telescopes. The planets are in the astronomical position of December 25, 1779, the day James Robertson crossed the Cumberland River and onto the future site of Nashville. Six of the telescopes are aimed at Nashville landmarks and two at astronomical bodies."
+          }, {
+            "count" : 1,
+            "item" : "The third piece of \"Exploration and Discovery\" represents reaching the aim of knowledge as she only reaches the moon through standing on a tower of books and objects. The objects in the stack represent various aspects of local history, the musical tradition, space and astronomical exploration, and local flora and fauna."
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616390,
+        "name" : "Page Link",
+        "dataTypeName" : "text",
+        "fieldName" : "page_link",
+        "position" : 8,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19342813,
+        "width" : 455,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Aileron.aspx",
+          "null" : 0,
+          "largest" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Projects-in-Progress/Southeast-Davidson-Library-and-Community-Center.aspx",
+          "top" : [ {
+            "count" : 20,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Aileron.aspx"
+          }, {
+            "count" : 19,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Air-Wave.aspx"
+          }, {
+            "count" : 18,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Banjo.aspx"
+          }, {
+            "count" : 17,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Bicycle-Copse.aspx"
+          }, {
+            "count" : 16,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Capital.aspx"
+          }, {
+            "count" : 15,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/City-Irises.aspx"
+          }, {
+            "count" : 14,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Corn-and-Tomato.aspx"
+          }, {
+            "count" : 13,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Emerge.aspx"
+          }, {
+            "count" : 12,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Lotus.aspx"
+          }, {
+            "count" : 11,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Lyrical-Rider.aspx"
+          }, {
+            "count" : 10,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Microphone.aspx"
+          }, {
+            "count" : 9,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/On-Air.aspx"
+          }, {
+            "count" : 8,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Pedal-Petroleum.aspx"
+          }, {
+            "count" : 7,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Soundboard-Sliders.aspx"
+          }, {
+            "count" : 6,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/The-Riders.aspx"
+          }, {
+            "count" : 5,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Citizen.aspx"
+          }, {
+            "count" : 4,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Continuum.aspx"
+          }, {
+            "count" : 3,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Exploration-and-Discovery.aspx"
+          }, {
+            "count" : 2,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Ghost-Ballet.aspx"
+          }, {
+            "count" : 1,
+            "item" : "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Magnolia-Transit-Shelters.aspx"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616391,
+        "name" : "Latitude",
+        "dataTypeName" : "text",
+        "fieldName" : "latitude",
+        "position" : 9,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19566260,
+        "width" : 68,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : "36.052048",
+          "null" : 0,
+          "largest" : "36.314567",
+          "top" : [ {
+            "count" : 20,
+            "item" : "36.140969"
+          }, {
+            "count" : 19,
+            "item" : "36.272295"
+          }, {
+            "count" : 18,
+            "item" : "36.153346"
+          }, {
+            "count" : 17,
+            "item" : "36.161906"
+          }, {
+            "count" : 16,
+            "item" : "36.170499"
+          }, {
+            "count" : 15,
+            "item" : "36.177653"
+          }, {
+            "count" : 14,
+            "item" : "36.170885"
+          }, {
+            "count" : 13,
+            "item" : "36.16245"
+          }, {
+            "count" : 12,
+            "item" : "36.137488"
+          }, {
+            "count" : 11,
+            "item" : "36.111846"
+          }, {
+            "count" : 10,
+            "item" : "36.152392"
+          }, {
+            "count" : 9,
+            "item" : "36.180458"
+          }, {
+            "count" : 8,
+            "item" : "36.167182"
+          }, {
+            "count" : 7,
+            "item" : "36.126699"
+          }, {
+            "count" : 6,
+            "item" : "36.164314"
+          }, {
+            "count" : 5,
+            "item" : "36.166414"
+          }, {
+            "count" : 4,
+            "item" : "36.314567"
+          }, {
+            "count" : 3,
+            "item" : "36.162154"
+          }, {
+            "count" : 2,
+            "item" : "36.163256"
+          }, {
+            "count" : 1,
+            "item" : "36.153674"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616392,
+        "name" : "Longitude",
+        "dataTypeName" : "text",
+        "fieldName" : "longitude",
+        "position" : 10,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19566278,
+        "width" : 72,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : "-86.615069",
+          "null" : 0,
+          "largest" : "-86.937682",
+          "top" : [ {
+            "count" : 20,
+            "item" : "-86.842667"
+          }, {
+            "count" : 19,
+            "item" : "-86.689705"
+          }, {
+            "count" : 18,
+            "item" : "-86.768642"
+          }, {
+            "count" : 17,
+            "item" : "-86.779003"
+          }, {
+            "count" : 16,
+            "item" : "-86.788966"
+          }, {
+            "count" : 15,
+            "item" : "-86.615069"
+          }, {
+            "count" : 14,
+            "item" : "-86.788364"
+          }, {
+            "count" : 13,
+            "item" : "-86.781914"
+          }, {
+            "count" : 12,
+            "item" : "-86.805803"
+          }, {
+            "count" : 11,
+            "item" : "-86.74484"
+          }, {
+            "count" : 10,
+            "item" : "-86.79135"
+          }, {
+            "count" : 9,
+            "item" : "-86.790428"
+          }, {
+            "count" : 8,
+            "item" : "-86.665812"
+          }, {
+            "count" : 7,
+            "item" : "-86.78912"
+          }, {
+            "count" : 6,
+            "item" : "-86.76936"
+          }, {
+            "count" : 5,
+            "item" : "-86.778467"
+          }, {
+            "count" : 4,
+            "item" : "-86.710658"
+          }, {
+            "count" : 3,
+            "item" : "-86.781827"
+          }, {
+            "count" : 2,
+            "item" : "-86.772114"
+          }, {
+            "count" : 1,
+            "item" : "-86.818316"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 149616393,
+        "name" : "Mapped Location",
+        "dataTypeName" : "location",
+        "fieldName" : "mapped_location",
+        "position" : 11,
+        "renderTypeName" : "location",
+        "tableColumnId" : 19342814,
+        "width" : 201,
+        "cachedContents" : {
+          "non_null" : 40,
+          "smallest" : {
+            "longitude" : "-86.842667",
+            "latitude" : "36.140969"
+          },
+          "null" : 0,
+          "largest" : {
+            "longitude" : "-86.791617",
+            "latitude" : "36.152092"
+          },
+          "top" : [ {
+            "count" : 20,
+            "item" : {
+              "longitude" : "-86.842667",
+              "latitude" : "36.140969"
+            }
+          }, {
+            "count" : 19,
+            "item" : {
+              "longitude" : "-86.689705",
+              "latitude" : "36.272295"
+            }
+          }, {
+            "count" : 18,
+            "item" : {
+              "longitude" : "-86.768642",
+              "latitude" : "36.153346"
+            }
+          }, {
+            "count" : 17,
+            "item" : {
+              "longitude" : "-86.779003",
+              "latitude" : "36.161906"
+            }
+          }, {
+            "count" : 16,
+            "item" : {
+              "longitude" : "-86.788966",
+              "latitude" : "36.170499"
+            }
+          }, {
+            "count" : 15,
+            "item" : {
+              "longitude" : "-86.615069",
+              "latitude" : "36.177653"
+            }
+          }, {
+            "count" : 14,
+            "item" : {
+              "longitude" : "-86.788364",
+              "latitude" : "36.170885"
+            }
+          }, {
+            "count" : 13,
+            "item" : {
+              "longitude" : "-86.781914",
+              "latitude" : "36.16245"
+            }
+          }, {
+            "count" : 12,
+            "item" : {
+              "longitude" : "-86.805803",
+              "latitude" : "36.137488"
+            }
+          }, {
+            "count" : 11,
+            "item" : {
+              "longitude" : "-86.74484",
+              "latitude" : "36.111846"
+            }
+          }, {
+            "count" : 10,
+            "item" : {
+              "longitude" : "-86.79135",
+              "latitude" : "36.152392"
+            }
+          }, {
+            "count" : 9,
+            "item" : {
+              "longitude" : "-86.790428",
+              "latitude" : "36.180458"
+            }
+          }, {
+            "count" : 8,
+            "item" : {
+              "longitude" : "-86.665812",
+              "latitude" : "36.167182"
+            }
+          }, {
+            "count" : 7,
+            "item" : {
+              "longitude" : "-86.78912",
+              "latitude" : "36.126699"
+            }
+          }, {
+            "count" : 6,
+            "item" : {
+              "longitude" : "-86.76936",
+              "latitude" : "36.164314"
+            }
+          }, {
+            "count" : 5,
+            "item" : {
+              "longitude" : "-86.778467",
+              "latitude" : "36.166414"
+            }
+          }, {
+            "count" : 4,
+            "item" : {
+              "longitude" : "-86.710658",
+              "latitude" : "36.314567"
+            }
+          }, {
+            "count" : 3,
+            "item" : {
+              "longitude" : "-86.781827",
+              "latitude" : "36.162154"
+            }
+          }, {
+            "count" : 2,
+            "item" : {
+              "longitude" : "-86.781827",
+              "latitude" : "36.162154"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : "-86.781827",
+              "latitude" : "36.162154"
+            }
+          } ]
+        },
+        "format" : {
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Public Domain"
+      },
+      "metadata" : {
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rdfSubject" : "0",
+        "attachments" : [ {
+          "assetId" : "wZu3h-TE95mH01F2bRZVwzYprYPUdyaj4NaTaP2op9o",
+          "name" : "Public-Art-Collection-Metadata.docx",
+          "filename" : "Public-Art-Collection-Metadata.docx"
+        } ],
+        "rowIdentifier" : "0",
+        "rdfClass" : ""
+      },
+      "owner" : {
+        "id" : "vezj-bc7i",
+        "displayName" : "Houston",
+        "profileImageUrlLarge" : "/images/profile/8202/8592/houston_large.jpg",
+        "profileImageUrlMedium" : "/images/profile/8202/8592/houston_thumb.jpg",
+        "profileImageUrlSmall" : "/images/profile/8202/8592/houston_tiny.jpg",
+        "roleName" : "administrator",
+        "screenName" : "Houston",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "query" : {
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "vezj-bc7i",
+        "displayName" : "Houston",
+        "profileImageUrlLarge" : "/images/profile/8202/8592/houston_large.jpg",
+        "profileImageUrlMedium" : "/images/profile/8202/8592/houston_thumb.jpg",
+        "profileImageUrlSmall" : "/images/profile/8202/8592/houston_tiny.jpg",
+        "roleName" : "administrator",
+        "screenName" : "Houston",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "tags" : [ "public", "art", "collection" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 1, "0691215F-DFB6-4F4F-B490-98FB3472C45B", 1, 1400819049, "878289", 1400819049, "878289", "{\n}", "Aileron", "Dillon", "Michael", "McCabe Park Community Center", "Forged iron, bronze", "Complete", "A kinetic bronze sculpture sitting on three legs with two wings on top which spin 360 degrees with the wind. ", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Aileron.aspx", "36.140969", "-86.842667", [ null, "36.140969", "-86.842667", null, false ] ]
+, [ 2, "487CC382-2F79-47DF-A74A-6DCE4B163964", 2, 1400819049, "878289", 1400819049, "878289", "{\n}", "Air Wave", "Hendrix", "Suzy", "Madison Police Precinct, 400 Myatt Dr., Madison, 37115", null, "Complete", "For this design, a pair of functional air pumps flank an oscillating air wave. Air Wave is as practical as it is conceptual. In homage to all the good musical vibrations created by Nashville, sounds waves flow out from the flanking air pumps.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Air-Wave.aspx", "36.272295", "-86.689705", [ null, "36.272295", "-86.689705", null, false ] ]
+, [ 3, "B9DCFC29-0BDD-498E-B2A4-74A03E5062B1", 3, 1400819049, "878289", 1400819049, "878289", "{\n}", "Banjo", "Howse", "Ric", "Fulton Complex", "Mild steel, powder coat", "Complete", "This rack reflects the rich musical history, tradition, and culture of the Nashville area.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Banjo.aspx", "36.153346", "-86.768642", [ null, "36.153346", "-86.768642", null, false ] ]
+, [ 4, "DA7692BC-7F9A-4D7A-8F4B-76B134311BAC", 4, 1400819049, "878289", 1400819049, "878289", "{\n}", "Bicycle Copse", "Doak", "Alice", "401 Commerce Street", "Stainless Steel", "Complete", "This rack represents a copse of trees found in nature, offering visual and spacial shelter in a bare sidewalk-scape.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Bicycle-Copse.aspx", "36.161906", "-86.779003", [ null, "36.161906", "-86.779003", null, false ] ]
+, [ 5, "D60050E6-D494-4C70-ADFF-46717B1EA87C", 5, 1400819049, "878289", 1400819049, "878289", "{\n}", "Capital", "Tidwell", "Luke", "Nashville Farmers' Market", "Stainless Steel", "Complete", "The three circumscribed circles with stars represent the state flag of Tennessee. This design for this rack was influenced by Nashville's growing civic identity as a town of health and environmentally conscious citizens, represented by the circles made of bike chains and the location beside the Farmers' Market.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Capital.aspx", "36.170499", "-86.788966", [ null, "36.170499", "-86.788966", null, false ] ]
+, [ 6, "5C2C4026-03FE-4AF4-A3D0-601053A163EE", 6, 1400819049, "878289", 1400819049, "878289", "{\n}", "City Irises", "Eichman", "Jessica", "Hermitage Park, 3720 James Kay Lane, Hermitage, 37076 ", null, "Complete", "City Irises uses a playful and colorful design to showcase Tennessee’s state flower.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/City-Irises.aspx", "36.177653", "-86.615069", [ null, "36.177653", "-86.615069", null, false ] ]
+, [ 7, "1151BB45-9069-4E9A-AC30-2004DFCFE28A", 7, 1400819049, "878289", 1400819049, "878289", "{\n}", "Corn and Tomato", "Easter and Goostree", "Page and Dan", "Nashville Farmers' Market", "Mild steel and steel pope, acrylic steel curved bar", "Complete", "Located by the Farmers' Market, this bike rack represents the fresh and local fruits and vegetables that can be found at the market. ", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Corn-and-Tomato.aspx", "36.170885", "-86.788364", [ null, "36.170885", "-86.788364", null, false ] ]
+, [ 8, "5BF055EA-F4BA-4659-8549-88A6AD03FFAE", 8, 1400819049, "878289", 1400819049, "878289", "{\n}", "Emerge", "Young", "Matt", "Church Street Park", "Polished concrete base with stainless steel curved bar", "Complete", "Emerge is a bike rack of two padlocks coming up from the ground. They are placed across the street from the Nashville Public Library. Emergewas selected by Americans for the Arts 2011 Public Art Network Year in Review.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Emerge.aspx", "36.16245", "-86.781914", [ null, "36.16245", "-86.781914", null, false ] ]
+, [ 9, "387D5633-9F29-4C45-A674-E772D64C5E7D", 9, 1400819049, "878289", 1400819049, "878289", "{\n}", "Lotus", "Allison", "Michael", "Fannie Mae Dees Park, 2400 Blakemore Ave., 37212", null, "Complete", "This bike rack utilizes recycled bike frames to compose the colorful organic design. “My goal in designing this rack was to make a visually and artistically interesting piece of art, while also keeping the design practical and useful. I want the rack to clearly communicate it is available to the public for the purpose of locking bicycles. I also wanted to create something that reminds the public that biking is a great healthy, environmentally-friendly way to commute and explore our city. In addition, I like the idea that the materials for this rack are sourced locally. Tied into this idea of using local materials is the concept of sustainability, which is always an undercurrent in my work. I mainly work with recycled metal and glass.  Most of the art I create is functional and many of my large metal and glass pieces serve as light fixtures.” I am passionate about public art because they allow art to reach more people than just those who can afford to purchase professional art. Public art allows people to interact with art on a daily basis instead of just in museums.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Lotus.aspx", "36.137488", "-86.805803", [ null, "36.137488", "-86.805803", null, false ] ]
+, [ 10, "9D6E3AF6-067C-41AD-802D-176F76708FEB", 10, 1400819049, "878289", 1400819049, "878289", "{\n}", "Lyrical Riders", "Novak", "Anthony", "Coleman Park Community Center, 384 Thompson Ln., 37211", null, "Complete", "In this design, bicycle and rider are synthesized into one unified, lyrical design. “I love bike and I love Nashville – except for the traffic, which is why I want to do my part as a professional artist to encourage fellow cyclists to ride instead of drive.”", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Lyrical-Rider.aspx", "36.111846", "-86.74484", [ null, "36.111846", "-86.74484", null, false ] ]
+, [ 11, "55C1EDCA-1158-4C22-8E4C-23EB8BD28336", 11, 1400819049, "878289", 1400819049, "878289", "{\n}", "Microphone", "Harmon and Hill and Lee", "Keith and Mac and Franne", "Buddy Killen Circle (Demonbruen Roundabout)", "Steel and stainless steel, powder coat", "Complete", "At the roundabout by Music Row, this rack highlights the musical tradition of Nashville.Microphone was selected by Americans for the Arts 2011 Public Art Network Year in Review.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Microphone.aspx", "36.152392", "-86.79135", [ null, "36.152392", "-86.79135", null, false ] ]
+, [ 12, "A782594E-7B0A-422B-8EAF-59D72268C9BA", 12, 1400819049, "878289", 1400819049, "878289", "{\n}", "On Air", "Griffith and Pellerin", "Samantha and Jen", "Morgan Park, 411 Hume St., 37208", null, "Complete", "This rack is an abstracted radio tower inspired by the history of live radio shows and music in Nashville. This artwork stands approximately 12 feet high with its circles of radio waves and lightning bolts crowning the top of the tower.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/On-Air.aspx", "36.180458", "-86.790428", [ null, "36.180458", "-86.790428", null, false ] ]
+, [ 13, "537A7704-ECAD-46EF-BB31-C65A54B5DFB5", 13, 1400819049, "878289", 1400819049, "878289", "{\n}", "Pedal Petroleum", "Buffet", "William", "Donelson Train Station, 2705 Lebanon Pike, 37214", null, "Complete", "Pedal Petroleum is a play on pedal powered “free gas.” Using actual gas pumps and bright colors, this rack is a fun addition to commuters’ daily treks. “The design for my bicycle rack Pedal Petroleum aims at light-hearted humor, using bright happy colors.  The implied message, that riding a bicycle displaces a certain amount of costly and noxious gasoline, is meant to be immediately grasped.  There is also some irony in the fact that the defunct gas pump is now the means of securing and protecting its rival: free transportation.”", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Pedal-Petroleum.aspx", "36.167182", "-86.665812", [ null, "36.167182", "-86.665812", null, false ] ]
+, [ 14, "EB7FF568-6469-4E90-A47D-A8A66257C738", 14, 1400819049, "878289", 1400819049, "878289", "{\n}", "Soundboard Sliders", "McDaniel", "Duncan", "12 South, 2318 12th Avenue South, 37204", null, "Complete", "Soundboard Sliders represents Nashville’s unique identity as a music production hub. \"As an avid cycler and visual artist, naturally I was excited about this project from the beginning. Mixing sculpture with a functional object such as a bike rack is a great way to promote cycling and public art, both of which are good for our city. Although we have far to go, over the past six years I have witnessed this city expand its biking culture exponentially through bike lanes, greenways, bike sharing, and artistic bicycle racks. I am proud to be a part of this growing movement and hopefully these racks will encourage more cycling while at the same time bolster an appreciation for public art.\" Duncan McDaniel lives and works in Nashville. In addition to working as a professional visual artist, he works as an art handler for various institutions including the Frist Center for the Visual Arts, Cheekwood Museum of Art and the Tennessee State Museum.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/Soundboard-Sliders.aspx", "36.126699", "-86.78912", [ null, "36.126699", "-86.78912", null, false ] ]
+, [ 15, "8C1F17E7-25AA-4D47-94D4-73FFF1CD11FF", 15, 1400819049, "878289", 1400819049, "878289", "{\n}", "The Riders", "Conley", "Seth", "Shelby Street Pedestrian Bridge", "Tube Steel", "Complete", "Made of painted tube steel, the Riders are created to look like they are riding a bicycle when it is placed parallel to the rack.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Bike-Racks/The-Riders.aspx", "36.164314", "-86.76936", [ null, "36.164314", "-86.76936", null, false ] ]
+, [ 16, "27F13373-A5E0-4AB3-9441-B0C5178138D8", 16, 1400819049, "878289", 1400819049, "878289", "{\n}", "Citizen", "Sayre", "Thomas", "Public Square Park", "Glass torsos with woven stainless steel base", "Complete", "The two figures represent the leaders of Nashville directing the development of the city, going back to founders James Robertson and John Donelson to Fisk and Tennessee A&I University students leading the Nashville Civil Rights reform to current leadership. The sculptures turn to represent every Nashvillian's participation in the city. At night, the sculptures are lit to serve as a beacon for a gathering place for all of Nashville.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Citizen.aspx", "36.166414", "-86.778467", [ null, "36.166414", "-86.778467", null, false ] ]
+, [ 17, "6EC17F47-8E32-4369-B935-74D5211F71E5", 17, 1400819049, "878289", 1400819049, "878289", "{\n}", "Continuum", "McGee", "Carrie", "Goodlettsville Public Library", "Acrylic on transparent tiles; some photographs", "Complete", "The piece is above the information desk at the library and illuminates the rich history of Goodlettsville. The tiles represent pages and the information and history that can be found within the library. The artist created a companion book to more fully explain the piece and the history behind each tile.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Continuum.aspx", "36.314567", "-86.710658", [ null, "36.314567", "-86.710658", null, false ] ]
+, [ 18, "12845677-5DCE-4B18-A564-10AE4E34A58B", 18, 1400819049, "878289", 1400819049, "878289", "{\n}", "Exploration and Discovery #1: The Spark of Discovery", "Rowe", "Ken", "Main Library Courtyard, 615 Church St. ", "Bronze, fabricated steel base", "Complete", "This is the first piece of Exploration and Discovery highlighting the role Nashville has played in art, science, and culture innovations. Among other things, a saber tooth tiger skull is buried underneath the children as a reference to the skull found in the AmSouth building excavation and representing the things that came before us.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Exploration-and-Discovery.aspx", "36.162154", "-86.781827", [ null, "36.162154", "-86.781827", null, false ] ]
+, [ 19, "18487D11-8B7A-4E9E-8B33-F4B327E16101", 19, 1400819049, "878289", 1400819049, "878289", "{\n}", "Exploration and Discovery #2: The Scholar", "Rowe", "Ken", "Main Library Courtyard, 615 Church St. ", "Cast bronze, fabricated bronze, fabricated steel base", "Complete", "The second piece of \"Exploration and Discovery\" represents the active pursuit of knowledge. The rug beneath the scholar is worn from looking into the telescopes. The planets are in the astronomical position of December 25, 1779, the day James Robertson crossed the Cumberland River and onto the future site of Nashville. Six of the telescopes are aimed at Nashville landmarks and two at astronomical bodies.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Exploration-and-Discovery.aspx", "36.162154", "-86.781827", [ null, "36.162154", "-86.781827", null, false ] ]
+, [ 20, "B8BD7C9D-8097-4D80-95B5-42A430AFA807", 20, 1400819049, "878289", 1400819049, "878289", "{\n}", "Exploration and Discovery #3: To the Moon", "Rowe", "Ken", "Main Library Courtyard, 615 Church St. ", "Bronze, cast glass with bronze rim, granite", "Complete", "The third piece of \"Exploration and Discovery\" represents reaching the aim of knowledge as she only reaches the moon through standing on a tower of books and objects. The objects in the stack represent various aspects of local history, the musical tradition, space and astronomical exploration, and local flora and fauna.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Exploration-and-Discovery.aspx", "36.162154", "-86.781827", [ null, "36.162154", "-86.781827", null, false ] ]
+, [ 21, "F4ECEBB2-F825-49D5-BA33-6A06A5C89F83", 21, 1400819049, "878289", 1400819049, "878289", "{\n}", "Ghost Ballet for the East Bank Machineworks", "Aycock", "Alice", "East Bank Greenway", "Steel, neon, aluminum, industrial metals", "Complete", "This piece is a representation of the transformation of the East Bank from an industrial area to an area for recreation and play. The trusses and crane base show the past industrial use of the area, while the circular and changing motion represents the transformation of the area.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Ghost-Ballet.aspx", "36.163256", "-86.772114", [ null, "36.163256", "-86.772114", null, false ] ]
+, [ 22, "E0730646-333B-4405-9139-D36A1AAC71BC", 22, 1400819049, "878289", 1400819049, "878289", "{\n}", "Magnolia Shelters (Charlotte Ave)", "Berry", "Kevin", "28th/31st Avenue Connector", null, "Complete", "These transit shelters continue the theme of connectivity by drawing inspiration from both Hadley Park and Centennial Park. The roof of the structure is mirrored after the roof of the amphitheater in Hadley Park, while the columns are modeled after those on the Parthenon replica. The magnolia shade screens and cast concrete bench celebrate the beauty of the magnolia trees in our community.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Magnolia-Transit-Shelters.aspx", "36.153674", "-86.818316", [ null, "36.153674", "-86.818316", null, false ] ]
+, [ 23, "7D755B53-A8B1-4BDA-B30D-522D1AA4AF95", 23, 1400819049, "878289", 1400819049, "878289", "{\n}", "Reflection", "Argent", "Lawrence", "Shelby Park", "Black granite and stainless steel", "Complete", "The mockingbird is Tennessee's state bird as well as an intelligent and playful bird. Inspiration comes from the site's history as an amusement park and is expressed in the bird's mirror-like surface which is constantly changing what it reflects. The wall and the hole suggest curiosity and passage as well as carrying the theme of play and amusement.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Reflection.aspx", "36.168381", "-86.729916", [ null, "36.168381", "-86.729916", null, false ] ]
+, [ 24, "8C812B85-8C88-42AA-B31D-864463AB80D1", 24, 1400819049, "878289", 1400819049, "878289", "{\n}", "Seasons from a Bird's Eye View", "Easter and Goostree", "Page and Dan", "Goodlettsville Public Library", "Tile and stone mosaic", "Complete", "Mosaic walls that provide the border of a garden to be planted outside of the library.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Seasons-from-a-Birds-Eye-View.aspx", "36.313942", "-86.710572", [ null, "36.313942", "-86.710572", null, false ] ]
+, [ 25, "19DAC4D1-160A-4FEB-B2BF-E9BE9FEBAEDA", 25, 1400819049, "878289", 1400819049, "878289", "{\n}", "Thread (Connector Bridge)", "Dahlquist", "David", "28th/31st Avenue Connector", null, "Complete", "The artwork concept for the 28th Avenue Connector Bridge centers on themes of connectivity. The bridge is intended to connect two formerly separated neighborhoods and cultural areas. Dahlquist explores the new connectivity through themes of sewing, thread, and tying. Dahlquist ties all of this together with the metaphor of quilting to building community. Dahlquist will work with the community to develop individual quilt square patters, each of which will act as a QR code that links back to video and content of the community members' stories and background.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Thread-and-Needle.aspx", "36.150571", "-86.818648", [ null, "36.150571", "-86.818648", null, false ] ]
+, [ 26, "5F608DA9-1EB2-4227-A45F-688132538108", 26, 1400819049, "878289", 1400819049, "878289", "{\n}", "Needle (Transit Shelter)", "Dahlquist", "David", "28th/31st Avenue Connector", null, "Complete", "This transit shelter compliments the theme of quilting and connectivity that runs through the connector bridge.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Thread-and-Needle.aspx", "36.149839", "-86.818187", [ null, "36.149839", "-86.818187", null, false ] ]
+, [ 27, "7C9F3645-41D3-4414-932D-D7F64A96A2D4", 27, 1400819049, "878289", 1400819049, "878289", "{\n}", "Watermark: Anchor in the Storm", "Benson", "Lee and Betty", "West Park Community Center", "Yellow pine logs, limestone boulder, anchor chain", "Complete", "Collaborative artists Lee & Betty Benson write, “Our piece is conceived on the ties between the West Park neighborhood and the Rogers Group, Inc. REOStone Limestone Quarry; we see the two inextricably linked by the millennial flood that occurred in May, 2010.”", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Watermarks.aspx", "36.161024", "-86.863058", [ null, "36.161024", "-86.863058", null, false ] ]
+, [ 28, "29A82251-1CF5-459F-8127-A35E3691749D", 28, 1400819049, "878289", 1400819049, "878289", "{\n}", "Watermark: Bench Mark", "Nutt", "Craig", "Harpeth Knoll Park", "Polychrome concrete", "Complete", "Artist Craig Nutt writes about his experience participating in the Bellevue community meeting, \"Flood experiences ranged from helping neighbors to the loss of family members....", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Watermarks.aspx", "36.058934", "-86.937682", [ null, "36.058934", "-86.937682", null, false ] ]
+, [ 29, "D0B7321C-1BCA-4D6A-83F6-60BAD156EF51", 29, 1400819049, "878289", 1400819049, "878289", "{\n}", "Watermark: Emergence", "Jackson", "Buddy", "Hartman Park", "Cast water-impermeable concrete, powdered pigments", "Complete", "Jackson writes, \"“I learned at the community meeting, that unlike other areas of Nashville, the flood is very much still in the Bordeaux community…Many homes still remain abandoned, and many people are still struggling to find resolution. I also discovered a very strong sense of pride in the community of Bordeaux…", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Watermarks.aspx", "36.20981", "-86.824725", [ null, "36.20981", "-86.824725", null, false ] ]
+, [ 30, "81DB984E-EEFD-4A16-BA86-EFF57232E195", 30, 1400819049, "878289", 1400819049, "878289", "{\n}", "Watermark: Liquid 615", "Allison", "Michael", "Antioch Community Center", "Blue glass, LED lighting, galvanized metal", "Complete", "The artist Michael Allison writes, “The drops represent the flood waters, but also the tears of the individuals in the Antioch community....\"", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Watermarks.aspx", "36.055845", "-86.673", [ null, "36.055845", "-86.673", null, false ] ]
+, [ 31, "1C4B1488-BDA6-42DD-8FAD-B577F1F97529", 31, 1400819049, "878289", 1400819049, "878289", "{\n}", "Watermark: Pier", "Coté", "Derek", "Cumberland River Pedestrian Bridge", "Composite decking, aluminum, windsocks", "Complete", "Coté describes, “The artwork is intended to provide a place for visitors to slow down and reflect on the beauty and physical presence of the Cumberland River rather than be reminded specifically of the devastating floods of 2010....", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Watermarks.aspx", "36.189788", "-86.689544", [ null, "36.189788", "-86.689544", null, false ] ]
+, [ 32, "1C19183A-9844-450E-B380-B2A09EC0084A", 32, 1400819049, "878289", 1400819049, "878289", "{\n}", "Watermark: Tool Fire", "Fennell", "Christopher", "Shelby Bottoms Park", "Welded metal hand tools, metal pipe, paint", "Complete", "Artist Christopher Fennell writes, “Referencing the tremendous clean up efforts by the community and volunteers, the sculpture is a construction of hand tools over the existing fire pit next to the suspension bridge. The shape of each panel will be built from tools welded together and painted black....", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Watermarks.aspx", "36.190825", "-86.691912", [ null, "36.190825", "-86.691912", null, false ] ]
+, [ 33, "4E2C9F18-57F6-4248-8221-C4E32F063973", 33, 1400819049, "878289", 1400819049, "878289", "{\n}", "Great Beginnings", "Precious", "Beverly Stucker", "Bellevue Library (Exterior)", null, "In Progress", "Project in progress", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Projects-in-Progress/Bellevue-Library.aspx", "36.073381", "-86.935262", [ null, "36.073381", "-86.935262", null, false ] ]
+, [ 34, "BAC9AB52-FAED-454F-90B0-C97FA6158C8E", 34, 1400819049, "878289", 1400819049, "878289", "{\n}", "Rise Above", "Stein", "Brenda", "Bellevue Library (Interior)", null, "In Progress", "Project in progress", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Projects-in-Progress/Bellevue-Library.aspx", "36.073381", "-86.935262", [ null, "36.073381", "-86.935262", null, false ] ]
+, [ 35, "CA2C5AA5-72F0-4487-A14B-5C9B9C679D14", 35, 1400819049, "878289", 1400819049, "878289", "{\n}", "Civil Rights Public Art Project", "Hood", "Walter", "Public Square, located on the west side of the historic Metro Nashville Courthouse", null, "In Progress", "Project in progress", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Projects-in-Progress/Civil-Rights-Public-Art-Project.aspx", "36.166848", "-86.779096", [ null, "36.166848", "-86.779096", null, false ] ]
+, [ 36, "B3684608-400A-41B1-BCB2-0D007DD94863", 36, 1400819049, "878289", 1400819049, "878289", "{\n}", "Edmondson Park Project", "Dial and Holley", "Thornton and Lonnie", "Edmondson Park", null, "In Progress", "Project in progress", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Projects-in-Progress/Edmondson-Park.aspx", "36.159382", "-86.797346", [ null, "36.159382", "-86.797346", null, false ] ]
+, [ 37, "ADF174A2-851C-4B16-9E29-3B5DA6D0D710", 37, 1400819049, "878289", 1400819049, "878289", "{\n}", "Stix", "Moeller", "Christian", "Korean Veterans Boulevard and 8th Avenue", null, "In Progress", "Project in progress", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Projects-in-Progress/KVB-Roundabout-Project.aspx", "36.154697", "-86.779386", [ null, "36.154697", "-86.779386", null, false ] ]
+, [ 38, "55D9A318-ED82-4A5C-A22E-F6497DC4887A", 38, 1400819049, "878289", 1400819049, "878289", "{\n}", "Circulate", "Carlson", "Erik", "Lentz Public Health Center, Charlotte Avenue building", null, "In Progress", "Project in progress", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Projects-in-Progress/Lentz-Public-Health-Center.aspx", "36.155665", "-86.813369", [ null, "36.155665", "-86.813369", null, false ] ]
+, [ 39, "CDE1CC84-FC63-4439-803C-1151E69792B1", 39, 1400819049, "878289", 1400819049, "878289", "{\n}", "From the Four Corners", "Vexler", "Paul", "Southeast Davidson Public Library and Regional Community Center", null, "In Progress", "Project in progress", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Projects-in-Progress/Southeast-Davidson-Library-and-Community-Center.aspx", "36.052048", "-86.655822", [ null, "36.052048", "-86.655822", null, false ] ]
+, [ 40, "315F96A3-0923-43D7-A692-7786A3669E75", 40, 1400819049, "878289", 1400819049, "878289", "{\n}", "Musica", "LeQuire", "Alan", "Buddy Killen Circle (Demonbruen Roundabout)", "Bronze, Limestone", "Complete", "Musica features nine dancing figures in a circular composition roughly thirty-eight feet tall. There are five figures which spring forth from the base in an over-all vase form. Four more rise up in the center floating above the others. Each figure is fourteen to fifteen feet, or more than twice life-size. The dancers and part of the base are cast in bronze. The other part of the base is composed of massive natural limestone boulders.", "http://www.nashville.gov/Arts-Commission/Public-Art/Find-An-Artwork/Collection/Musica.aspx", "36.152092", "-86.791617", [ null, "36.152092", "-86.791617", null, false ] ]
+ ]
+}
