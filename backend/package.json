@@ -11,7 +11,7 @@
   "dependencies": {
     "express": "^4.12.3",
     "lodash": "^3.5.0",
-    "mongo": "^0.1.0",
+    "mongodb": "^1.4.34"
   },
   "devDependencies": {
     "flow": "^0.2.3",
