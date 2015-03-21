@@ -1,5 +1,12 @@
 {
     "jscodehints.detectedExclusions": [
+<<<<<<< HEAD
         "/Users/lawrencehumphrey/Dev/hashville/bower_components/lodash/dist/lodash.underscore.min.js"
+=======
+        "/Users/noah/Dropbox/programming/projects/hashville/bower_components/lodash/dist/lodash.underscore.min.js",
+        "/Users/noah/Dropbox/programming/projects/hashville/bower_components/lodash/dist/lodash.underscore.js",
+        "/Users/noah/Dropbox/programming/projects/hashville/js/app.js",
+        "/Users/noah/Dropbox/programming/projects/hashville/bower_components/lodash/dist/lodash.min.js"
+>>>>>>> 6dde4ffd33b765f3108d59f76390cc438a0d971a
     ]
 }
