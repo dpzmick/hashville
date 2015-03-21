@@ -33,19 +33,6 @@ angular.module('hashControllers', [])
         
         $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
         
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                actualLocation = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-//                $scope.map.setCenter(actualLocation);
-            });
-        }
-        
-        var rendererOptions = { 
-            map: $scope.map,
-//            suppressMarkers: true
-        };
-        var directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
-        
         $scope.data = {
             itinerary: [
                 {
@@ -80,23 +67,21 @@ angular.module('hashControllers', [])
         
         var points = parseJSON($scope.data);
 
-        var org = new google.maps.LatLng(lat, long);
-        var dest = points.suggestions[0].location;
-
-        var request = {
-            origin: org,
-            destination: dest,
-            waypoints: points.itinerary,
-            travelMode: google.maps.DirectionsTravelMode.WALKING
+        var origin = new google.maps.LatLng(lat, long);
+        var destination = points.suggestions[0].location;
+        
+        var rendererOptions = { 
+            map: $scope.map,
+    //        suppressMarkers: true
         };
-
-        var directionsService = new google.maps.DirectionsService();
-        directionsService.route(request, function(response, status) {
-            if (status == google.maps.DirectionsStatus.OK) {
-                directionsDisplay.setDirections(response);
-            }
-            else
-                alert ('failed to get directions');
-        });
+        
+        var directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+        
+        plotRoute($scope.map, directionsDisplay, origin, destination, points.itinerary);
+        
+        $scope.switchSuggestion = function(i) {
+            var dest = points.suggestions[i].location;
+            plotRoute($scope.map, directionsDisplay, origin, dest, points.itinerary);
+        }
     }
 ]);
