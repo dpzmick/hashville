@@ -7,21 +7,19 @@ angular.module('hashControllers', ['uiGmapgoogle-maps'])
         $scope.when = "How long will you be in Nashville?";
 }])
 
-.controller('ItineraryCtrl', ['$scope', 'uiGmapGoogleMapApi',
-    function($scope, uiGmapGoogleMapApi) {
-        $scope.lat = 36.17;
-        $scope.long = -86.78;
-        uiGmapGoogleMapApi.then(function(maps) {
-            $scope.map = { 
-                center: { latitude: $scope.lat, longitude: $scope.long }, 
-                zoom: 8,
-                options: {
-                    scrollwheel: false,
-//                    draggable: false,
-                    keyboardShortcuts: false,
-                    disableDoubleClickZoom: true,
-                    disableDefaultUI: true
-                }
-            };
-    });
-}]);
+.controller('ItineraryCtrl', ['$scope',
+    function($scope) {
+        var mapOptions = {
+            zoom: 8,
+            center: new google.maps.LatLng(37.0000, -80.0000),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false,
+            draggable: false,
+            keyboardShortcuts: false,
+            disableDoubleClickZoom: true,
+            disableDefaultUI: true
+        }
+        
+        $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    }
+]);
