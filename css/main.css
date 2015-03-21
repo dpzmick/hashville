@@ -4,14 +4,16 @@ html, body {
   overflow-x: hidden; }
 
 /* line 27, /Users/lawrencehumphrey/Dev/hashville/css/main.scss */
-html {
+.wrapper {
+  width: 100%;
+  height: 100vh;
   background: url(../img/nashville-603784_1920.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
 
-/* line 32, /Users/lawrencehumphrey/Dev/hashville/css/main.scss */
+/* line 34, /Users/lawrencehumphrey/Dev/hashville/css/main.scss */
 .input {
   position: absolute;
   top: 45%;
