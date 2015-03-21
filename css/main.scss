@@ -1,0 +1,32 @@
+.keys {
+    color: blue;
+}
+
+#rental {
+    label:first-child {
+        width: 120px;
+        text-align: right;
+        display: inline-block;
+    }
+    
+    button {
+        margin-left: 124px;
+    }
+    
+    .error {
+        color: red;   
+    }
+}
+
+.log { 
+    width: 100%;
+    margin-top: 20px;
+    
+    th {
+        text-align: left;
+    }
+    
+    tr {
+        margin-bottom: 6px;
+    }
+}
