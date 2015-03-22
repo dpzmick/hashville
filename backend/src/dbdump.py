@@ -3,21 +3,21 @@ from pymongo import MongoClient
 
 data_info = [
     {
-        'fname': '/Users/dz0004455/programming/hashville/backend/raw_data/Art_in_Public_Places.csv',
+        'fname': '/Users/zmmille2/playground/hashville/backend/raw_data/Art_in_Public_Places.csv',
         'desc_fields': {'title': 0, 'last_name': 1, 'first_name': 2, 'medium': 4, 'type_': 5, 'desc': 6},
         'lat_field': 7,
         'long_field': 8,
         'db_collection': 'public_art'
     },
     {
-        'fname': '/Users/dz0004455/programming/hashville/backend/raw_data/Historic_Markers.csv',
+        'fname': '/Users/zmmille2/playground/hashville/backend/raw_data/Historic_Markers.csv',
         'desc_fields': {'title': 0},
         'lat_field': 4,
         'long_field': 5,
         'db_collection': 'historical_markers'
     },
     {
-        'fname': '/Users/dz0004455/programming/hashville/backend/raw_data/Metro_Public_Art_Collection.csv',
+        'fname': '/Users/zmmille2/playground/hashville/backend/raw_data/Metro_Public_Art_Collection.csv',
         'desc_fields': {'title': 0, 'last_name': 1, 'first_name': 2, 'medium': 4, 'desc': 6},
         'lat_field': 8,
         'long_field': 9,
@@ -37,16 +37,21 @@ for dtype in data_info:
     with open(dtype['fname'], 'rb') as csvfile:
         read = csv.reader(csvfile, delimiter=',')
         for row in list(read)[1:]: # assume everyone has a header
-            datum = {
-                    'desc': {},
-                    'lat' : row[dtype['lat_field']],
-                    'long': row[dtype['long_field']]
-            }
+            try:
+                datum = {
+                        'desc': {},
+                        'lat' : float(row[dtype['lat_field']]),
+                        'long': float(row[dtype['long_field']])
+                }
 
-            # build description
-            for field, index in dtype['desc_fields'].iteritems():
-                datum['desc'][field] = row[index]
+                # build description
+                for field, index in dtype['desc_fields'].iteritems():
+                    datum['desc'][field] = row[index]
 
-            # push to database
-            dtype_collection.insert(datum)
+                # push to database
+                dtype_collection.insert(datum)
+
+            except ValueError:
+                # some of the rows in the history data don't have location info
+                pass
 
