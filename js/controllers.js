@@ -1,40 +1,41 @@
 angular.module('hashControllers', [])
 
+//.controller('LandingCtrl', ['$scope',
+//    function($scope, Info) {
+//        
+//        // Create the autocomplete object, restricting the search
+//        // to geographical location types.
+//        var autocomplete = new google.maps.places.Autocomplete(
+//        /** @type {HTMLInputElement} */(document.getElementById('autocomplete')),
+//        { types: ['geocode'] });
+//        // When the user selects an address from the dropdown,
+//        // populate the address fields in the form.
+//        google.maps.event.addListener(autocomplete, 'place_changed', function() {
+//            console.log(autocomplete);
+//        });
+//        
+//        $scope.geolocate = function() {
+//            if (navigator.geolocation) {
+//                navigator.geolocation.getCurrentPosition( function(position) {
+//                    var geolocation = new google.maps.LatLng(
+//                        position.coords.latitude, 
+//                        position.coords.longitude);
+//
+//                    var circle = new google.maps.Circle({
+//                        center: geolocation,
+//                        radius: position.coords.accuracy
+//                    });
+//
+//                    autocomplete.setBounds(circle.getBounds());
+//                });
+//            }
+//        }
+//        $scope.submit = function() {
+//            $location.path('/plan');
+//}])
+
 .controller('LandingCtrl', ['$scope',
     function($scope, Info) {
-        
-        // Create the autocomplete object, restricting the search
-        // to geographical location types.
-        var autocomplete = new google.maps.places.Autocomplete(
-        /** @type {HTMLInputElement} */(document.getElementById('autocomplete')),
-        { types: ['geocode'] });
-        // When the user selects an address from the dropdown,
-        // populate the address fields in the form.
-        google.maps.event.addListener(autocomplete, 'place_changed', function() {
-            console.log(autocomplete);
-        });
-        
-        $scope.geolocate = function() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition( function(position) {
-                    var geolocation = new google.maps.LatLng(
-                        position.coords.latitude, 
-                        position.coords.longitude);
-
-                    var circle = new google.maps.Circle({
-                        center: geolocation,
-                        radius: position.coords.accuracy
-                    });
-
-                    autocomplete.setBounds(circle.getBounds());
-                });
-            }
-        }
-        
-        $scope.submit = function() {
-            $location.path('/plan');
-        }
-        
         var scrollVal = 0;
 
         var layer0 = document.getElementById("layer-0");
@@ -43,11 +44,11 @@ angular.module('hashControllers', [])
         var layer3 = document.getElementById("layer-3");
         var layer4 = document.getElementById("layer-4");
         var layer5 = document.getElementById("layer-5");
-        var layer6 = document.getElementById("layer-6");
+        //var layer6 = document.getElementById("layer-6");
 
         function parallaxy()
         {   
-            offset6 = -(scrollVal * 1.0);
+        //	offset6 = -(scrollVal * 1.0);
             offset5 = -(scrollVal * 0.7);
             offset4 = -(scrollVal * 0.5);
             offset3 = -(scrollVal * 0.3);
@@ -91,11 +92,11 @@ angular.module('hashControllers', [])
             layer5.style.OTransform = "translate3d(0, " + offset5 + "px, 0)";
             layer5.style.transform = "translate3d(0, " + offset5 + "px, 0)";
 
-            layer6.style.webkitTransform = "translate3d(0, " + offset6 + "px, 0)";
-            layer6.style.MozTransform = "translate3d(0, " + offset6 + "px, 0)";
-            layer6.style.msTransform = "translateY(" + offset6 + "px)";
-            layer6.style.OTransform = "translate3d(0, " + offset6 + "px, 0)";
-            layer6.style.transform = "translate3d(0, " + offset6 + "px, 0)";
+        //	layer6.style.webkitTransform = "translate3d(0, " + offset6 + "px, 0)";
+        //	layer6.style.MozTransform = "translate3d(0, " + offset6 + "px, 0)";
+        //	layer6.style.msTransform = "translateY(" + offset6 + "px)";
+        //	layer6.style.OTransform = "translate3d(0, " + offset6 + "px, 0)";
+        //	layer6.style.transform = "translate3d(0, " + offset6 + "px, 0)";
         }
 
 
@@ -107,6 +108,38 @@ angular.module('hashControllers', [])
         }
 
         document.addEventListener('scroll', scrollHandler, false);
+        
+//        // Create the autocomplete object, restricting the search
+//        // to geographical location types.
+//        var autocomplete = new google.maps.places.Autocomplete(
+//        /** @type {HTMLInputElement} */(document.getElementById('autocomplete')),
+//        { types: ['geocode'] });
+//        // When the user selects an address from the dropdown,
+//        // populate the address fields in the form.
+//        google.maps.event.addListener(autocomplete, 'place_changed', function() {
+//            console.log(autocomplete);
+//        });
+//        
+//        $scope.geolocate = function() {
+//            if (navigator.geolocation) {
+//                navigator.geolocation.getCurrentPosition( function(position) {
+//                    var geolocation = new google.maps.LatLng(
+//                        position.coords.latitude, 
+//                        position.coords.longitude);
+//
+//                    var circle = new google.maps.Circle({
+//                        center: geolocation,
+//                        radius: position.coords.accuracy
+//                    });
+//
+//                    autocomplete.setBounds(circle.getBounds());
+//                });
+//            }
+//        }
+//        
+//        $scope.submit = function() {
+//            $location.path('/plan');
+//        }
     }
 ])
 
@@ -139,31 +172,31 @@ angular.module('hashControllers', [])
         $scope.data = {
             itinerary: [
                 {
-                    name: "cafe-coco", lat: 36.151912, lon: -86.804893
+                    name: "Cafe Coco", lat: 36.151912, lon: -86.804893
                 },
                 {
-                    name: "frist", lat: 36.157501, lon: -86.783707
+                    name: "Frist", lat: 36.157501, lon: -86.783707
                 },
                 {
-                    name: "edleys", lat: 36.175921, lon: -86.756294
+                    name: "Edleys", lat: 36.175921, lon: -86.756294
                 },
                 {
-                    name: "parthenon", lat: 36.149608, lon: -86.81262
+                    name: "Parthenon", lat: 36.149608, lon: -86.81262
                 }
             ],
 
             suggestions: [
                 {
-                    name: "filling-station", lat: 36.122781, lon: -86.789652
+                    name: "The Filling Station", lat: 36.122781, lon: -86.789652
                 },
                 {
-                    name: "climb-nashville", lat: 36.153031, lon: -86.828027
+                    name: "Climb Nashville", lat: 36.153031, lon: -86.828027
                 },
                 {
-                    name: "contra", lat: 36.110897, lon: -86.801207
+                    name: "Contra", lat: 36.110897, lon: -86.801207
                 },
                 {
-                    name: "ryman", lat: 36.161248, lon: -86.778471
+                    name: "Ryman", lat: 36.161248, lon: -86.778471
                 }
             ]
         };

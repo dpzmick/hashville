@@ -1,16 +1,22 @@
-/* line 25, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 22, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 27, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 html, body {
   max-width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: 'Hind', sans-serif; }
 
-/* line 30, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 33, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing .parallax {
   background: url(../img/background.png) no-repeat center center;
   background-size: cover;
   position: relative;
   height: 840px;
   z-index: 10; }
-/* line 38, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 41, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing .parallax_layer {
   background-position: bottom center;
   background-size: cover;
@@ -23,30 +29,84 @@ html, body {
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
-/* line 52, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 55, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing #layer-0 {
   background-image: url("../img/welcometonashville.png"); }
-/* line 53, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 56, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing #layer-1 {
   background-image: url("../img/moon.png"); }
-/* line 54, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 57, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing #layer-2 {
   background-image: url("../img/city_layer3.png"); }
-/* line 55, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 58, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing #layer-3 {
   background-image: url("../img/city_layer2.png"); }
-/* line 56, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 59, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing #layer-4 {
   background-image: url("../img/city_layer1.png"); }
-/* line 57, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 60, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing #layer-5 {
   background-image: url("../img/bridge.png"); }
 
-/* line 60, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 63, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 #autocomplete {
   width: 480px; }
 
-/* line 64, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 68, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.itin_page {
+  box-sizing: border-box;
+  padding: 60px 0 60px 80px;
+  height: 100%; }
+  /* line 73, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  .itin_page ul {
+    list-style: none;
+    padding: 0; }
+
+/* line 76, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.itin_page header {
+  font-weight: 300;
+  font-size: 1.4em;
+  padding-bottom: 40px;
+  color: #aaa; }
+
+/* line 82, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.itinerary, .suggestions {
+  float: left;
+  height: 100%; }
+  /* line 86, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  .itinerary li, .suggestions li {
+    padding: 10px 0; }
+    /* line 89, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+    .itinerary li h3, .suggestions li h3 {
+      font-weight: 300; }
+
+/* line 95, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.itinerary h2, .suggestions h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1em; }
+
+/* line 100, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.itinerary {
+  width: 360px;
+  border-right: 1px solid #aaa; }
+  /* line 104, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  .itinerary .options {
+    text-align: center; }
+
+/* line 109, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.suggestions {
+  width: 524px; }
+  /* line 112, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  .suggestions li {
+    padding-left: 60px;
+    cursor: pointer; }
+    /* line 116, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+    .suggestions li:hover {
+      background-color: #e2edf2; }
+
+/* line 122, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 #map {
   position: absolute;
   right: 0;
