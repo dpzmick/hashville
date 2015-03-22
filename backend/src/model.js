@@ -262,9 +262,14 @@ class DataModel {
                 '&types=' + type + '&rankby=distance')
             .on('response', function(response) { 
                 if(response.status === 'OK') {
+                // I'm not sure this is doing what I want it to do. How does the
+                // application know that response has a suptype results?
                     var data = response.results
+
                     jsonQuery('results.name, results.geometry.location.lat, results.geometrey.location.lng', {data: data});
 
+            // This still isn't logging anything
+                    console.log(data);
                     callback(data);
                 } else {
                     callback(null);
