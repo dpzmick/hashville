@@ -37,8 +37,8 @@ angular.module('hashControllers', [])
     }
 ])
 
-.controller('ItineraryCtrl', ['$scope',
-    function($scope, Info) {
+.controller('ItineraryCtrl', ['$scope', '$http',
+    function($scope, $http) {
         $scope.travel_mode = "walking";
         $scope.current_suggestion = 0;
         
@@ -58,8 +58,6 @@ angular.module('hashControllers', [])
             disableDefaultUI: true,
             styles: mapStyle
         }
-        
-        $scope.travel_time = "";
         
         $scope.map = new google.maps.Map(document.getElementById('map'), mapOptions);
         
@@ -95,6 +93,11 @@ angular.module('hashControllers', [])
             ]
         };
         
+        $http.get('http://localhost:3000/near?type=art&latitude=36.052948&longitude=-86.65582&radius=10000').
+            success(function(response) {
+                console.log(response);
+            });
+        
         var points = parseJSON($scope.data);
 
         var origin = new google.maps.LatLng(lat, long);
@@ -118,9 +121,11 @@ angular.module('hashControllers', [])
                 hours   = Math.floor(seconds/3600 % 24),
                 minutes = Math.floor(seconds/60   % 60);
             
-            $scope.travel_time = (days    ? days    + " days "    : "")
-                        + (hours   ? hours   + " hours "   : "")
-                        + (minutes ? minutes + " minutes " : "");
+            var time = (days    ? days    + " days "    : "")
+                     + (hours   ? hours   + " hours "   : "")
+                     + (minutes ? minutes + " minutes " : "");
+            
+            $('.travel_time').text(time);
         }
         
         $scope.switchSuggestion = function(i) {
