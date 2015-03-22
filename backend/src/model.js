@@ -43,6 +43,35 @@ model.fromDatabaseConnection = function(url: string, callback: Function) {
     });
 }
 
+// options
+// db: MongoClient.Db
+// collection: string
+// filterFunc: Function (lat, lon) -> bool // probably repetitive but w/e
+// sortFunc: Function (e) -> sortable value
+// mapFunc: Function (e) -> e to return
+// callback: Function (lastData)
+var genericFilterFunction = function(options: Object) {
+    options.db.collection(options.collection, function (err, coll) {
+        // get all of the data from the collection, do a filter manually
+        // don't tell anyone
+        coll.find().toArray(function(err, res) {
+            if (err) {
+                options.callback(null);
+            } else {
+                var kept = _.filter(res, function(e) {
+                    return options.filterFunc(e['lat'], e['long']);
+                });
+
+                var unmapped = _.sortBy(kept, options.sortFunc);
+
+                var data = _.map(unmapped, options.mapFunc);
+
+                options.callback(data);
+            }
+        });
+    });
+}
+
 class DataModel {
     db: MongoClient.Db;
 
@@ -50,37 +79,64 @@ class DataModel {
         this.db = db;
     }
 
+    // I think this might be more gross than I was hoping sorry!
     getArtNear(options: any, callback: Function) {
         var latitude  = options.latitude;
         var longitude = options.longitude;
         var radius    = options.radius;
 
+        // set up options for first round
         var filterFunc = within(latitude, longitude, radius);
 
-        // do first arts
-        var collection = this.db.collection('metro_public_art', function (err, coll) {
+        var sortFunc = function(e) {
+            return Math.sqrt(
+                Math.pow(latitude - e['lat'], 2),
+                Math.pow(longitude - e['long'], 2));
+        };
 
-            // get all of the data from the collection, do a filter manually
-            // don't tell anyone
-            coll.find().toArray(function(err, res) {
-                if (err) {
-                    callback(null);
-                } else {
-                    var kept = _.filter(res, function(e) {
-                        var tmp = filterFunc(e['lat'], e['long']);
-                        return tmp;
-                    });
+        var firstMapFunc = function (e) {
+            return {
+                'title': e['desc']['title'],
+                'lat': e['lat'],
+                'lon': e['long']
+            }
+        };
 
-                    callback(_.sortBy(res, function(e) {
-                        return Math.sqrt(
-                            Math.pow(latitude - e['lat'], 2),
-                            Math.pow(collection - e['long'], 2));
-                    }));
-
-                    // TODO second arts..
+        var innerCallback = function (data) {
+            if (data) {
+                var innerInnerCallback = function (innerData) {
+                    if (innerData) {
+                        callback(innerData.concat(data));
+                    } else {
+                        callback(null);
+                    }
                 }
-            })
-        });
+
+                var innerOptions = {
+                    'db': this.db,
+                    'collection': 'public_art',
+                    filterFunc: filterFunc,
+                    sortFunc: sortFunc,
+                    mapFunc: firstMapFunc,
+                    callback: innerInnerCallback
+                }
+
+                genericFilterFunction(innerOptions);
+            } else {
+                callback(null);
+            }
+        }
+
+        var firstOptions = {
+            db: this.db,
+            collection: 'metro_public_art',
+            filterFunc: filterFunc,
+            sortFunc: sortFunc,
+            mapFunc: firstMapFunc,
+            callback: innerCallback
+        }
+
+        genericFilterFunction(firstOptions);
     }
 
     getHistoricalNear(options: any, callback: Function) {
