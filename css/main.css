@@ -84,7 +84,7 @@ html, body {
   /* line 88, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .input button {
     background: none;
-    background-color: red;
+    background-color: #c64747;
     border: none;
     outline: none;
     padding: 8px 50px;
@@ -111,21 +111,36 @@ html, body {
   font-size: 1.4em;
   padding-bottom: 40px;
   color: #aaa; }
+  /* line 119, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  .itin_page header img {
+    position: relative;
+    top: 1px;
+    margin-right: 12px;
+    width: 24px;
+    height: auto; }
 
-/* line 120, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 129, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .itinerary, .suggestions {
   float: left;
   height: 100%; }
-  /* line 124, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  /* line 133, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .itinerary li, .suggestions li {
     padding: 10px 0; }
-    /* line 127, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+    /* line 136, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+    .itinerary li img, .suggestions li img {
+      height: 44px;
+      width: auto;
+      margin-right: 2px;
+      position: relative;
+      top: 14px; }
+    /* line 144, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
     .itinerary li h3, .suggestions li h3 {
+      display: inline-block;
       font-weight: 300;
       font-size: 1.3em;
       letter-spacing: 1px; }
 
-/* line 134, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 152, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .itinerary h2, .suggestions h2 {
   text-transform: uppercase;
   text-align: center;
@@ -133,15 +148,15 @@ html, body {
   font-size: 1.1em;
   margin-bottom: 12px; }
 
-/* line 140, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 158, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .itinerary {
   width: 360px;
   border-right: 1px solid #aaa; }
-  /* line 144, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  /* line 162, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .itinerary .options {
     text-align: center; }
 
-/* line 150, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 168, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options label {
   cursor: pointer;
   display: inline-block;
@@ -151,47 +166,60 @@ html, body {
   font-size: 0.8em;
   font-weight: 300;
   color: #aaa; }
-/* line 160, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 178, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options label[for="travel-driving"] {
   background: url(../img/icons/driving.png) no-repeat top center;
-  background-size: auto 40px; }
-/* line 165, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  background-size: auto 50px; }
+/* line 183, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.options input:checked + label[for="travel-driving"] {
+  background: url(../img/icons/driving_red.png) no-repeat top center;
+  background-size: auto 50px; }
+/* line 188, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options label[for="travel-walking"] {
   background: url(../img/icons/walking.png) no-repeat top center;
-  background-size: auto 40px; }
-/* line 170, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  background-size: auto 50px; }
+/* line 193, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.options input:checked + label[for="travel-walking"] {
+  background: url(../img/icons/walking_red.png) no-repeat top center;
+  background-size: auto 50px; }
+/* line 198, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options label[for="travel-bicycling"] {
   background: url(../img/icons/biking.png) no-repeat top center;
-  background-size: auto 40px; }
-/* line 175, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  background-size: auto 50px; }
+/* line 203, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.options input:checked + label[for="travel-bicycling"] {
+  background: url(../img/icons/biking_red.png) no-repeat top center;
+  background-size: auto 50px; }
+/* line 208, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options input {
   display: none; }
-/* line 177, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 210, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options input:checked + label {
-  color: red; }
-/* line 181, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  color: #c64747; }
+/* line 214, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options .time {
   font-weight: 300;
   font-size: 0.9em;
   color: #888;
   margin-top: 6px; }
-  /* line 186, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  /* line 219, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .options .time span {
     font-weight: 400;
     color: #555; }
 
-/* line 193, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 226, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .suggestions {
-  width: 524px; }
-  /* line 196, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  width: 524px;
+  overflow-y: scroll; }
+  /* line 230, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .suggestions li {
-    padding-left: 60px;
+    padding-left: 30px;
     cursor: pointer; }
-    /* line 200, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+    /* line 234, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
     .suggestions li:hover {
       background-color: #e2edf2; }
 
-/* line 206, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 240, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 #map {
   position: absolute;
   right: 0;

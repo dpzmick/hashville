@@ -1,8 +1,26 @@
 angular.module('hashControllers', [])
 
+.service('origin', function() {
+  var origin = undefined;
+
+  var addOrigin = function(obj) {
+      origin = obj;
+  }
+
+  var getOrigin = function(){
+      return origin;
+  }
+
+  return {
+    addOrigin: addOrigin,
+    getOrigin: getOrigin
+  };
+
+})
+
 .filter('exclude', function() {
     return function(avail, selected) {
-        console.log(avail);
+//        console.log(avail);
         var ret = [];
         
         for (var i = 0; i < avail.length; i++) {
@@ -25,8 +43,8 @@ angular.module('hashControllers', [])
     }
 })
 
-.controller('LandingCtrl', ['$scope',
-    function($scope, Info) {
+.controller('LandingCtrl', ['$scope', 'origin', '$location',
+    function($scope, origin, $location) {
         
         // Create the autocomplete object, restricting the search
         // to geographical location types.
@@ -36,7 +54,7 @@ angular.module('hashControllers', [])
         // When the user selects an address from the dropdown,
         // populate the address fields in the form.
         google.maps.event.addListener(autocomplete, 'place_changed', function() {
-            console.log(autocomplete);
+//            console.log(autocomplete);
         });
         
         $scope.geolocate = function() {
@@ -57,20 +75,26 @@ angular.module('hashControllers', [])
         }
         
         $scope.submit = function() {
+//            console.log(autocomplete.getPlace());
+            origin.addOrigin(autocomplete.getPlace());
             $location.path('/plan');
         }
     }
 ])
 
-.controller('ItineraryCtrl', ['$scope', '$http', '$filter',
-    function($scope, $http, $filter) {
+.controller('ItineraryCtrl', ['$scope', '$http', '$filter', 'origin',
+    function($scope, $http, $filter, origin) {
         $scope.travel_mode = "walking";
         $scope.current_suggestion = 0;
         
-        var lat = 36.158,
-            lon = -86.769,
-            nextLat = 36.158,
-            nextLon = -86.769,
+        $scope.home = origin.getOrigin();
+        
+        console.log($scope.home);
+        
+        var lat = $scope.home.geometry.location.k,
+            lon = $scope.home.geometry.location.D,
+            nextLat = $scope.home.geometry.location.k,
+            nextLon = $scope.home.geometry.location.D,
             rad = 1000,
             mapStyle = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#e3ebec"}]},{"featureType":"landscape","elementType":"labels.text.fill","stylers":[{"color":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"all","stylers":[{"saturation":"-31"},{"color":"#c64747"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#005573"},{"visibility":"on"}]}]
         

@@ -22,7 +22,7 @@
 * { margin: 0; padding: 0; }
 
 $blue: #005573;
-$red: red;
+$red: #c64747;
 $light-blue: #e2edf2;
 
 html,
@@ -115,6 +115,15 @@ body {
     font: { weight: 300; size: 1.4em; }
     padding-bottom: 40px;
     color: #aaa;
+    
+    img {
+        position: relative;
+        top: 1px;
+        margin-right: 12px;
+        
+        width: 24px;
+        height: auto;
+    }
 }
 
 .itinerary, .suggestions { 
@@ -124,7 +133,16 @@ body {
     li {
         padding: 10px 0;
         
+        img {
+            height: 44px;
+            width: auto;
+            margin-right: 2px;
+            position: relative;
+            top: 14px;
+        }
+        
         h3 {
+            display: inline-block;
             font: { weight: 300; size: 1.3em; }
             letter-spacing: 1px;
         }
@@ -159,17 +177,32 @@ body {
     
     label[for="travel-driving"] {
         background: url(../img/icons/driving.png) no-repeat top center;
-        background-size: auto 40px;
+        background-size: auto 50px;
+    }
+    
+    input:checked + label[for="travel-driving"] {
+        background: url(../img/icons/driving_red.png) no-repeat top center;
+        background-size: auto 50px;
     }
     
     label[for="travel-walking"] {
         background: url(../img/icons/walking.png) no-repeat top center;
-        background-size: auto 40px;
+        background-size: auto 50px;
+    }
+    
+    input:checked + label[for="travel-walking"] {
+        background: url(../img/icons/walking_red.png) no-repeat top center;
+        background-size: auto 50px;
     }
     
     label[for="travel-bicycling"] {
         background: url(../img/icons/biking.png) no-repeat top center;
-        background-size: auto 40px;
+        background-size: auto 50px;
+    }
+    
+    input:checked + label[for="travel-bicycling"] {
+        background: url(../img/icons/biking_red.png) no-repeat top center;
+        background-size: auto 50px;
     }
     
     input { display: none; }
@@ -192,9 +225,10 @@ body {
 
 .suggestions {
     width: 524px;
+    overflow-y: scroll;
     
     li {
-        padding-left: 60px;
+        padding-left: 30px;
         cursor: pointer;
         
         &:hover {
