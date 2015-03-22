@@ -10,12 +10,12 @@ var layer5 = document.getElementById("layer-5");
 
 function parallaxy()
 {   
-//	offset6 = -(scrollVal * 1.0);
-	offset5 = -(scrollVal * 0.7);
-	offset4 = -(scrollVal * 0.5);
-	offset3 = -(scrollVal * 0.3);
-	offset2 = -(scrollVal * 0.2);
-	offset1 = -(scrollVal * 0.1);
+	offset6 = (scrollVal * 0.1);
+	offset5 = 0;
+	offset4 = -(scrollVal * 0.03);
+	offset3 = -(scrollVal * 0.2);
+	offset2 = (scrollVal * 0.12);
+	offset1 = -(scrollVal * 0.6);
 	offset0 = 0;
 
 	layer0.style.webkitTransform = "translate3d(0, " + offset0 + "px, 0)";
@@ -64,7 +64,6 @@ function parallaxy()
 
 function scrollHandler(e)
 {
-    console.log('scrolled');
 	scrollVal = Math.max(window.pageYOffset,0);
     parallaxy();
 }

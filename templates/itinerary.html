@@ -1,34 +1,35 @@
 <div class="itin_page">
-    <header>123 Sesame Street</header>
+    <header><img src="img/icons/home_gray.png">{{home.formatted_address}}</header>
     <section class="itinerary">
         <div class="options">
             <h2>Itinerary</h2>
-            Total Travel Time: <span ng-model="travel_time"></span> <br>
-            <label>
-                <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="driving"> 
+            <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="driving" id="travel-driving"> 
+            <label for="travel-driving">
                 Driving
             </label>
-            <label>
-                <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="walking"> 
+            <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="walking" id="travel-walking">
+            <label for="travel-walking">
                 Walking
             </label>
-            <label>
-                <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="bicycling">  
+            <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="bicycling" id="travel-bicycling">
+            <label for="travel-bicycling">
                 Bicycling
-            </label>
+            </label><br>
+            <div class="time">Total Travel Time: <span class="travel_time"></span></div>
         </div>
         
         <ul>
-            <li ng-repeat="item in data.itinerary">
-                <h3>{{ item.name }}</h3>
+            <li ng-repeat="item in itinerary">
+                <h3>{{ item.title }}</h3>
             </li>
         </ul>
     </section>
     <section class="suggestions">
         <h2>Things to Do</h2>
         <ul>
-            <li ng-repeat="item in data.suggestions" class="item">
-                <h3 ng-mouseenter="switchSuggestion($index)">{{ item.name }}</h3>
+            <li ng-repeat="item in suggestions" class="item">
+                <img src="img/icons/{{item.type}}.png">
+                <h3 ng-mouseenter="switchSuggestion($index)" ng-click="updateIten($index)">{{ item.title }}</h3>
             </li>
         </ul>
     </section>

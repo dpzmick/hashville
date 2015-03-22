@@ -1,20 +1,23 @@
 <div class="landing">
-    <div class="parallax">
+
+    <section class="splash">
         <div class="parallax_layer" id="layer-0"></div>
         <div class="parallax_layer" id="layer-1"></div>
         <div class="parallax_layer" id="layer-2"></div>
         <div class="parallax_layer" id="layer-3"></div>
         <div class="parallax_layer" id="layer-4"></div>
         <div class="parallax_layer" id="layer-5"></div>
-    </div>
-<!--
+        <div class="parallax_layer" id="layer-6"></div>
+    </section>
+
     <section class="input">
+        <h2>Where in Nashville are you staying?</h2>
         <div id="locationField">
-             <input id="autocomplete" placeholder="Where are you staying?"
-             ng-focus="geolocate()" type="text"></input>
+            <input id="autocomplete" placeholder="Enter Address"
+             ng-focus="geolocate()" type="text">
+            <button ng-click="submit()">Plan trip</button>
         </div>
     </section>
--->
 </div>
     
-<!--<script src="../js/landing.js"></script>-->
+<script src="../js/landing.js"></script>

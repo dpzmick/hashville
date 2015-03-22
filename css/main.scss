@@ -29,6 +29,8 @@
 * { margin: 0; padding: 0; }
 
 $blue: #005573;
+$red: #c64747;
+$light-blue: #e2edf2;
 
 html,
 body {
@@ -37,41 +39,81 @@ body {
 }
 
 .landing {
-    .parallax {
-        background: url(../img/background.png) no-repeat center center;
-        background-size: cover;
-        position: relative;
-        height: 840px;
-        z-index: 10;
-    }
-
-    .parallax_layer {
-        background-position: bottom center;
-        background-size: cover;
-        background-repeat: repeat-x;
-        position: fixed;
-        height: 840px;
+    .splash {
+        height: 800px;
         width: 100%;
-        @include translate3d(0,0,0);
     }
-
-    #layer-0 { background-image: url("../img/welcometonashville.png"); }
-    #layer-1 { background-image: url("../img/moon.png"); }
-    #layer-2 { background-image: url("../img/city_layer3.png"); }
-    #layer-3 { background-image: url("../img/city_layer2.png"); }
-    #layer-4 { background-image: url("../img/city_layer1.png"); }
-    #layer-5 { background-image: url("../img/bridge.png"); }
+        
+    .parallax_layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    #layer-0 { background-image: url("../img/background.png"); background-size: cover; position: fixed; }
+    #layer-1 { background-image: url("../img/moon.png"); background-size: cover; position: fixed; }
+    #layer-2 { background-image: url("../img/welcometonashville.png"); background-size: cover; position: fixed; }
+    #layer-3 { background-image: url("../img/city_layer3.png"); background-size: cover;  }
+    #layer-4 { background-image: url("../img/city_layer2.png"); background-size: cover;  }
+    #layer-5 { background-image: url("../img/city_layer1.png"); background-size: cover;  }
+    #layer-6 { background-image: url("../img/bridge.png"); background-size: cover;  }
 }
 
-#autocomplete {
-    width: 480px;
+.input {
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    height: 400px;
+    width: 100%;
+    background-color: $blue;
+    text-align: center;
+    padding-top: 50px;
+    
+    h2 {
+        color: $light-blue;
+        text: { transform: uppercase; }
+        font: { weight: 500; }
+        letter-spacing: 2px;
+    }
+    
+    input {
+        display: block;
+        margin: 45px auto 130px;
+        width: 510px;
+        background: none;
+        border: none;
+        border-bottom: 2px solid $light-blue;
+        outline: none;
+        color: $light-blue;
+        padding-left: 4px;
+        padding-bottom: 8px;
+        font: { style: italic; }
+    }
+    
+    button {
+        background: none;
+        background-color: $red;
+        border: none;
+        outline: none;
+        padding: 8px 50px;
+        
+        text: { transform: uppercase; }
+        font: { weight: 400; }
+        color: $light-blue;
+    }
 }
+
 
 
 .itin_page {
     box-sizing: border-box;
+    background: url(../img/citybackground.png) no-repeat center center;
+    background-size: cover;
     padding: 60px 0 60px 80px;
-    height: 100%;
+    height: 100vh;
+    min-height: 800px;
     
     ul { list-style: none; padding: 0; }
 }
@@ -80,17 +122,36 @@ body {
     font: { weight: 300; size: 1.4em; }
     padding-bottom: 40px;
     color: #aaa;
+    
+    img {
+        position: relative;
+        top: 1px;
+        margin-right: 12px;
+        
+        width: 24px;
+        height: auto;
+    }
 }
 
-.itinerary, .suggestions {
+.itinerary, .suggestions { 
     float: left;
     height: 100%;
     
     li {
         padding: 10px 0;
         
+        img {
+            height: 44px;
+            width: auto;
+            margin-right: 2px;
+            position: relative;
+            top: 14px;
+        }
+        
         h3 {
-            font: { weight: 300; }
+            display: inline-block;
+            font: { weight: 300; size: 1.3em; }
+            letter-spacing: 1px;
         }
     }
 }
@@ -98,6 +159,7 @@ body {
 .itinerary h2, .suggestions h2 {
     text: { transform: uppercase; align: center; }
     font: { weight: 700; size: 1.1em; }
+    margin-bottom: 12px;
 }
 
 .itinerary {
@@ -109,15 +171,75 @@ body {
     }
 }
 
+.options {
+    label {
+        cursor: pointer;  
+        display: inline-block;
+        height: 50px;
+        width: 80px;
+        line-height: 100px;
+        font: { size: .8em; weight: 300; }
+        color: #aaa;
+    }
+    
+    label[for="travel-driving"] {
+        background: url(../img/icons/driving.png) no-repeat top center;
+        background-size: auto 50px;
+    }
+    
+    input:checked + label[for="travel-driving"] {
+        background: url(../img/icons/driving_red.png) no-repeat top center;
+        background-size: auto 50px;
+    }
+    
+    label[for="travel-walking"] {
+        background: url(../img/icons/walking.png) no-repeat top center;
+        background-size: auto 50px;
+    }
+    
+    input:checked + label[for="travel-walking"] {
+        background: url(../img/icons/walking_red.png) no-repeat top center;
+        background-size: auto 50px;
+    }
+    
+    label[for="travel-bicycling"] {
+        background: url(../img/icons/biking.png) no-repeat top center;
+        background-size: auto 50px;
+    }
+    
+    input:checked + label[for="travel-bicycling"] {
+        background: url(../img/icons/biking_red.png) no-repeat top center;
+        background-size: auto 50px;
+    }
+    
+    input { display: none; }
+    
+    input:checked + label {
+        color: $red;
+    }
+    
+    .time {
+        font: { weight: 300; size: .9em; }
+        color: #888;
+        margin-top: 6px;
+        
+        span {
+            font-weight: 400;
+            color: #555;
+        }
+    }
+}
+
 .suggestions {
     width: 524px;
+    overflow-y: scroll;
     
     li {
-        padding-left: 60px;
+        padding-left: 30px;
         cursor: pointer;
         
         &:hover {
-            background-color: #e2edf2;
+            background-color: $light-blue;
         }
     }
 }
