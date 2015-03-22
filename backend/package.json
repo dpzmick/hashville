@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.12.3",
+    "json-query": "^1.4.0",
     "lodash": "^3.5.0",
-    "mongodb": "^1.4.34"
+    "mongodb": "^1.4.34",
+    "request": "^2.53.0"
   },
   "devDependencies": {
     "react-tools": "^0.13.1"

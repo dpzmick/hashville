@@ -1,6 +1,8 @@
 /* @flow */
 var MongoClient = require('mongodb').MongoClient;
 var _ = require('lodash');
+var jsonQuery = require('json-query');
+var request = require('request');
 
 var model = exports;
 
@@ -190,9 +192,6 @@ class DataModel {
         var radius = options.radius;
         var type = options.type;
 
-        // NOAH CODE
-        var jsonQuery = require('json-query');
-        var request = require('request');
         var data;
 
         request.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location='
@@ -201,15 +200,14 @@ class DataModel {
             .on('response', function(response) { 
                 if(response.status === 'OK') {
                     data = reponse.results
+                    jsonQuery('results.name, results.geometry.location.lat, results.geometrey.location.lng'
+                    , {data: data});
+
+                    console.log(data);
                 } else {
                     data = null
                 }
             });
-
-        jsonQuery('results.name, results.geometry.location.lat, results.geometrey.location.lng'
-                , {data: data})
-
-        callback(data)
     }
 
 
