@@ -1,7 +1,6 @@
 /* @flow */
 var MongoClient = require('mongodb').MongoClient;
 var _ = require('lodash');
-var jsonQuery = require('json-query');
 var request = require('request');
 
 var model = exports;
@@ -257,24 +256,32 @@ class DataModel {
         var radius    = options.radius;
         var type      = options.type;
 
-        request.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location='
-                + latitude + ',' + longitude + '&radius=' + radius +
-                '&types=' + type + '&rankby=distance')
-            .on('response', function(response) {
-                if(response.status === 'OK') {
-                // I'm not sure this is doing what I want it to do. How does the
-                // application know that response has a suptype results?
-                    var data = response.results
+        var baseUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location=';
+        var locationStr = latitude + ',' + longitude + '&radius=' + radius;
+        var typeStr = '&types=' + type;
+        var blah = '&rankBy=distance';
 
-                    jsonQuery('results.name, results.geometry.location.lat, results.geometrey.location.lng', {data: data});
+        var url = baseUrl + locationStr + typeStr + blah;
 
-            // This still isn't logging anything
-                    console.log(data);
-                    callback(data);
+        request(url, function(error, response, data){
+            if(!error && response.statusCode === 200) {
+                // check that we actually got data
+                var jsonDat = JSON.parse(data);
+                if (jsonDat.status !== 'ZERO_RESULTS') {
+                    var dat = _.map(jsonDat['results'], function (e) {
+                        return {
+                            'title': e['name'],
+                            'lat': e['geometry']['location']['lat'],
+                            'lon': e['geometry']['location']['lng']
+                        }
+                    });
+
+                    callback(dat);
                 } else {
                     callback(null);
                 }
-            });
+            }
+        })
     }
 
 
@@ -296,7 +303,7 @@ class DataModel {
         } else if (type === 'historical') {
             this.getHistoricalNear(payload, callback);
         } else if (type !== null) {
-            this.getOtherNear(payload, callback);
+            this.getOtherNear(options, callback); // use the passed options, we need to keep type!
         } else {
             callback(null);
         }
