@@ -81,14 +81,79 @@ class DataModel {
         this.db = db;
     }
 
+    allArtAndHistoryWithTypes(options: Object, callback: Function) {
+        var latitude  = options.latitude;
+        var longitude = options.longitude;
+        var radius    = options.radius;
+
+        // set up options for first round
+        var filter = within(latitude, longitude, radius);
+
+        var sort = function(e) {
+            return Math.sqrt(
+                Math.pow(latitude - e['lat'], 2),
+                Math.pow(longitude - e['long'], 2));
+        };
+
+        var artMapper = function (e) {
+            return {
+                'title': e['desc']['title'],
+                'lat': e['lat'],
+                'lon': e['long'],
+                'type': 'art'
+            }
+        }
+
+        var historyMapper = function (e) {
+            return {
+                'title': e['desc']['title'],
+                'lat': e['lat'],
+                'lon': e['long'],
+                'type': 'historical'
+            }
+        }
+
+        var art1Callback = function (data) {
+            var art2Callback = function (innerData) {
+                var histCallback = function (innerInnerData) {
+                    callback(data.concat(innerData).concat(innerInnerData));
+                }
+
+                genericFilterFunction({
+                    db: this.db,
+                    collection: 'historical_markers',
+                    filterFunc: filter,
+                    mapFunc: historyMapper,
+                    sortFunc: sort,
+                    callback: histCallback
+                });
+            }
+
+            genericFilterFunction({
+                db: this.db,
+                collection: 'metro_public_art',
+                filterFunc: filter,
+                mapFunc: artMapper,
+                sortFunc: sort,
+                callback: art2Callback
+            });
+        }
+
+        genericFilterFunction({
+            db: this.db,
+            collection: 'public_art',
+            filterFunc: filter,
+            mapFunc: artMapper,
+            sortFunc: sort,
+            callback: art1Callback
+        });
+    }
+
     // I think this might be more gross than I was hoping sorry!
     getArtNear(options: any, callback: Function) {
         var latitude  = options.latitude;
         var longitude = options.longitude;
         var radius    = options.radius;
-
-        // do first arts
-        var collection = this.db;
 
         // set up options for first round
         var filterFunc = within(latitude, longitude, radius);

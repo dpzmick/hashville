@@ -19,11 +19,14 @@
     -webkit-filter: blur($quant);
 }
 
+* { margin: 0; padding: 0; }
+
 $blue: #005573;
 
 html,
 body {
     @include disable-horizontal-scrolling();
+    font-family: 'Hind', sans-serif;
 }
 
 .landing {
@@ -59,6 +62,62 @@ body {
 
 #autocomplete {
     width: 480px;
+}
+
+
+.itin_page {
+    box-sizing: border-box;
+    padding: 60px 0 60px 80px;
+    height: 100%;
+    
+    ul { list-style: none; padding: 0; }
+}
+
+.itin_page header {
+    font: { weight: 300; size: 1.4em; }
+    padding-bottom: 40px;
+    color: #aaa;
+}
+
+.itinerary, .suggestions {
+    float: left;
+    height: 100%;
+    
+    li {
+        padding: 10px 0;
+        
+        h3 {
+            font: { weight: 300; size: 1.3em; }
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.itinerary h2, .suggestions h2 {
+    text: { transform: uppercase; align: center; }
+    font: { weight: 700; size: 1.1em; }
+}
+
+.itinerary {
+    width: 360px;
+    border-right: 1px solid #aaa;
+    
+    .options {
+        text-align: center;
+    }
+}
+
+.suggestions {
+    width: 524px;
+    
+    li {
+        padding-left: 60px;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: #e2edf2;
+        }
+    }
 }
 
 #map { 
