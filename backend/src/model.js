@@ -230,8 +230,9 @@ class DataModel {
             this.getArtNear(payload, callback);
         } else if (type === 'historical') {
             this.getHistoricalNear(payload, callback);
-        } else {
+        } else if (type !== null) {
             this.getOtherNear(payload, callback);
+        } else {
             callback(null);
         }
     }
