@@ -143,6 +143,42 @@ class DataModel {
         var latitude  = options.latitude;
         var longitude = options.longitude;
         var radius    = options.radius;
+
+        // set up options for first round
+        var filterFunc = within(latitude, longitude, radius);
+
+        var sortFunc = function(e) {
+            return Math.sqrt(
+                Math.pow(latitude - e['lat'], 2),
+                Math.pow(longitude - e['long'], 2));
+        };
+
+        var mapFunc = function (e) {
+            return {
+                'title': e['desc']['title'],
+                'lat': e['lat'],
+                'lon': e['long']
+            }
+        };
+
+        var innerCallback = function (data) {
+            if (data) {
+                callback(data);
+            } else {
+                callback(null);
+            }
+        }
+
+        var firstOptions = {
+            db: this.db,
+            collection: 'metro_public_art',
+            filterFunc: filterFunc,
+            sortFunc: sortFunc,
+            mapFunc: mapFunc,
+            callback: innerCallback
+        }
+
+        genericFilterFunction(firstOptions);
     }
 
     placesNear(options: any, callback: Function) {
