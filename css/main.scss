@@ -31,8 +31,9 @@ body {
     @include background-size(cover);
 }
 
-.input {
+#autocomplete {
     @include center-this(45%);
+    width: 480px;
 }
 
 #map { 
