@@ -37,16 +37,21 @@ for dtype in data_info:
     with open(dtype['fname'], 'rb') as csvfile:
         read = csv.reader(csvfile, delimiter=',')
         for row in list(read)[1:]: # assume everyone has a header
-            datum = {
-                    'desc': {},
-                    'lat' : row[dtype['lat_field']],
-                    'long': row[dtype['long_field']]
-            }
+            try:
+                datum = {
+                        'desc': {},
+                        'lat' : float(row[dtype['lat_field']]),
+                        'long': float(row[dtype['long_field']])
+                }
 
-            # build description
-            for field, index in dtype['desc_fields'].iteritems():
-                datum['desc'][field] = row[index]
+                # build description
+                for field, index in dtype['desc_fields'].iteritems():
+                    datum['desc'][field] = row[index]
 
-            # push to database
-            dtype_collection.insert(datum)
+                # push to database
+                dtype_collection.insert(datum)
+
+            except ValueError:
+                # some of the rows in the history data don't have location info
+                pass
 
