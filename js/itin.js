@@ -24,25 +24,42 @@ function parseJSON(data) {
     return { itinerary: itinPoints, suggestions: suggestPoints };
 }
 
-function plotRoute(map, directionsDisplay, org, dest, itin) {
+function plotRoute(map, directionsDisplay, org, dest, itin, mode,  update) {
     directionsDisplay.setMap(null);
-
-//    directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+    
+    var travel_mode = null;
+    switch (mode) {
+        case "driving":
+            travel_mode = google.maps.DirectionsTravelMode.DRIVING;
+            break;
+        case "bicycling":
+            travel_mode = google.maps.DirectionsTravelMode.BICYCLING;
+            break;
+        case "transit":
+            travel_mode = google.maps.DirectionsTravelMode.TRANSIT;
+            break;
+        case "walking":
+        default:
+            travel_mode = google.maps.DirectionsTravelMode.WALKING;
+            break;
+    }
     
     var request = {
         origin: org,
         destination: dest,
         waypoints: itin,
-        travelMode: google.maps.DirectionsTravelMode.WALKING
+        travelMode: travel_mode
     };
 
     var directionsService = new google.maps.DirectionsService();
+    
     directionsService.route(request, function(response, status) {
         if (status == google.maps.DirectionsStatus.OK) {
             directionsDisplay.setDirections(response);
             directionsDisplay.setMap(map);
+            update(response);
         } else {
-            console.log('Failed to get directions');
+            console.log('Failed to get route..');
         }
     });
 }

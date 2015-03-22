@@ -13,7 +13,7 @@ angular.module('hash', [
         })
         
         .when('/plan', {
-            templateUrl: '/templates/plan.html',
+            templateUrl: '/templates/itinerary.html',
             controller: 'ItineraryCtrl'
         })
         
