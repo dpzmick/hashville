@@ -3,19 +3,20 @@
     <section class="itinerary">
         <div class="options">
             <h2>Itinerary</h2>
-            Total Travel Time: <span ng-model="travel_time"></span> <br>
-            <label>
-                <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="driving"> 
+            <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="driving" id="travel-driving"> 
+            <label for="travel-driving">
                 Driving
             </label>
-            <label>
-                <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="walking"> 
+            <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="walking" id="travel-walking"> 
+            <label for="travel-walking">
                 Walking
             </label>
             <label>
-                <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="bicycling">  
+                <input type="radio" ng-model="travel_mode" ng-change="switchSuggestion(current_suggestion)" value="bicycling" id="travel-bicycling">  
+            <label for="travel-bicycling">
                 Bicycling
-            </label>
+            </label><br>
+            Total Travel Time: <span class="travel_time"></span>
         </div>
         
         <ul>
