@@ -184,7 +184,6 @@ class DataModel {
         genericFilterFunction(firstOptions);
     }
 
-
     getOtherNear(options: any, callback: Function) {
         var latitude = options.latitude;
         var longitude = options.longitude;
@@ -192,16 +191,25 @@ class DataModel {
         var type = options.type;
 
         // NOAH CODE
+        var jsonQuery = require('json-query');
         var request = require('request');
+        var data;
 
         request.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location='
-                + latitude + ',' + longitude + '&radius=' + radius + '&types=' type)
-            .on('response', function(response) {
-                    console.log(response.statusCode) // 200 
-                    console.log(response.headers['content-type']) // 'JSON?' 
-                    console.log(response)
-                  });
-        // NOAH CODE
+                + latitude + ',' + longitude + '&radius=' + radius +
+                '&types=' + type + '&rankby=distance')
+            .on('response', function(response) { 
+                if(response.status === 'OK') {
+                    data = reponse.results
+                } else {
+                    data = null
+                }
+            });
+
+        jsonQuery('results.name, results.geometry.location.lat, results.geometrey.location.lng'
+                , {data: data})
+
+        callback(data)
     }
 
 
