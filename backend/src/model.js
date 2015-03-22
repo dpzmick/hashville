@@ -262,7 +262,7 @@ class DataModel {
         request.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location='
                 + latitude + ',' + longitude + '&radius=' + radius +
                 '&types=' + type + '&rankby=distance')
-            .on('response', function(response) { 
+            .on('response', function(response) {
                 if(response.status === 'OK') {
                     data = reponse.results
                     jsonQuery('results.name, results.geometry.location.lat, results.geometrey.location.lng'
