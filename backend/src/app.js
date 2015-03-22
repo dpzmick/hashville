@@ -7,6 +7,8 @@ var modelMaker = require('./model.js')
 modelMaker.fromDatabaseConnection('mongodb://localhost:27017/place_data', function (model) {
     if (model) {
         app.get('/all', function (req, res) {
+            res.header("Access-Control-Allow-Origin", "*");
+            res.header("Access-Control-Allow-Headers", "X-Requested-With");
             model.allArtAndHistoryWithTypes(function (d) {
                 res.send(d);
             });
@@ -14,6 +16,8 @@ modelMaker.fromDatabaseConnection('mongodb://localhost:27017/place_data', functi
 
         // add the endpoints after we load the model, so we can use it
         app.get('/near', function (req, res) {
+            res.header("Access-Control-Allow-Origin", "*");
+            res.header("Access-Control-Allow-Headers", "X-Requested-With");
             if(typeof(req.query.type) === 'undefined') {
                 res.send({'error': 0, 'desc': 'query needs a type'});
                 return;
