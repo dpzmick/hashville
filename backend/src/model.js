@@ -79,6 +79,64 @@ class DataModel {
         this.db = db;
     }
 
+    allArtAndHistoryWithTypes(callback: Function) {
+        var filter = function (e) { return true; }
+        var sort = function(e) { return 1; }
+
+        var artMapper = function (e) {
+            return {
+                'title': e['desc']['title'],
+                'lat': e['lat'],
+                'lon': e['long'],
+                'type': 'art'
+            }
+        }
+
+        var historyMapper = function (e) {
+            return {
+                'title': e['desc']['title'],
+                'lat': e['lat'],
+                'lon': e['long'],
+                'type': 'art'
+            }
+        }
+
+        var art1Callback = function (data) {
+            var art2Callback = function (innerData) {
+                var histCallback = function (innerInnerData) {
+                    callback(data.concat(innerData).concat(innerInnerData));
+                }
+
+                genericFilterFunction({
+                    db: this.db,
+                    collection: 'historical_markers',
+                    filterFunc: filter,
+                    mapFunc: historyMapper,
+                    sortFunc: sort,
+                    callback: histCallback
+                });
+            }
+
+            genericFilterFunction({
+                db: this.db,
+                collection: 'metro_public_art',
+                filterFunc: filter,
+                mapFunc: artMapper,
+                sortFunc: sort,
+                callback: art2Callback
+            });
+        }
+
+        genericFilterFunction({
+            db: this.db,
+            collection: 'public_art',
+            filterFunc: filter,
+            mapFunc: artMapper,
+            sortFunc: sort,
+            callback: art1Callback
+        });
+    }
+
     // I think this might be more gross than I was hoping sorry!
     getArtNear(options: any, callback: Function) {
         var latitude  = options.latitude;
