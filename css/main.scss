@@ -27,37 +27,32 @@ html,
 body {
     @include disable-horizontal-scrolling();
     font-family: 'Hind', sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
 .landing {
-    .parallax {
-        background: url(../img/background.png) no-repeat center center;
+    .splash {
+        background-image: url(../img/background.png);
         background-size: cover;
-        position: relative;
-        height: 840px;
-        z-index: 10;
-    }
-
-    .parallax_layer {
-        background-position: bottom center;
-        background-size: cover;
-        background-repeat: repeat-x;
-        position: fixed;
-        height: 840px;
+        height: 800px;
         width: 100%;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
     }
-
-    #layer-0 { background-image: url("../img/welcometonashville.png"); }
-    #layer-1 { background-image: url("../img/moon.png"); }
-    #layer-2 { background-image: url("../img/city_layer3.png"); }
-    #layer-3 { background-image: url("../img/city_layer2.png"); }
-    #layer-4 { background-image: url("../img/city_layer1.png"); }
-    #layer-5 { background-image: url("../img/bridge.png"); }
+        
+    .parallax_layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    #layer-0 { background-image: url("../img/moon.png"); background-size: cover; position: fixed; }
+    #layer-1 { background-image: url("../img/welcometonashville.png"); background-size: cover; position: fixed; }
+    #layer-2 { background-image: url("../img/city_layer3.png"); background-size: cover;  }
+    #layer-3 { background-image: url("../img/city_layer2.png"); background-size: cover;  }
+    #layer-4 { background-image: url("../img/city_layer1.png"); background-size: cover;  }
+    #layer-5 { background-image: url("../img/bridge.png"); background-size: cover;  }
 }
 
 #autocomplete {
@@ -67,8 +62,11 @@ body {
 
 .itin_page {
     box-sizing: border-box;
+    background: url(../img/citybackground.png) no-repeat center center;
+    background-size: cover;
     padding: 60px 0 60px 80px;
-    height: 100%;
+    height: 100vh;
+    min-height: 800px;
     
     ul { list-style: none; padding: 0; }
 }
@@ -79,7 +77,7 @@ body {
     color: #aaa;
 }
 
-.itinerary, .suggestions {
+.itinerary, .suggestions { 
     float: left;
     height: 100%;
     
@@ -96,6 +94,7 @@ body {
 .itinerary h2, .suggestions h2 {
     text: { transform: uppercase; align: center; }
     font: { weight: 700; size: 1.1em; }
+    margin-bottom: 12px;
 }
 
 .itinerary {
@@ -104,6 +103,50 @@ body {
     
     .options {
         text-align: center;
+    }
+}
+
+.options {
+    label {
+        cursor: pointer;  
+        display: inline-block;
+        height: 50px;
+        width: 80px;
+        line-height: 100px;
+        font: { size: .8em; weight: 300; }
+        color: #aaa;
+    }
+    
+    label[for="travel-driving"] {
+        background: url(../img/icons/driving.png) no-repeat top center;
+        background-size: auto 40px;
+    }
+    
+    label[for="travel-walking"] {
+        background: url(../img/icons/walking.png) no-repeat top center;
+        background-size: auto 40px;
+    }
+    
+    label[for="travel-bicycling"] {
+        background: url(../img/icons/biking.png) no-repeat top center;
+        background-size: auto 40px;
+    }
+    
+    input { display: none; }
+    
+    input:checked + label {
+        color: red;
+    }
+    
+    .time {
+        font: { weight: 300; size: .9em; }
+        color: #888;
+        margin-top: 6px;
+        
+        span {
+            font-weight: 400;
+            color: #555;
+        }
     }
 }
 
