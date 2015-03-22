@@ -7,21 +7,13 @@ function getLocation(map) {
     }
 }
 
-function JSONtoMaps(itenerary, suggestions) {
-    var itinPoints = [];
-    var suggestPoints = []
-
-    $.each(itenerary, function(index, value) {
+function JSONtoMaps(lst) {
+    $.each(lst, function(index, value) {
         var loc = new google.maps.LatLng(value.lat, value.lon);
-        itinPoints.push({ location: loc });
-    });
-
-    $.each(suggestions, function(index, value) {
-        var loc = new google.maps.LatLng(value.lat, value.lon);
-        suggestPoints.push({ location: loc });
+        value.location = loc;
     });
     
-    return { itinerary: itinPoints, suggestions: suggestPoints };
+    return lst;
 }
 
 function plotRoute(map, directionsDisplay, org, dest, itin, mode,  update) {
