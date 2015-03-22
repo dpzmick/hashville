@@ -184,17 +184,6 @@ class DataModel {
         genericFilterFunction(firstOptions);
     }
 
-    // NOAH CODE
-    var request = require('request');
-
-    request.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location='
-            + latitude + ',' + longitude + '&radius=' + radius + '&types=' type)
-        .on('response', function(response) {
-                console.log(response.statusCode) // 200 
-                console.log(response.headers['content-type']) // 'JSON?' 
-                console.log(response)
-              });
-    // NOAH CODE
 
     getOtherNear(options: any, callback: Function) {
         var latitude = options.latitude;
@@ -202,28 +191,17 @@ class DataModel {
         var radius = options.radius;
         var type = options.type;
 
-        var https = require('https');
+        // NOAH CODE
+        var request = require('request');
 
-        var options = {
-            host:'https://maps.googleapis.com/',
-            path:'maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location='
-                + latitude + ',' + longitude + '&radius=' + radius + '&types=' + type
-        };
-
-        callback = function(response) {
-            var str = '';
-        // another chunk of data has been recieved, so append it to `str`
-            response.on('data', function (chunk) {
-                str += chunk;
-                });
-
-        //the whole response has been recieved, so we just print it out here
-            response.on('end', function () {
-                console.dir(str);
-                });
-            }
-
-        https.request(options, callback).end();
+        request.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location='
+                + latitude + ',' + longitude + '&radius=' + radius + '&types=' type)
+            .on('response', function(response) {
+                    console.log(response.statusCode) // 200 
+                    console.log(response.headers['content-type']) // 'JSON?' 
+                    console.log(response)
+                  });
+        // NOAH CODE
     }
 
 
