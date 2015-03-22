@@ -79,9 +79,19 @@ class DataModel {
         this.db = db;
     }
 
-    allArtAndHistoryWithTypes(callback: Function) {
-        var filter = function (e) { return true; }
-        var sort = function(e) { return 1; }
+    allArtAndHistoryWithTypes(options: Object, callback: Function) {
+        var latitude  = options.latitude;
+        var longitude = options.longitude;
+        var radius    = options.radius;
+
+        // set up options for first round
+        var filter = within(latitude, longitude, radius);
+
+        var sort = function(e) {
+            return Math.sqrt(
+                Math.pow(latitude - e['lat'], 2),
+                Math.pow(longitude - e['long'], 2));
+        };
 
         var artMapper = function (e) {
             return {
@@ -97,7 +107,7 @@ class DataModel {
                 'title': e['desc']['title'],
                 'lat': e['lat'],
                 'lon': e['long'],
-                'type': 'art'
+                'type': 'historical'
             }
         }
 
@@ -142,9 +152,6 @@ class DataModel {
         var latitude  = options.latitude;
         var longitude = options.longitude;
         var radius    = options.radius;
-
-        // do first arts
-        var collection = this.db;
 
         // set up options for first round
         var filterFunc = within(latitude, longitude, radius);
