@@ -252,25 +252,22 @@ class DataModel {
     }
 
     getOtherNear(options: any, callback: Function) {
-        var latitude = options.latitude;
+        var latitude  = options.latitude;
         var longitude = options.longitude;
-        var radius = options.radius;
-        var type = options.type;
-
-        var data;
+        var radius    = options.radius;
+        var type      = options.type;
 
         request.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location='
                 + latitude + ',' + longitude + '&radius=' + radius +
                 '&types=' + type + '&rankby=distance')
             .on('response', function(response) { 
                 if(response.status === 'OK') {
-                    data = reponse.results
-                    jsonQuery('results.name, results.geometry.location.lat, results.geometrey.location.lng'
-                    , {data: data});
+                    var data = response.results
+                    jsonQuery('results.name, results.geometry.location.lat, results.geometrey.location.lng', {data: data});
 
-                    console.log(data);
+                    callback(data);
                 } else {
-                    data = null
+                    callback(null);
                 }
             });
     }
