@@ -1,7 +1,37 @@
 /* @flow */
 var MongoClient = require('mongodb').MongoClient;
+var _ = require('lodash');
 
 var model = exports;
+
+var toRadians = function (degree: number) {
+    return degree * 0.0174532925; // close enough
+}
+
+// http://www.movable-type.co.uk/scripts/latlong.html
+var haversine = function (lat1: number, lon1: number, lat2: number, lon2: number) : number {
+    var R = 6371000; // metres
+    var a1 = toRadians(lat1);
+    var a2 = toRadians(lat2);
+    var d1 = toRadians(lat2-lat1);
+    var d2 = toRadians(lon2-lon1);
+
+    var a = Math.sin(d1/2) * Math.sin(d1/2) +
+            Math.cos(a1) * Math.cos(a2) *
+            Math.sin(d2/2) * Math.sin(d2/2);
+
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+    return R * c;
+}
+
+// radius in meters
+var within = function (lat1: number, lon1: number, radius: number) {
+    return function(lat2: number, lon2: number) : boolean {
+        var tmp = haversine(lat1, lon1, lat2, lon2);
+        return  tmp < radius;
+    }
+}
 
 model.fromDatabaseConnection = function(url: string, callback: Function) {
     MongoClient.connect(url, function(err, db) {
@@ -25,22 +55,32 @@ class DataModel {
         var longitude = options.longitude;
         var radius    = options.radius;
 
+        var filterFunc = within(latitude, longitude, radius);
 
         // do first arts
-        var collection = this.db;
+        var collection = this.db.collection('metro_public_art', function (err, coll) {
 
-        console.log(collection);
+            // get all of the data from the collection, do a filter manually
+            // don't tell anyone
+            coll.find().toArray(function(err, res) {
+                if (err) {
+                    callback(null);
+                } else {
+                    var kept = _.filter(res, function(e) {
+                        var tmp = filterFunc(e['lat'], e['long']);
+                        return tmp;
+                    });
 
-        var wtf = this.db.metro_public_art.find( {
-            $where: function() {
-                this.name === 'Aileron'
-            }
+                    callback(_.sortBy(res, function(e) {
+                        return Math.sqrt(
+                            Math.pow(latitude - e['lat'], 2),
+                            Math.pow(collection - e['long'], 2));
+                    }));
+
+                    // TODO second arts..
+                }
+            })
         });
-
-        console.dir(wtf);
-
-        callback(null);
-
     }
 
     getHistoricalNear(options: any, callback: Function) {
@@ -58,7 +98,7 @@ class DataModel {
 
         var payload = {
             latitude:   latitude,
-            longitiude: longitude,
+            longitude:  longitude,
             radius:     radius
         }
 
@@ -66,8 +106,8 @@ class DataModel {
             this.getArtNear(payload, callback);
         } else if (type === 'historical') {
             this.getHistoricalNear(payload, callback);
+        } else {
+            callback(null);
         }
-
-        callback(null);
     }
 }

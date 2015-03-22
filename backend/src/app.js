@@ -31,23 +31,26 @@ modelMaker.fromDatabaseConnection('mongodb://localhost:27017/place_data', functi
             // we have all the data we need, lets extract it all again..
             var payload = {
                 type:       req.query.type,
-                latitude:   req.query.latitude,
-                longitiude: req.query.longitude,
-                radius:     req.query.radius
+                latitude:   parseFloat(req.query.latitude),
+                longitude:  parseFloat(req.query.longitude),
+                radius:     parseFloat(req.query.radius)
             };
 
             // write something to the result
             model.placesNear(payload, function(d){
-                res.send('hi');
-            })
+                res.send(d);
+                return;
+            });
         });
 
         // start the server
         var server = app.listen(3000, function () {
-            var host = server.address().address
-            var port = server.address().port
-            console.log('Server listening at http://%s:%s', host, port)
+            var host = server.address().address;
+            var port = server.address().port;
+            console.log('Server listening at http://%s:%s', host, port);
         });
+
+        // TODO catch ctrl-C and close database connection
 
     } else {
         console.log('failed to connect to database, server exiting');
