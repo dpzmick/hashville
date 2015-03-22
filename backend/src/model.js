@@ -259,7 +259,8 @@ class DataModel {
                         radius: radius,
                         type: 'restaurant'
                     }, function (foodData) {
-                        var buhhh = _.map(foodData, function (e) {
+                        console.log('got food data');
+                        var food = _.map(foodData, function (e) {
                             return {
                                 'title': e['title'],
                                 'lat': e['lat'],
@@ -267,7 +268,29 @@ class DataModel {
                                 'type': 'restaurant'
                             }
                         });
-                        callback(data.concat(innerData).concat(innerInnerData).concat(buhhh));
+
+                        outerThis.getOtherNear({
+                            latitude: latitude,
+                            longitude: longitude,
+                            radius: radius,
+                            type: 'museum'
+                        }, function (museumData) {
+                            console.log('got museum data');
+                            var mus = _.map(museumData, function (e) {
+                                return {
+                                    'title': e['title'],
+                                    'lat': e['lat'],
+                                    'lon': e['lon'],
+                                    'type': 'museum'
+                                }
+                            });
+
+                            callback(data
+                                     .concat(innerData)
+                                     .concat(innerInnerData)
+                                     .concat(food)
+                                     .concat(mus));
+                        })
                     })
                 }
 
