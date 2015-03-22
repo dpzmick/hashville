@@ -184,6 +184,18 @@ class DataModel {
         genericFilterFunction(firstOptions);
     }
 
+    // NOAH CODE
+    var request = require('request');
+
+    request.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location='
+            + latitude + ',' + longitude + '&radius=' + radius + '&types=' type)
+        .on('response', function(response) {
+                console.log(response.statusCode) // 200 
+                console.log(response.headers['content-type']) // 'JSON?' 
+                console.log(response)
+              });
+    // NOAH CODE
+
     getOtherNear(options: any, callback: Function) {
         var latitude = options.latitude;
         var longitude = options.longitude;
