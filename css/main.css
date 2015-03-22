@@ -1,27 +1,52 @@
-/* line 23, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 25, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 html, body {
   max-width: 100%;
   overflow-x: hidden; }
 
-/* line 27, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.wrapper {
+/* line 30, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing .parallax {
+  background: url(../img/background.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 840px;
+  z-index: 10; }
+/* line 38, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing .parallax_layer {
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  position: fixed;
+  height: 840px;
   width: 100%;
-  height: 100vh;
-  background: url(../img/nashville-603784_1920.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+/* line 52, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-0 {
+  background-image: url("../img/welcometonashville.png"); }
+/* line 53, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-1 {
+  background-image: url("../img/moon.png"); }
+/* line 54, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-2 {
+  background-image: url("../img/city_layer3.png"); }
+/* line 55, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-3 {
+  background-image: url("../img/city_layer2.png"); }
+/* line 56, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-4 {
+  background-image: url("../img/city_layer1.png"); }
+/* line 57, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-5 {
+  background-image: url("../img/bridge.png"); }
 
-/* line 34, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 60, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 #autocomplete {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 480px; }
 
-/* line 39, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 64, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 #map {
   position: absolute;
   right: 0;

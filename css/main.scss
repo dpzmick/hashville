@@ -18,21 +18,49 @@
     filter: blur($quant);
     -webkit-filter: blur($quant);
 }
+@mixin translate3d(x,y,z) {
+    -webkit-transform: translate3d(x, y, z);
+    -moz-transform: translate3d(x, y, z);
+    -ms-transform: translate3d(x, y, z);
+    -o-transform: translate3d(x, y, z);
+    transform: translate3d(x, y, z);
+}
+
+$blue: #005573;
 
 html,
 body {
     @include disable-horizontal-scrolling();
 }
 
-.wrapper { 
-    width: 100%;
-    height: 100vh;
-    background: url(../img/nashville-603784_1920.jpg) no-repeat center center fixed; 
-    @include background-size(cover);
+.landing {
+    .parallax {
+        background: url(../img/background.png) no-repeat center center;
+        background-size: cover;
+        position: relative;
+        height: 840px;
+        z-index: 10;
+    }
+
+    .parallax_layer {
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: repeat-x;
+        position: fixed;
+        height: 840px;
+        width: 100%;
+        @include translate3d(0,0,0);
+    }
+
+    #layer-0 { background-image: url("../img/welcometonashville.png"); }
+    #layer-1 { background-image: url("../img/moon.png"); }
+    #layer-2 { background-image: url("../img/city_layer3.png"); }
+    #layer-3 { background-image: url("../img/city_layer2.png"); }
+    #layer-4 { background-image: url("../img/city_layer1.png"); }
+    #layer-5 { background-image: url("../img/bridge.png"); }
 }
 
 #autocomplete {
-    @include center-this(45%);
     width: 480px;
 }
 
