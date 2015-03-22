@@ -14,13 +14,14 @@ html, body {
   background-size: cover; }
 
 /* line 34, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.input {
+#autocomplete {
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  width: 480px; }
 
-/* line 38, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 39, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 #map {
   position: absolute;
   right: 0;
