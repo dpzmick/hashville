@@ -3,59 +3,96 @@
   margin: 0;
   padding: 0; }
 
-/* line 27, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 29, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Hind', sans-serif;
-  height: 100%;
-  width: 100%; }
+  font-family: 'Hind', sans-serif; }
 
 /* line 35, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing .splash {
-  background-image: url(../img/background.png);
-  background-size: cover;
   height: 800px;
   width: 100%; }
-/* line 42, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 40, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing .parallax_layer {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0; }
-/* line 50, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 48, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing #layer-0 {
+  background-image: url("../img/background.png");
+  background-size: cover;
+  position: fixed; }
+/* line 49, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-1 {
   background-image: url("../img/moon.png");
   background-size: cover;
   position: fixed; }
-/* line 51, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.landing #layer-1 {
+/* line 50, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-2 {
   background-image: url("../img/welcometonashville.png");
   background-size: cover;
   position: fixed; }
-/* line 52, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.landing #layer-2 {
+/* line 51, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-3 {
   background-image: url("../img/city_layer3.png");
   background-size: cover; }
-/* line 53, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.landing #layer-3 {
+/* line 52, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-4 {
   background-image: url("../img/city_layer2.png");
   background-size: cover; }
-/* line 54, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.landing #layer-4 {
+/* line 53, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-5 {
   background-image: url("../img/city_layer1.png");
   background-size: cover; }
-/* line 55, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-.landing #layer-5 {
+/* line 54, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.landing #layer-6 {
   background-image: url("../img/bridge.png");
   background-size: cover; }
 
-/* line 58, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
-#autocomplete {
-  width: 480px; }
+/* line 57, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+.input {
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+  height: 400px;
+  width: 100%;
+  background-color: #005573;
+  text-align: center;
+  padding-top: 50px; }
+  /* line 67, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  .input h2 {
+    color: #e2edf2;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px; }
+  /* line 74, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  .input input {
+    display: block;
+    margin: 45px auto 130px;
+    width: 510px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #e2edf2;
+    outline: none;
+    color: #e2edf2;
+    padding-left: 4px;
+    padding-bottom: 8px;
+    font-style: italic; }
+  /* line 88, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  .input button {
+    background: none;
+    background-color: red;
+    border: none;
+    outline: none;
+    padding: 8px 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #e2edf2; }
 
-/* line 63, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 103, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .itin_page {
   box-sizing: border-box;
   background: url(../img/citybackground.png) no-repeat center center;
@@ -63,32 +100,32 @@ html, body {
   padding: 60px 0 60px 80px;
   height: 100vh;
   min-height: 800px; }
-  /* line 71, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  /* line 111, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .itin_page ul {
     list-style: none;
     padding: 0; }
 
-/* line 74, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 114, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .itin_page header {
   font-weight: 300;
   font-size: 1.4em;
   padding-bottom: 40px;
   color: #aaa; }
 
-/* line 80, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 120, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .itinerary, .suggestions {
   float: left;
   height: 100%; }
-  /* line 84, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  /* line 124, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .itinerary li, .suggestions li {
     padding: 10px 0; }
-    /* line 87, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+    /* line 127, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
     .itinerary li h3, .suggestions li h3 {
       font-weight: 300;
       font-size: 1.3em;
       letter-spacing: 1px; }
 
-/* line 94, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 134, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .itinerary h2, .suggestions h2 {
   text-transform: uppercase;
   text-align: center;
@@ -96,15 +133,15 @@ html, body {
   font-size: 1.1em;
   margin-bottom: 12px; }
 
-/* line 100, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 140, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .itinerary {
   width: 360px;
   border-right: 1px solid #aaa; }
-  /* line 104, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  /* line 144, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .itinerary .options {
     text-align: center; }
 
-/* line 110, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 150, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options label {
   cursor: pointer;
   display: inline-block;
@@ -114,47 +151,47 @@ html, body {
   font-size: 0.8em;
   font-weight: 300;
   color: #aaa; }
-/* line 120, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 160, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options label[for="travel-driving"] {
   background: url(../img/icons/driving.png) no-repeat top center;
   background-size: auto 40px; }
-/* line 125, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 165, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options label[for="travel-walking"] {
   background: url(../img/icons/walking.png) no-repeat top center;
   background-size: auto 40px; }
-/* line 130, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 170, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options label[for="travel-bicycling"] {
   background: url(../img/icons/biking.png) no-repeat top center;
   background-size: auto 40px; }
-/* line 135, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 175, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options input {
   display: none; }
-/* line 137, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 177, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options input:checked + label {
   color: red; }
-/* line 141, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 181, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .options .time {
   font-weight: 300;
   font-size: 0.9em;
   color: #888;
   margin-top: 6px; }
-  /* line 146, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  /* line 186, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .options .time span {
     font-weight: 400;
     color: #555; }
 
-/* line 153, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 193, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .suggestions {
   width: 524px; }
-  /* line 156, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+  /* line 196, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
   .suggestions li {
     padding-left: 60px;
     cursor: pointer; }
-    /* line 160, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+    /* line 200, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
     .suggestions li:hover {
       background-color: #e2edf2; }
 
-/* line 166, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
+/* line 206, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 #map {
   position: absolute;
   right: 0;

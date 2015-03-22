@@ -2,6 +2,8 @@
     "jscodehints.detectedExclusions": [
         "/Users/noah/Dropbox/programming/projects/hashville/bower_components/jquery/src/serialize.js",
         "/Users/noah/Dropbox/programming/projects/hashville/backend/src/model.js",
-        "/Users/noah/Dropbox/programming/projects/hashville/bower_components/jquery/src/sizzle/dist/sizzle.js"
+        "/Users/noah/Dropbox/programming/projects/hashville/bower_components/jquery/src/sizzle/dist/sizzle.js",
+        "/Users/noah/Dropbox/programming/projects/hashville/bower_components/jquery/src/traversing/var/rneedsContext.js",
+        "/Users/noah/Dropbox/programming/projects/hashville/bower_components/jquery/src/traversing.js"
     ]
 }

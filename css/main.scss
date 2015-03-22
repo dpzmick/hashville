@@ -22,19 +22,17 @@
 * { margin: 0; padding: 0; }
 
 $blue: #005573;
+$red: red;
+$light-blue: #e2edf2;
 
 html,
 body {
     @include disable-horizontal-scrolling();
     font-family: 'Hind', sans-serif;
-    height: 100%;
-    width: 100%;
 }
 
 .landing {
     .splash {
-        background-image: url(../img/background.png);
-        background-size: cover;
         height: 800px;
         width: 100%;
     }
@@ -47,17 +45,59 @@ body {
         bottom: 0;
     }
     
-    #layer-0 { background-image: url("../img/moon.png"); background-size: cover; position: fixed; }
-    #layer-1 { background-image: url("../img/welcometonashville.png"); background-size: cover; position: fixed; }
-    #layer-2 { background-image: url("../img/city_layer3.png"); background-size: cover;  }
-    #layer-3 { background-image: url("../img/city_layer2.png"); background-size: cover;  }
-    #layer-4 { background-image: url("../img/city_layer1.png"); background-size: cover;  }
-    #layer-5 { background-image: url("../img/bridge.png"); background-size: cover;  }
+    #layer-0 { background-image: url("../img/background.png"); background-size: cover; position: fixed; }
+    #layer-1 { background-image: url("../img/moon.png"); background-size: cover; position: fixed; }
+    #layer-2 { background-image: url("../img/welcometonashville.png"); background-size: cover; position: fixed; }
+    #layer-3 { background-image: url("../img/city_layer3.png"); background-size: cover;  }
+    #layer-4 { background-image: url("../img/city_layer2.png"); background-size: cover;  }
+    #layer-5 { background-image: url("../img/city_layer1.png"); background-size: cover;  }
+    #layer-6 { background-image: url("../img/bridge.png"); background-size: cover;  }
 }
 
-#autocomplete {
-    width: 480px;
+.input {
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    height: 400px;
+    width: 100%;
+    background-color: $blue;
+    text-align: center;
+    padding-top: 50px;
+    
+    h2 {
+        color: $light-blue;
+        text: { transform: uppercase; }
+        font: { weight: 500; }
+        letter-spacing: 2px;
+    }
+    
+    input {
+        display: block;
+        margin: 45px auto 130px;
+        width: 510px;
+        background: none;
+        border: none;
+        border-bottom: 2px solid $light-blue;
+        outline: none;
+        color: $light-blue;
+        padding-left: 4px;
+        padding-bottom: 8px;
+        font: { style: italic; }
+    }
+    
+    button {
+        background: none;
+        background-color: $red;
+        border: none;
+        outline: none;
+        padding: 8px 50px;
+        
+        text: { transform: uppercase; }
+        font: { weight: 400; }
+        color: $light-blue;
+    }
 }
+
 
 
 .itin_page {
@@ -135,7 +175,7 @@ body {
     input { display: none; }
     
     input:checked + label {
-        color: red;
+        color: $red;
     }
     
     .time {
@@ -158,7 +198,7 @@ body {
         cursor: pointer;
         
         &:hover {
-            background-color: #e2edf2;
+            background-color: $light-blue;
         }
     }
 }
