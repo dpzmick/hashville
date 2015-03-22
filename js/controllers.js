@@ -1,5 +1,30 @@
 angular.module('hashControllers', [])
 
+.filter('exclude', function() {
+    return function(avail, selected) {
+        console.log(avail);
+        var ret = [];
+        
+        for (var i = 0; i < avail.length; i++) {
+            var curr = avail[i];
+            
+            var found = false;
+            for (var j = 0; j < selected.length; j++) {
+                if (selected[j].title === curr.title){
+                    found = true;
+                    break;
+                }
+            }
+            
+            if (!found) {
+                ret.push(curr);
+            }
+        }
+        
+        return ret;
+    }
+})
+
 .controller('LandingCtrl', ['$scope',
     function($scope, Info) {
         
@@ -37,8 +62,8 @@ angular.module('hashControllers', [])
     }
 ])
 
-.controller('ItineraryCtrl', ['$scope', '$http',
-    function($scope, $http) {
+.controller('ItineraryCtrl', ['$scope', '$http', '$filter',
+    function($scope, $http, $filter) {
         $scope.travel_mode = "walking";
         $scope.current_suggestion = 0;
         
@@ -78,10 +103,7 @@ angular.module('hashControllers', [])
         function iterateIten() {
             $http.get('http://localhost:3000/all?latitude=' + nextLat + '&longitude=' + nextLon + '&radius=' + rad)
             .then(function(response) {
-                $scope.suggestions = response.data;
-                setTimeout(function() {
-                    $scope.$apply();
-                }, 300);
+                $scope.suggestions = $filter('exclude')(JSONtoMaps(response.data), $scope.itinerary);
             });
         }
         
@@ -114,9 +136,13 @@ angular.module('hashControllers', [])
         
         $scope.switchSuggestion = function(i) {
             $scope.current_suggestion = i;
-            var points = JSONtoMaps($scope.itinerary, $scope.suggestions);
-            var dest = points.suggestions[i].location;
-            route = plotRoute($scope.map, directionsDisplay, origin, dest, points.itinerary, $scope.travel_mode, updateTime);
+            var dest = $scope.suggestions[i].location;
+
+            var itin = $scope.itinerary.map(function (e) {
+                return {location: e.location};
+            });
+            
+            route = plotRoute($scope.map, directionsDisplay, origin, dest, itin, $scope.travel_mode, updateTime);
         }
         
         iterateIten();

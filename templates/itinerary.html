@@ -19,16 +19,16 @@
         </div>
         
         <ul>
-            <li ng-repeat="item in data.itinerary">
-                <h3>{{ item.name }}</h3>
+            <li ng-repeat="item in itinerary">
+                <h3>{{ item.title }}</h3>
             </li>
         </ul>
     </section>
     <section class="suggestions">
         <h2>Things to Do</h2>
         <ul>
-            <li ng-repeat="item in data.suggestions" class="item">
-                <h3 ng-mouseenter="switchSuggestion($index)" ng-click="updateIten($index)">{{ item.name }}</h3>
+            <li ng-repeat="item in suggestions" class="item">
+                <h3 ng-mouseenter="switchSuggestion($index)" ng-click="updateIten($index)">{{ item.title }}</h3>
             </li>
         </ul>
     </section>
