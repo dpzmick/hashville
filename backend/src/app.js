@@ -6,6 +6,12 @@ var modelMaker = require('./model.js')
 // connect to database
 modelMaker.fromDatabaseConnection('mongodb://localhost:27017/place_data', function (model) {
     if (model) {
+        app.get('/all', function (req, res) {
+            model.allArtAndHistoryWithTypes(function (d) {
+                res.send(d);
+            });
+        });
+
         // add the endpoints after we load the model, so we can use it
         app.get('/near', function (req, res) {
             if(typeof(req.query.type) === 'undefined') {
