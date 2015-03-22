@@ -285,11 +285,13 @@ class DataModel {
                                 }
                             });
 
-                            callback(data
+                            var all = data
                                      .concat(innerData)
                                      .concat(innerInnerData)
                                      .concat(food)
-                                     .concat(mus));
+                                     .concat(mus);
+
+                            callback(_.sortBy(all, sort));
                         })
                     })
                 }
