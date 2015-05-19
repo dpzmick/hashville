@@ -75,43 +75,10 @@ angular.module('hashControllers', [])
         }
         
         $scope.submit = function() {
+//            console.log(autocomplete.getPlace());
             origin.addOrigin(autocomplete.getPlace());
             $location.path('/plan');
         }
-
-        document.addEventListener('scroll', scrollHandler, false);
-        
-//        // Create the autocomplete object, restricting the search
-//        // to geographical location types.
-//        var autocomplete = new google.maps.places.Autocomplete(
-//        /** @type {HTMLInputElement} */(document.getElementById('autocomplete')),
-//        { types: ['geocode'] });
-//        // When the user selects an address from the dropdown,
-//        // populate the address fields in the form.
-//        google.maps.event.addListener(autocomplete, 'place_changed', function() {
-//            console.log(autocomplete);
-//        });
-//        
-//        $scope.geolocate = function() {
-//            if (navigator.geolocation) {
-//                navigator.geolocation.getCurrentPosition( function(position) {
-//                    var geolocation = new google.maps.LatLng(
-//                        position.coords.latitude, 
-//                        position.coords.longitude);
-//
-//                    var circle = new google.maps.Circle({
-//                        center: geolocation,
-//                        radius: position.coords.accuracy
-//                    });
-//
-//                    autocomplete.setBounds(circle.getBounds());
-//                });
-//            }
-//        }
-//        
-//        $scope.submit = function() {
-//            $location.path('/plan');
-//        }
     }
 ])
 
