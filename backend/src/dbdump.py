@@ -3,21 +3,21 @@ from pymongo import MongoClient
 
 data_info = [
     {
-        'fname': '/Users/noah/Dropbox/programming/projects/hashville/backend/raw_data/Art_in_Public_Places.csv',
+        'fname': '/Users/lawrencehumphrey/Dev/hashville/backend/raw_data/Art_in_Public_Places.csv',
         'desc_fields': {'title': 0, 'last_name': 1, 'first_name': 2, 'medium': 4, 'type_': 5, 'desc': 6},
         'lat_field': 7,
         'long_field': 8,
         'db_collection': 'public_art'
     },
     {
-        'fname': '/Users/noah/Dropbox/programming/projects/hashville/backend/raw_data/Historic_Markers.csv',
+        'fname': '/Users/lawrencehumphrey/Dev/hashville/backend/raw_data/Historic_Markers.csv',
         'desc_fields': {'title': 0},
         'lat_field': 4,
         'long_field': 5,
         'db_collection': 'historical_markers'
     },
     {
-        'fname': '/Users/noah/Dropbox/programming/projects/hashville/backend/raw_data/Metro_Public_Art_Collection.csv',
+        'fname': '/Users/lawrencehumphrey/Dev/hashville/backend/raw_data/Metro_Public_Art_Collection.csv',
         'desc_fields': {'title': 0, 'last_name': 1, 'first_name': 2, 'medium': 4, 'desc': 6},
         'lat_field': 8,
         'long_field': 9,
