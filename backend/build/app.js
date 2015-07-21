@@ -3,8 +3,10 @@ var express = require('express');
 var app = express();
 var modelMaker = require('./model.js')
 
+var url = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/place_data';
+
 // connect to database
-modelMaker.fromDatabaseConnection('mongodb://localhost:27017/place_data', function (model) {
+modelMaker.fromDatabaseConnection(url, function (model) {
     if (model) {
         app.get('/all', function (req, res) {
             res.header("Access-Control-Allow-Origin", "*");
