@@ -30,6 +30,9 @@ client = MongoClient()
 #db = client.test_database # TODO change for real export
 db = client.place_data
 
+# to prevent doubling data
+client.drop_database(db)
+
 for dtype in data_info:
     print "Getting data for %s" % dtype['fname']
     dtype_collection = db[dtype['db_collection']] # get the collection
