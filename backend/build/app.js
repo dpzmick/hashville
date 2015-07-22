@@ -2,13 +2,13 @@
 var express = require('express');
 var app = express();
 var modelMaker = require('./model.js');
-var url = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/place_data';
+
 app.set('port', process.env.PORT || 3000);
 
 // mongoose 3.8.x
 var mongoose = require('mongoose');
 // mongodb-uri 0.9.x
-// var uriUtil = require('mongodb-uri');
+var uriUtil = require('mongodb-uri');
  
 /* 
  * Mongoose by default sets the auto_reconnect option to true.
@@ -16,22 +16,22 @@ var mongoose = require('mongoose');
  * We recommend a 30 second connection timeout because it allows for 
  * plenty of time in most operating environments.
  */
-// var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
-//                 replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } } };       
+var options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
+                replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } } };       
  
 /*
  * Mongoose uses a different connection string format than MongoDB's standard.
  * Use the mongodb-uri library to help you convert from the standard format to
  * Mongoose's format.
  */
-// var mongodbUri = 'mongodb://user:pass@host:port/db';
-// var mongooseUri = uriUtil.formatMongoose(mongodbUri);
- 
-mongoose.connect(url);
-// mongoose.connect(mongooseUri, options);
-var conn = mongoose.connection;             
- 
-conn.on('error', console.error.bind(console, 'connection error:'));  
+var mongodbUri = 'mongodb://heroku_03569s1r:s3u0kclt6nrgiqq4sev1pbmrjp@ds061731.mongolab.com:61731/heroku_03569s1r';
+var mongooseUri = uriUtil.formatMongoose(mongodbUri);
+
+mongoose.connect(mongooseUri, options);
+
+var db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error:'));
  
 conn.once('open', function() {
     // Wait for the database connection to establish, then start the app.
