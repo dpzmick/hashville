@@ -91,10 +91,10 @@ angular.module('hashControllers', [])
         
         console.log($scope.home);
         
-        var lat = $scope.home.geometry.location.k,
-            lon = $scope.home.geometry.location.D,
-            nextLat = $scope.home.geometry.location.k,
-            nextLon = $scope.home.geometry.location.D,
+        var lat = $scope.home.geometry.location.A,
+            lon = $scope.home.geometry.location.F,
+            nextLat = $scope.home.geometry.location.A,
+            nextLon = $scope.home.geometry.location.F,
             rad = 1000,
             mapStyle = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#e3ebec"}]},{"featureType":"landscape","elementType":"labels.text.fill","stylers":[{"color":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"all","stylers":[{"saturation":"-31"},{"color":"#c64747"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#005573"},{"visibility":"on"}]}]
         

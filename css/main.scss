@@ -18,6 +18,13 @@
     filter: blur($quant);
     -webkit-filter: blur($quant);
 }
+@mixin translate3d(x,y,z) {
+    -webkit-transform: translate3d(x, y, z);
+    -moz-transform: translate3d(x, y, z);
+    -ms-transform: translate3d(x, y, z);
+    -o-transform: translate3d(x, y, z);
+    transform: translate3d(x, y, z);
+}
 
 * { margin: 0; padding: 0; }
 
