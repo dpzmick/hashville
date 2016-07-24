@@ -98,15 +98,6 @@ angular.module('hashControllers', [])
             rad = 1000,
             mapStyle = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#e3ebec"}]},{"featureType":"landscape","elementType":"labels.text.fill","stylers":[{"color":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"all","stylers":[{"saturation":"-31"},{"color":"#c64747"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#005573"},{"visibility":"on"}]}]
 
-        console.log(lat);
-        console.log(lon);
-        // var lat = $scope.home.geometry.location.G,
-        //     lon = $scope.home.geometry.location.K,
-        //     nextLat = $scope.home.geometry.location.G,
-        //     nextLon = $scope.home.geometry.location.K,
-        //     rad = 1000,
-        //     mapStyle = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#e3ebec"}]},{"featureType":"landscape","elementType":"labels.text.fill","stylers":[{"color":"#ff0000"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"all","stylers":[{"saturation":"-31"},{"color":"#c64747"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#005573"},{"visibility":"on"}]}]
-
         var mapOptions = {
             zoom: 14,
             center: new google.maps.LatLng(lat, lon),
@@ -134,7 +125,7 @@ angular.module('hashControllers', [])
         var directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
 
         function iterateIten() {
-            $http.get('http://localhost:3000/all?latitude=' + nextLat + '&longitude=' + nextLon + '&radius=' + rad)
+            $http.get('http://mcplanr.herokuapp.com/all?latitude=' + nextLat + '&longitude=' + nextLon + '&radius=' + rad)
             .then(function(response) {
                 $scope.suggestions = $filter('exclude')(JSONtoMaps(response.data), $scope.itinerary);
             });
