@@ -1,5 +1,6 @@
 import csv
 from pymongo import MongoClient
+from bson.json_util import dumps
 
 data_info = [
     {
@@ -57,4 +58,3 @@ for dtype in data_info:
             except ValueError:
                 # some of the rows in the history data don't have location info
                 pass
-
