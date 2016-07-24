@@ -74,7 +74,7 @@ var genericFilterFunction = function(options        ) {
 }
 
 
-                       
+
 
     function DataModel(db                ) {"use strict";
         this.db = db;
@@ -189,7 +189,8 @@ var genericFilterFunction = function(options        ) {
         var radius    = options.radius;
         var type      = options.type;
 
-        var baseUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location=';
+        var baseUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyBx-B8jQZJRf6rsdRZlNvqxeJIhxDs4dkM&location=';
+        // var baseUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyDBSoBV6-9seLDqK62S5LRjIRMG5G1ZZYA&location=';
         var locationStr = latitude + ',' + longitude + '&radius=' + radius;
         var typeStr = '&types=' + type;
         var blah = '&rankBy=distance';
@@ -350,4 +351,3 @@ var genericFilterFunction = function(options        ) {
             callback(null);
         }
     }});
-
