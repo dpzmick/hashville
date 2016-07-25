@@ -11,7 +11,8 @@ html, body {
 
 /* line 35, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing .splash {
-  height: 800px;
+  height: 98vh;
+  /*height: 800px;*/
   width: 100%; }
 /* line 40, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing .parallax_layer {
