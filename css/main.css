@@ -20,7 +20,8 @@ html, body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  background-position: center; }
 /* line 48, /Users/noah/Dropbox/programming/projects/hashville/css/main.scss */
 .landing #layer-0 {
   background-image: url("../img/background.png");
